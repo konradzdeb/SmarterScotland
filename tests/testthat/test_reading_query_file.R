@@ -1,0 +1,25 @@
+context("Support Rcpp function reading query files")
+
+test_that(
+  "read_query_file function returns character vector",
+  expect_is(object = read_query_file(query_file(
+    "qry_get_topics.sparql"
+  )),
+  class = "character")
+)
+
+test_that(
+  "Read query files have expected content",
+  expect_match(object = read_query_file(
+    query_file("qry_get_topics_regex.sparql")
+  ),
+  regexp = "FILTER")
+)
+
+test_that(
+  "Read query files are of length 1 (one line)",
+  expect_length(object = read_query_file(
+    query_file("qry_get_topics_regex.sparql")
+  ),
+  n = 1)
+)

@@ -1,0 +1,7 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT DISTINCT ?subject
+WHERE
+{
+  ?a qb:component ?subject .
+  FILTER regex(str(?subject), 'p', 'i')
+}

@@ -22,19 +22,18 @@
 #' @examples
 #' head(get_ToC(which = "pupil"), n = 5)
 get_ToC <-
-
   # FIXME: fix queries generating right results
-
   function(endpoint = "http://statistics.gov.scot/sparql.csv",
            which = NULL) {
     # Depending on the which value use defult or query with regex
     if (is.null(which)) {
       query <- read_query_file(query_file("qry_get_topics"))
     } else {
-      query <- read_query_file(query_file("qry_get_topics_regex.sparql"))
-      gsub(pattern = "\\?subject",
-           replacement = which,
-           x = query)
+      gsub(
+        pattern = "replaceWithKeyword",
+        replacement = which,
+        x = read_query_file(query_file("qry_get_topics_regex.sparql"))
+      ) -> query
     }
 
     # Generating data.frame via SPARQL

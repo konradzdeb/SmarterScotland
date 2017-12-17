@@ -2,6 +2,7 @@
 #include <sstream>
 #include <string>
 #include <algorithm>
+#include <boost/algorithm/string.hpp>
 #include <Rcpp.h>
 using namespace Rcpp;
 
@@ -23,7 +24,9 @@ std::string read_query_file(std::string path){
   // Declare string variable to loop trhough and delete carriage returns
   std::string qryTxt;
   qryTxt = ss.str();
-  // Remove new line characters
-  qryTxt.erase(std::remove(qryTxt.begin(), qryTxt.end(), '\n'), qryTxt.end());
+
+  // Remove line breaks and return clean string
+  boost::replace_all(qryTxt, "\r\n", " ");
   return qryTxt;
 }
+

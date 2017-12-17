@@ -1,7 +1,10 @@
 PREFIX qb: <http://purl.org/linked-data/cube#>
-SELECT DISTINCT ?subject
+SELECT DISTINCT ?theme ?dimension
 WHERE
 {
   ?a qb:component ?subject .
-  FILTER regex(str(?subject), 'p', 'i')
+  FILTER regex(str(?subject), 'replaceWithKeyword', 'i')
+  bind( strafter(str(?subject), "specification/")  as ?theme_raw)
+  bind( strafter(?theme_raw, "/") as ?dimension)
+  bind( strbefore(?theme_raw, "/") as ?theme)
 }

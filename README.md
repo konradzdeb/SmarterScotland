@@ -1,0 +1,23 @@
+README
+================
+
+## Overview
+
+The SmarterScotland package provides a convenient interface for sourcing
+and interrogeting data available through the
+[statistics.gov.scot](http://statistics.gov.scot).
+
+## Installation
+
+``` r
+if ("devtools" %in% rownames(installed.packages())) {
+  devtools::install_github(repo = "konradedgar/SmarterScotland", build_vignettes = TRUE)
+} else {
+  install.packages("devtools")
+  devtools::install_github(repo ="konradedgar/SmarterScotland", build_vignettes = TRUE)
+}
+```
+
+## Usage
+
+## Previe available data

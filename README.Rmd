@@ -1,0 +1,28 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+The SmarterScotland package provides a convenient interface for sourcing and interrogeting data available through the [statistics.gov.scot](http://statistics.gov.scot).
+
+## Installation
+
+```{r installation, echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE}
+if ("devtools" %in% rownames(installed.packages())) {
+  devtools::install_github(repo = "konradedgar/SmarterScotland", build_vignettes = TRUE)
+} else {
+  install.packages("devtools")
+  devtools::install_github(repo ="konradedgar/SmarterScotland", build_vignettes = TRUE)
+}
+```
+
+## Usage
+
+## Previe available data
+

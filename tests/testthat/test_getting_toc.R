@@ -9,8 +9,10 @@ test_that("The data frame has a sensible number of rows",
                     expected = 10))
 
 test_that("Returned data has expected search results",
-          expect_true(object = grepl(
-            pattern = "pupil",
-            x = get_ToC(which = "pupil")[1],
-            ignore.case = TRUE
+          expect_true(object = any(
+            grepl(
+              pattern = "pupil",
+              x = get_ToC(which = "pupil")[, 1],
+              ignore.case = TRUE
+            )
           )))

@@ -6,12 +6,17 @@
 #' @param indicator A character vector with the name of indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
-#' @details In effect, the following function works as a wraper for a SPARQL query.
+#' @details In effect, the following function works as a wraper for a SPARQL query
+#'   sourcing data across desired geographies. The query requires a number of dimensions
+#'   concerned with the indicator, value and geography to be specified.
 #'
 #' @return
 #' @export
 #'
 #' @examples
-get_data <- function(indicator) {
+get_data <- function(indicator, geography) {
+  # Check if all arguments were specificed
+  stopifnot()
+
   return(NULL)
 }

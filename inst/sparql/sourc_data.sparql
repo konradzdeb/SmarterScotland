@@ -1,0 +1,6 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT DISTINCT ?geography ?measure ?time ?value
+WHERE 
+{
+  ?a qb:component ?geography
+}

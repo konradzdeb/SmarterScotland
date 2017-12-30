@@ -4,7 +4,6 @@
 #'   the package enviornment.
 #'
 #' @keywords internal
-#' @import Rcpp
 #' @name utility_functions
 NULL
 

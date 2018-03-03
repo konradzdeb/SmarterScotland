@@ -5,6 +5,8 @@
 #' @describeIn utility_functions Provides a convenience function quickly reading
 #'   \code{SPARQL} files via \code{Rcpp}.
 #' @useDynLib SmarterScotland
+NULL
+
 read_query_file <- function(path) {
     .Call('_SmarterScotland_read_query_file', PACKAGE = 'SmarterScotland', path)
 }

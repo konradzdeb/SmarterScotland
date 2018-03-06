@@ -23,8 +23,8 @@ In practice, the function can be used to to inform aguments in
 \examples{
 \dontrun{
 head(get_available_hierarchies())
-#                                                           hierarchy                      label
+#   hierarchy                                                           label
 # 1 http://statistics.gov.scot/def/hierarchy/best-fit#health-board-area Best fit health board area
-# 2      http://statistics.gov.scot/def/hierarchy/best-fit#council-area      Best fit council area
+# 2      http://statistics.gov.scot/def/hierarchy/best-fit#council-area Best fit council area
 }
 }

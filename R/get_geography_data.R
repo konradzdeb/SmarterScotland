@@ -11,10 +11,14 @@
 #'   sources the full time series data set as
 #'
 #'
-#' @return
+#' @return A data framewith indicator values per selected geography.
+#'
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' get_geography_data(indicator = "JSA", geography = "datazones")
+#' }
 get_geography_data <- function(indicator, geography) {
   # Check if all arguments were specificed
   assert_that(is.string(indicator), is.string(geography),

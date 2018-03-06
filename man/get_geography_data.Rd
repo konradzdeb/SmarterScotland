@@ -10,6 +10,9 @@ get_geography_data(indicator, geography)
 \item{indicator}{A character vector with the name of indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 }
+\value{
+A data framewith indicator values per selected geography.
+}
 \description{
 The function fetches statistical data for a selected geography
   \href{http://statistics.gov.scot}{statistics.gov.scot}.
@@ -18,4 +21,9 @@ The function fetches statistical data for a selected geography
 In effect, the following function works as a wraper for a SPARQL query
   sourcing data across desired geography for selected indicator. The function
   sources the full time series data set as
+}
+\examples{
+\dontrun{
+get_geography_data(indicator = "JSA", geography = "datazones")
+}
 }

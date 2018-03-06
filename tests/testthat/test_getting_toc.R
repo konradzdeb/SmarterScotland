@@ -1,4 +1,4 @@
-context("Getting TOC with the right contet")
+context("SPARQL: Getting ToC")
 
 test_that("TOC is a data.frame",
           expect_is(object = get_ToC(),
@@ -8,7 +8,7 @@ test_that("The data frame has a sensible number of rows",
           expect_gt(object = nrow(get_ToC()),
                     expected = 10))
 
-test_that("Returned data has expected search results",
+test_that("Returned data has expected values",
           expect_true(object = any(
             grepl(
               pattern = "pupil",

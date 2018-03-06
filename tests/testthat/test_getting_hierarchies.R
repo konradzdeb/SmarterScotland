@@ -1,5 +1,14 @@
-context("Test getting spatial hierarchies.")
+library(SmarterScotland)
+context("SPARQL: getting spatial frameworks")
+
+# Create temporary object for tests
+tmpDta <- get_available_hierarchies()
 
 test_that("Sourced hierarchies are a data frame",
-          expect_is(object = get_available_hierarchies(),
+          expect_is(object = tmpDta,
                     class = "data.frame"))
+
+test_that("Sourced hierarchies are with some content",
+          expect_more_than(dim(tmpDta)[1], 3))
+
+rm(tmpDta)

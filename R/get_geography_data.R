@@ -13,6 +13,8 @@
 #'
 #' @return A data framewith indicator values per selected geography.
 #'
+#' @import assertthat
+#'
 #' @export
 #'
 #' @examples

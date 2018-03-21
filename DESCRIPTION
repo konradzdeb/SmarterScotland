@@ -1,7 +1,7 @@
 Package: SmarterScotland
 Type: Package
 Title: Source Public Data from statistics.gov.scot
-Version: 0.1
+Version: 0.0.1
 Date: 2016-02-03
 Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))
@@ -9,14 +9,15 @@ Description: The package sources the publicly available data life outcomes, demo
 License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
-    Rcpp (>= 0.12.3),
-    BH (>= 1.65.0.1),
-    assertthat (>= 0.2)
+  Rcpp (>= 0.12.3),
+  BH (>= 1.65.0.1),
+  assertthat (>= 0.2)
 LinkingTo:
-    Rcpp
+  Rcpp
 RoxygenNote: 6.0.1
-Suggests: knitr,
-    rmarkdown
+Suggests: 
+  knitr,
+  rmarkdown
 VignetteBuilder: knitr
-Depends: SPARQL,
-    RCurl
+Depends: 
+  SPARQL

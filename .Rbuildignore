@@ -1,4 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
-^vignettes\.*cache$
+# Vignettes
+^vignettes/.*[.](pdf|PDF)$
+^vignettes/.*[.](r|R)$
+^vignettes/[.]install_extras$

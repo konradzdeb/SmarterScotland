@@ -1,5 +1,17 @@
 PREFIX qb: <http://purl.org/linked-data/cube#>
 SELECT DISTINCT ?geography ?measure ?time ?value
+-- FIXME: Current development
+
+-- Prefixes
+PREFIX stats: <http://statistics.data.gov.uk/id/statistical-geography/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX simd: <http://data.opendatascotland.org/def/simd/>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+PREFIX stats_dim: <http://data.opendatascotland.org/def/statistical-dimensions/>
+PREFIX year: <http://reference.data.gov.uk/id/year/>
+
+SELECT ?dz_label
+
 WHERE 
 {
   ?a qb:component ?geography

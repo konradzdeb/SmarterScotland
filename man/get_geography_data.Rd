@@ -9,13 +9,16 @@ get_geography_data(indicator, geography)
 \arguments{
 \item{indicator}{A character vector with the name of indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
+
+\item{geography}{A character corresponding to geographies for which to source
+the data.}
 }
 \value{
 A data framewith indicator values per selected geography.
 }
 \description{
 The function fetches statistical data for a selected geography
-  \href{http://statistics.gov.scot}{statistics.gov.scot}.
+  framework from: \href{http://statistics.gov.scot}{statistics.gov.scot}.
 }
 \details{
 In effect, the following function works as a wraper for a SPARQL query

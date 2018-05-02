@@ -1,18 +1,23 @@
 PREFIX qb: <http://purl.org/linked-data/cube#>
 SELECT DISTINCT ?geography ?measure ?time ?value
 -- FIXME: Current development
+#To be developed on JSA example
 
 -- Prefixes
-PREFIX stats: <http://statistics.data.gov.uk/id/statistical-geography/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX simd: <http://data.opendatascotland.org/def/simd/>
-PREFIX cube: <http://purl.org/linked-data/cube#>
-PREFIX stats_dim: <http://data.opendatascotland.org/def/statistical-dimensions/>
-PREFIX year: <http://reference.data.gov.uk/id/year/>
+PREFIX sdmx: <http://purl.org/linked-data/sdmx/2009/concept#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+-- Select
 SELECT ?dz_label
 
-WHERE 
-{
-  ?a qb:component ?geography
+WHERE {
+				GRAPH 
 }

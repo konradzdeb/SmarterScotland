@@ -17,7 +17,3 @@ if ("devtools" %in% rownames(installed.packages())) {
   devtools::install_github(repo ="konradedgar/SmarterScotland", build_vignettes = TRUE)
 }
 ```
-
-## Usage
-
-## Previe available data

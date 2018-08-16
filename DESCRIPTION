@@ -18,7 +18,8 @@ LinkingTo:
 RoxygenNote: 6.1.0
 Suggests: 
   knitr,
-  rmarkdown
+  rmarkdown,
+  testthat
 VignetteBuilder: knitr
 Depends: 
   SPARQL

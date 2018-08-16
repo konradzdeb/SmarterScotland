@@ -9,6 +9,6 @@ test_that("Sourced hierarchies are a data frame",
                     class = "data.frame"))
 
 test_that("Sourced hierarchies are with some content",
-          expect_more_than(dim(tmpDta)[1], 3))
+          expect_gt(dim(tmpDta)[1], 3))
 
 rm(tmpDta)

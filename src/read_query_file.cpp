@@ -1,3 +1,5 @@
+// [[Rcpp::depends(BH)]]
+
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -5,7 +7,6 @@
 #include <boost/regex.hpp>
 #include <boost/algorithm/string/replace.hpp>
 
-// [[Rcpp::depends(BH)]]
 
 #include <Rcpp.h>
 using namespace Rcpp;

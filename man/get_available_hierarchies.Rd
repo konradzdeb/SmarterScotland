@@ -4,7 +4,8 @@
 \alias{get_available_hierarchies}
 \title{Get Available Spatial Frameworks}
 \usage{
-get_available_hierarchies(endpoint = "http://statistics.gov.scot/sparql.csv")
+
+  get_available_hierarchies(endpoint = "http://statistics.gov.scot/sparql.csv")
 }
 \value{
 A data frame containing list of available hierarchies.

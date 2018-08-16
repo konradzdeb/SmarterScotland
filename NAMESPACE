@@ -2,8 +2,10 @@
 
 export(get_ToC)
 export(get_available_hierarchies)
+export(get_geography_code_register)
 export(get_geography_data)
 import(Rcpp)
 import(SPARQL)
 import(assertthat)
 useDynLib(SmarterScotland)
+useDynLib(SmarterScotland, .registration = TRUE)

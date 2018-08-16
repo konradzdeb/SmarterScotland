@@ -13,8 +13,9 @@
 #' }
 #'
 #' @section Acknowledgements:
-#' The following package is written in the open (both metaphorically and literally as I tend do undertake this development as a leisure reactivity while working on the Glasgow - Edinburgh commuter train), with big thanks to the whole Open Source community that contributed useful input through their questions, answers, discussions and comments via StackOverflow, GitHub and R-Help. 
+#' The following package is written in the open (both metaphorically and literally as I tend do undertake this development as a leisure reactivity while working on the Glasgow - Edinburgh commuter train), with big thanks to the whole Open Source community that contributed useful input through their questions, answers, discussions and comments via StackOverflow, GitHub and R-Help.
 #'
+#' @useDynLib SmarterScotland, .registration = TRUE
 #' @import SPARQL
 #' @import assertthat
 #' @import Rcpp

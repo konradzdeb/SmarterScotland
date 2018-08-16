@@ -4,7 +4,8 @@
 \alias{get_ToC}
 \title{Get TOC from statistics.gov.scot}
 \usage{
-get_ToC(endpoint = "http://statistics.gov.scot/sparql.csv", which = NULL)
+get_ToC(endpoint = "http://statistics.gov.scot/sparql.csv",
+  which = NULL)
 }
 \arguments{
 \item{endpoint}{A SPARQL endpoint, currently defaults to

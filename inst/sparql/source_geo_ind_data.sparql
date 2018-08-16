@@ -3,7 +3,7 @@ SELECT DISTINCT ?geography ?measure ?time ?value
 -- FIXME: Current development
 #To be developed on JSA example
 
--- Prefixes
+# Prefixes
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>

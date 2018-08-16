@@ -49,7 +49,7 @@ std::string read_query_file(std::string path){
   // FiXME: replace lines
   // Consider:
   // https://stackoverflow.com/a/20058432/1655567
-  boost::replace_all(result, re_lineend, " ");
+  result = boost::regex_replace(result, re_lineend, " ");
 
   // Remove line breaks and return clean string
   // boost::regex_replace(qryTxt, re_linebreaks, " ");

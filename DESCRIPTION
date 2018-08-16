@@ -8,6 +8,7 @@ Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
 Description: The package sources the publicly available data life outcomes, demographic and administrative  data from the ScotStat portal for selected indicators, geographies and time periods. In addition the package offers basic visualisation and analytical functionalities.
 License: MIT + file LICENSE
 LazyData: TRUE
+Encoding: UTF-8
 Imports:
   Rcpp (>= 0.12.3),
   BH (>= 1.65.0.1),

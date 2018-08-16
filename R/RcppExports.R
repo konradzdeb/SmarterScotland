@@ -8,6 +8,6 @@
 NULL
 
 read_query_file <- function(path) {
-    .Call(`_SmarterScotland_read_query_file`, path)
+    .Call('_SmarterScotland_read_query_file', PACKAGE = 'SmarterScotland', path)
 }
 

@@ -1,3 +1,11 @@
+#' @title Update Package Version
+#'
+#' @description Updates package version
+#'
+#' @return Integer
+#'
+#' @keywords internal
+
 update_package_version <- function(packageLocation = ".") {
   # Read DESCRIPTION file
   desc <- readLines(file.path(packageLocation, "DESCRIPTION"))

@@ -9,10 +9,11 @@ get_ToC(endpoint = "http://statistics.gov.scot/sparql.csv",
 }
 \arguments{
 \item{endpoint}{A SPARQL endpoint, currently defaults to
-  \url{http://statistics.gov.scot/sparql}.
-@param which Defult \code{NULL} returns all subjects, a character value is
-  passed to \code{FILTER} in SPARQL query performing case insesitive regex
-  on filter categories.}
+\url{http://statistics.gov.scot/sparql}.}
+
+\item{which}{Defults \code{NULL} returns all subjects, a character value is
+passed to \code{FILTER} in SPARQL query performing case insesitive regex
+on filter categories.}
 }
 \value{
 A \code{data.frame} with columns corresponding to table name,

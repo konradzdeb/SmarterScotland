@@ -7,6 +7,10 @@
 
   get_available_hierarchies(endpoint = "http://statistics.gov.scot/sparql.csv")
 }
+\arguments{
+\item{endpoint}{A SPARQL endpoint, currently defaults to
+\url{http://statistics.gov.scot/sparql}.}
+}
 \value{
 A data frame containing list of available hierarchies.
 }

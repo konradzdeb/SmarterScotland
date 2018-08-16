@@ -5,6 +5,9 @@
 #'   correspond to the available best-fit geographies and can be used to aggregate
 #'   data zone level data.
 #'
+#' @param endpoint A SPARQL endpoint, currently defaults to
+#'    \url{http://statistics.gov.scot/sparql}.
+#'
 #' @details In practice, the function can be used to to inform aguments in
 #'   \code{\link[SmarterScotland]{get_geography_data}}.
 #'

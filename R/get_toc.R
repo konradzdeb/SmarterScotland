@@ -9,7 +9,8 @@
 #'
 #' @param endpoint A SPARQL endpoint, currently defaults to
 #'    \url{http://statistics.gov.scot/sparql}.
-#'  @param which Defult \code{NULL} returns all subjects, a character value is
+#'
+#' @param which Defults \code{NULL} returns all subjects, a character value is
 #'    passed to \code{FILTER} in SPARQL query performing case insesitive regex
 #'    on filter categories.
 #'

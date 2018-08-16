@@ -18,8 +18,7 @@ The following function takes no arguments other than the optional
 }
 \details{
 In practice, the function can be used to to inform aguments in
-  \code{\link{get_geographies_data}} and in
-  \code{\link{get_available_geographies}}.
+  \code{\link[SmarterScotland]{get_geography_data}}.
 }
 \examples{
 \dontrun{

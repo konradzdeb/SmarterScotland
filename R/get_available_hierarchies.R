@@ -6,8 +6,7 @@
 #'   data zone level data.
 #'
 #' @details In practice, the function can be used to to inform aguments in
-#'   \code{\link{get_geographies_data}} and in
-#'   \code{\link{get_available_geographies}}.
+#'   \code{\link[SmarterScotland]{get_geography_data}}.
 #'
 #' @return A data frame containing list of available hierarchies.
 #'

@@ -35,9 +35,8 @@ head(get_ToC(which = "pupil"))
 ```
 
 
+
 # Sample queries
 
+## Getting time series data
 
-## Getting long time series table
-
-# Similar Projects

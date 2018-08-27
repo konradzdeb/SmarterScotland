@@ -34,9 +34,9 @@ The function `get_ToC` provides a simple mechanism generating information on the
 head(get_ToC(which = "pupil"))
 ```
 
-
+A more informative approach to sourcing the relevant data relies on producing a matrix of indicators available across specific geographies. This is shown below.
 
 # Sample queries
 
-## Getting time series data
+## Available geographies
 

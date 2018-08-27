@@ -1,9 +1,4 @@
 PREFIX qb: <http://purl.org/linked-data/cube#>
-SELECT DISTINCT ?geography ?measure ?time ?value
--- FIXME: Current development
-#To be developed on JSA example
-
-# Prefixes
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -15,8 +10,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
--- Select
-SELECT ?dz_label
+SELECT DISTINCT ?geography ?indicator ?timeframe
 
 WHERE {
 				GRAPH 

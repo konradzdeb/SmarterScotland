@@ -24,7 +24,7 @@ require("SmarterScotland")
 The following packages makes use of the SPARQL [^1] language queries in order to query the data available through the [statistics.gov.scot](http://statistics.gov.scot) portal [^2]. In effect, the app works as a wrapper for SPARQL queries providing a suite of common functionalities relevant to how the Scottish public data is being utilises.
 
 [^1]: Detailed information on the SPARQL is available through [W3C pages](https://www.w3.org/TR/rdf-sparql-query/).
-[^2]: The implemenation follows part of the *Open Data Strategy* implemented by the Scottish Government, policy papers and relevant legislation is availbale through [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
+[^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government, policy papers and relevant legislation is available through [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
 
 ## What data is available
 
@@ -40,3 +40,4 @@ A more informative approach to sourcing the relevant data relies on producing a 
 
 ## Available geographies
 
+The list of available geographies can be sourced with use of the query below.

@@ -7,6 +7,8 @@ facilitate collaboration.***
 [![Build
 Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradedgar/SmarterScotland)
 [![codecov](https://codecov.io/gh/konradedgar/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradedgar/SmarterScotland)
+[![Build
+status](https://ci.appveyor.com/api/projects/status/annjvg09a5bsil3a?svg=true)](https://ci.appveyor.com/project/konradedgar/smarterscotland)
 
 ## Overview
 

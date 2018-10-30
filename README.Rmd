@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***The package is in an early development stage and was posted to facilitate collaboration.***
 
-[![Build Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradedgar/SmarterScotland) [![codecov](https://codecov.io/gh/konradedgar/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradedgar/SmarterScotland) [![Build status](https://ci.appveyor.com/api/projects/status/annjvg09a5bsil3a?svg=true)](https://ci.appveyor.com/project/konradedgar/smarterscotland)
+[![Build Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradedgar/SmarterScotland) [![codecov](https://codecov.io/gh/konradedgar/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradedgar/SmarterScotland) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/konradedgar/SmarterScotland?branch=master&svg=true)](https://ci.appveyor.com/project/konradedgar/SmarterScotland)
 
 
 ## Overview

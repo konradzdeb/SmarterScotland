@@ -41,3 +41,7 @@ A more informative approach to sourcing the relevant data relies on producing a 
 ## Available geographies
 
 The list of available geographies can be sourced with use of the query below.
+
+```{r get_available_geographies}
+```
+

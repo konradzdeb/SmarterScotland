@@ -1,7 +1,7 @@
 Package: SmarterScotland
 Type: Package
 Title: Source Public Data from statistics.gov.scot
-Version: 0.0.9000
+Version: 0.0.09
 Date: 2016-02-03
 Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))

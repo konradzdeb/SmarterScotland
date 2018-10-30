@@ -1,6 +1,9 @@
 README
 ================
 
+***The package is in an early development stage and was posted to
+facilitate collaboration.***
+
 ## Overview
 
 The SmarterScotland package provides a convenient interface for sourcing

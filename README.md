@@ -27,7 +27,7 @@ if ("devtools" %in% rownames(installed.packages())) {
 
 ## Other projects
 
-For better and more mature similar projects have a look
+For better and more mature, similar projects have a look
     at:
 
   - [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)

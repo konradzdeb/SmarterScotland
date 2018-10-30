@@ -1,3 +1,4 @@
-# SmarterScotland 0.1
+# SmarterScotland 0.0.09
 
-* Developmental version of the package created
+* Added a `NEWS.md` file to track changes to the package.
+* Posted early developmental version on GitHub

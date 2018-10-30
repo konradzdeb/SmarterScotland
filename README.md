@@ -11,7 +11,7 @@ Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](ht
 ## Overview
 
 The SmarterScotland package provides a convenient interface for sourcing
-and interrogeting data available through the
+and interrogating data available through the
 [statistics.gov.scot](http://statistics.gov.scot).
 
 ## Installation
@@ -27,7 +27,7 @@ if ("devtools" %in% rownames(installed.packages())) {
 
 ## Other projects
 
-For better projects, have a look
+For better and more mature similar projects have a look
     at:
 
   - [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)

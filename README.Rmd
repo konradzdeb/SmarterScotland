@@ -25,3 +25,10 @@ if ("devtools" %in% rownames(installed.packages())) {
   devtools::install_github(repo ="konradedgar/SmarterScotland", build_vignettes = TRUE)
 }
 ```
+
+## Other projects
+
+For better projects, have a look at:
+
+* [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)
+* [eurostat](https://cran.r-project.org/web/packages/eurostat/index.html)

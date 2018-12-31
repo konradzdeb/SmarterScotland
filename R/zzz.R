@@ -1,4 +1,4 @@
 .onAttach <- function(...) {
   packageStartupMessage("Loaded SmarterScotland version:",
-                        packageVersion("SmarterScotland"))
+                        utils::packageVersion("SmarterScotland"))
 }

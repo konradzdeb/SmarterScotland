@@ -11,8 +11,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' dta_geo <- get_geography_code_register()
+#' 1+1
 #' }
 get_geography_code_register <- function() {
-  return(dta_geo)
+  return(NULL)
 }

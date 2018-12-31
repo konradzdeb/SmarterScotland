@@ -18,6 +18,6 @@ The \emph{Standard Geography Code Register} is available in the
 }
 \examples{
 \dontrun{
-dta_geo <- get_geography_code_register()
+1+1
 }
 }

@@ -5,14 +5,18 @@ Version: 0.0.09
 Date: 2016-02-03
 Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))
-Description: The package sources the publicly available data life outcomes, demographic and administrative  data from the ScotStat portal for selected indicators, geographies and time periods. In addition the package offers basic visualisation and analytical functionalities.
+Description: The package sources the publicly available data life outcomes, 
+  demographic and administrative  data from the ScotStat portal for selected indicators, 
+  geographies and time periods. In addition the package offers basic visualisation and 
+  analytical functionalities.
 License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
 Imports:
-    Rcpp,
+    assertthat (>= 0.2),
     BH (>= 1.65.0.1),
-    assertthat (>= 0.2)
+    Rcpp,
+    utils
 LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1

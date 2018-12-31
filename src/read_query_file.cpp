@@ -23,7 +23,6 @@ using namespace Rcpp;
 //' @keyword internal
 //' @describeIn utility_functions Provides a convenience function quickly reading
 //'   \code{SPARQL} files via \code{Rcpp}.
-//' @useDynLib SmarterScotland
 
 // Regular expressions to pass to replace_all to remove all comments and line breaks
 // Define regex to match lines with comments

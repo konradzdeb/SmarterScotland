@@ -7,3 +7,5 @@
 ^vignettes/.*[.](pdf|PDF)$
 ^vignettes/.*[.](r|R)$
 ^vignettes/[.]install_extras$
+^sessionInfoLog$
+^README\.Rmd$

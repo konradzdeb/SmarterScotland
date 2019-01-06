@@ -15,7 +15,8 @@
 #'
 #' @return A data framewith indicator values per selected geography.
 #'
-#' @import assertthat
+#' @importFrom assertthat assert_that
+#' @importFrom assertthat is.string
 #'
 #' @export
 #'

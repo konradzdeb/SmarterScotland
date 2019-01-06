@@ -15,6 +15,8 @@
 #'
 #' @export
 #'
+#' @importFrom SPARQL SPARQL
+#'
 #' @examples
 #' \dontrun{
 #' head(get_available_hierarchies())

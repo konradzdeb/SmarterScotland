@@ -17,7 +17,5 @@
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
-#' @import SPARQL
-#' @import assertthat
 #' @keywords internal
 "_PACKAGE"

@@ -1,5 +1,3 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 os:
   - linux
 
@@ -17,10 +15,9 @@ addons:
       - clang-5.0
 
 env:
-  - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
-
-before_install:
-  - eval "${MATRIX_EVAL}"
+  - CC=ccache clang -Qunused-arguments 
+  - CXX=ccache clang++ -Qunused-arguments
+  - CCACHE_CPP2=yes
 
 r_packages:
   - covr

@@ -13,7 +13,6 @@
 #' @details The original code was based on the syntax available through:
 #'   \url{https://figshare.com/articles/Fast_text_file_reading_into_R_using_Rcpp_functions/3407032}.
 #'
-#' @export
 NULL
 
 read_query_file <- function(file_path) {

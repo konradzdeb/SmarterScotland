@@ -19,7 +19,6 @@
 //' @details The original code was based on the syntax available through:
 //'   \url{https://figshare.com/articles/Fast_text_file_reading_into_R_using_Rcpp_functions/3407032}.
 //'
-//' @export
 
 // To quick test query:
 // Sys.setenv("PKG_LIBS"="-lboost_regex"); Rcpp::sourceCpp('src/read_query_file.cpp',

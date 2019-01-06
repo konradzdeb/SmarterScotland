@@ -2,6 +2,7 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 #' @rdname utility_functions
+#' @param file_path File path string to source
 #' @section read_query_file: C++ fast cleaner for query text file removing
 #'   comments and line breaks.
 read_query_file <- function(file_path) {

@@ -10,6 +10,7 @@ NULL
 #' @section query_file: Wrapper for the \code{system.file} function
 #'   passing path to a given query file and taking care of potentially missing
 #'   extensions.
+#' @param query_file_name Name of query file
 query_file <- function(query_file_name) {
   system.file("sparql",
               {

@@ -8,6 +8,7 @@
 #include <boost/algorithm/string/replace.hpp>
 
 //' @rdname utility_functions
+//' @param file_path File path string to source
 //' @section read_query_file: C++ fast cleaner for query text file removing
 //'   comments and line breaks.
 // [[Rcpp::export]]

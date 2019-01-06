@@ -10,6 +10,11 @@ read_query_file(file_path)
 
 query_file(query_file_name)
 }
+\arguments{
+\item{file_path}{File path string to source}
+
+\item{query_file_name}{Name of query file}
+}
 \description{
 Small and handy utility functions usually not useful outside
   the package enviornment.

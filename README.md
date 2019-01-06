@@ -12,6 +12,8 @@ status](https://ci.appveyor.com/api/projects/status/github/konradedgar/SmarterSc
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradedgar/SmarterScotland)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/SmarterScotland)](https://cran.r-project.org/package=SmarterScotland)
 
 ## Overview
 

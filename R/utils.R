@@ -3,11 +3,11 @@
 #' @description Small and handy utility functions usually not useful outside
 #'   the package enviornment.
 #'
-#' @keywords internal
 #' @name utility_functions
 NULL
 
-#' @describeIn utility_functions Wrapper for the \code{system.file} function
+#' @rdname utility_functions
+#' @section query_file: Wrapper for the \code{system.file} function
 #'   passing path to a given query file and taking care of potentially missing
 #'   extensions.
 query_file <- function(query_file_name) {

@@ -25,3 +25,4 @@ The following package is written in the open (both metaphorically and literally 
 \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@me.com}
 }
 }
+\keyword{internal}

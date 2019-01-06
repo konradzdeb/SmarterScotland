@@ -30,7 +30,7 @@ The following packages makes use of the SPARQL [^1] language queries in order to
 
 The function `get_ToC` provides a simple mechanism generating information on the initial data that is available through the [statistics.gov.scot](http://statistics.gov.scot). For instance the query below will return a list of indicators for which the keyword *pupil* was found.
 
-```{r get_ToC_example1}
+```{r get_ToC_example1, eval=FALSE, include=FALSE}
 head(get_ToC(which = "pupil"))
 ```
 
@@ -41,7 +41,3 @@ A more informative approach to sourcing the relevant data relies on producing a 
 ## Available geographies
 
 The list of available geographies can be sourced with use of the query below.
-
-```{r get_available_geographies}
-```
-

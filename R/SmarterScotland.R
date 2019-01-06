@@ -9,14 +9,14 @@
 #'  \code{vignette("other-functions", package = "SmarterScotland")}.
 #'
 #' @author \itemize{
-#' \item Maintainer/Author: Konrad Zdeb <konrad.zdeb@me.com>
+#' \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@@me.com}
 #' }
 #'
 #' @section Acknowledgements:
 #' The following package is written in the open (both metaphorically and literally as I tend do undertake this development as a leisure reactivity while working on the Glasgow - Edinburgh commuter train), with big thanks to the whole Open Source community that contributed useful input through their questions, answers, discussions and comments via StackOverflow, GitHub and R-Help.
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE
+#' @importFrom Rcpp sourceCpp
 #' @import SPARQL
 #' @import assertthat
-#' @importFrom Rcpp sourceCpp
 "_PACKAGE"

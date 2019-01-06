@@ -22,6 +22,6 @@ The following package is written in the open (both metaphorically and literally 
 
 \author{
 \itemize{
-\item Maintainer/Author: Konrad Zdeb <konrad.zdeb@me.com>
+\item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@me.com}
 }
 }

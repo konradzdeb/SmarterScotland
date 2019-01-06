@@ -6,13 +6,13 @@
 using namespace Rcpp;
 
 // read_query_file
-std::string read_query_file(std::string path);
-RcppExport SEXP _SmarterScotland_read_query_file(SEXP pathSEXP) {
+Rcpp::String read_query_file(std::string file_path);
+RcppExport SEXP _SmarterScotland_read_query_file(SEXP file_pathSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< std::string >::type path(pathSEXP);
-    rcpp_result_gen = Rcpp::wrap(read_query_file(path));
+    Rcpp::traits::input_parameter< std::string >::type file_path(file_pathSEXP);
+    rcpp_result_gen = Rcpp::wrap(read_query_file(file_path));
     return rcpp_result_gen;
 END_RCPP
 }

@@ -10,8 +10,17 @@ cache: packages
 addons:
   apt:
     sources:
-     - sourceline: 'deb https://dl.bintray.com/libgit2/ci-dependencies trusty libgit2deps'
-       key_url: 'https://bintray.com/user/downloadSubjectPublicKey?username=bintray'
+      - sourceline: 'deb https://dl.bintray.com/libgit2/ci-dependencies trusty libgit2deps'
+        key_url: 'https://bintray.com/user/downloadSubjectPublicKey?username=bintray'
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
+
+env:
+  - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+
+before_install:
+  - eval "${MATRIX_EVAL}"
 
 r_packages:
   - covr

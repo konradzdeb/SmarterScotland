@@ -15,7 +15,7 @@ addons:
       - g++-7
 
 env:
-  - CC=gcc-7 CXX=g++-7
+  - CC=gcc-7 CXX=g++-7 CXX_STD=CXX11
 
 r_packages:
   - covr

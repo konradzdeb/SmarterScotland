@@ -5,7 +5,7 @@ Version: 0.0.09
 Date: 2016-02-03
 Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))
-Description: The package sources the publicly available data life outcomes, 
+Description: This package sources the publicly available data life outcomes, 
   demographic and administrative  data from the ScotStat portal for selected indicators, 
   geographies and time periods. In addition the package offers basic visualisation and 
   analytical functionalities.

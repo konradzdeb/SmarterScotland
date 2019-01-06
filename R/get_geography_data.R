@@ -13,7 +13,6 @@
 #'   sourcing data across desired geography for selected indicator. The function
 #'   sources the full time series data set as
 #'
-#'
 #' @return A data framewith indicator values per selected geography.
 #'
 #' @import assertthat

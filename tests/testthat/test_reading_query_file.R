@@ -16,14 +16,16 @@ test_that(
   regexp = "FILTER")
 )
 
-test_that(
-  desc = "Read query files are of length 1 (one line)",
-  code = checkmate::expect_scalar(
-    x = read_query_file(query_file("qry_get_topics_regex.sparql")),
-    na.ok = FALSE,
-    null.ok = FALSE
+if (requireNamespace("checkmate", quietly = TRUE)) {
+  test_that(
+    desc = "Read query files are of length 1 (one line)",
+    code = checkmate::expect_scalar(
+      x = read_query_file(query_file("qry_get_topics_regex.sparql")),
+      na.ok = FALSE,
+      null.ok = FALSE
+    )
   )
-)
+}
 
 test_that(desc = "Importedquery files has no line breaks",
           code = expect_true(!grepl(

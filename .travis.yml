@@ -10,12 +10,12 @@ addons:
     sources:
       - sourceline: 'deb https://dl.bintray.com/libgit2/ci-dependencies trusty libgit2deps'
         key_url: 'https://bintray.com/user/downloadSubjectPublicKey?username=bintray'
-      - llvm-toolchain-trusty-5.0
+      - ubuntu-toolchain-r-test
     packages:
-      - clang-5.0
+      - g++-7
 
 env:
-  - CC=clang -Qunused-arguments CXX=clang++ -Qunused-arguments
+  - CC=gcc-7 CXX=g++-7
 
 r_packages:
   - covr

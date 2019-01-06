@@ -15,7 +15,7 @@ addons:
       - clang-5.0
 
 env:
-  - CC=ccache clang -Qunused-arguments CXX=ccache clang++ -Qunused-arguments CCACHE_CPP2=yes
+  - CC=clang -Qunused-arguments CXX=clang++ -Qunused-arguments
 
 r_packages:
   - covr

@@ -11,6 +11,7 @@ Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](ht
 status](https://ci.appveyor.com/api/projects/status/github/konradedgar/SmarterScotland?branch=master&svg=true)](https://ci.appveyor.com/project/konradedgar/SmarterScotland)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradedgar/SmarterScotland)
 
 ## Overview
 

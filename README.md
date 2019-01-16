@@ -4,6 +4,10 @@ README
 ***The package is in an early development stage and was posted to
 facilitate collaboration.***
 
+[![Project Status: Concept – Minimal or no implementation has been done
+yet, or the repository is only intended to be a limited example, demo,
+or
+proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 [![Build
 Status](https://travis-ci.org/konradedgar/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradedgar/SmarterScotland)
 [![codecov](https://codecov.io/gh/konradedgar/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradedgar/SmarterScotland)

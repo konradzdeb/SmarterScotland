@@ -44,8 +44,8 @@ get_ToC <-
     dta_res <- SPARQL(
       url = endpoint,
       query = query,
-      ns = 'sgdta',
-      '<http://statistics.gov.scot/data/>',
+      ns = "sgdta",
+      "<http://statistics.gov.scot/data/>",
       format = "csv"
     )
 

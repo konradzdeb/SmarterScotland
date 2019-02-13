@@ -28,7 +28,8 @@ get_available_hierarchies <-
   function(endpoint = "http://statistics.gov.scot/sparql.csv") {
     # Check that endpoint is a string
     assert_that(is.string(endpoint),
-                msg = "Endpoint should be a valid string, like for instance: http://statistics.gov.scot/sparql.csv.")
+                msg = "Endpoint should be a valid string, like for instance:
+                http://statistics.gov.scot/sparql.csv.")
 
     query <- read_query_file(query_file("get_available_frameworks"))
 

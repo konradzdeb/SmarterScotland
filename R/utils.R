@@ -12,15 +12,14 @@ NULL
 #'   extensions.
 #' @param query_file_name Name of query file
 query_file <- function(query_file_name) {
-  system.file("sparql",
-              {
-                # Check for extension and append if missing
-                if (!grepl("\\.sparql$", x = query_file_name, ignore.case = TRUE)) {
-                  paste0(query_file_name, ".sparql")
-                } else {
-                  query_file_name
-                }
-              },
-              package = "SmarterScotland",
-              mustWork = TRUE)
+  system.file("sparql", {
+    # Check for extension and append if missing
+    if (!grepl("\\.sparql$", x = query_file_name, ignore.case = TRUE)) {
+      paste0(query_file_name, ".sparql")
+    } else {
+      query_file_name
+    }
+  },
+  package = "SmarterScotland",
+  mustWork = TRUE)
 }

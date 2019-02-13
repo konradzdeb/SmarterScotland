@@ -27,7 +27,7 @@
 get_geography_data <- function(indicator, geography) {
   # Check if all arguments were specificed
   assert_that(is.string(indicator), is.string(geography),
-              msg = "Both indicator name and geography name have to be strings.")
+              msg = "Indicator name and geography name have to be strings.")
 
   # TODO: Query and corresponding mechanism
   return(NULL)

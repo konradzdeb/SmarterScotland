@@ -16,6 +16,8 @@
 #' @export
 #'
 #' @importFrom SPARQL SPARQL
+#' @importFrom checkmate assert_string
+#' @importFrom RCurl url.exists()
 #'
 #' @examples
 #' \dontrun{
@@ -26,10 +28,8 @@
 #' }
 get_available_hierarchies <-
   function(endpoint = "http://statistics.gov.scot/sparql.csv") {
-    # Check that endpoint is a string
-    assert_that(is.string(endpoint),
-                msg = "Endpoint should be a valid string, like for instance:
-                http://statistics.gov.scot/sparql.csv.")
+    # Validate endpoint
+    check_endpoint(x = endpoint, break = TRUE)
 
     query <- read_query_file(query_file("get_available_frameworks"))
 

@@ -13,14 +13,13 @@ License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
 Imports:
-    assertthat (>= 0.2),
+    checkmate (>= 1.8.5),
     Rcpp,
     utils
 LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1
 Suggests: 
-  checkmate (>= 1.8.5),
   knitr,
   rmarkdown,
   testthat

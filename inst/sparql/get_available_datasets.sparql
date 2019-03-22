@@ -6,3 +6,4 @@ SELECT DISTINCT ?dataset
 WHERE {
 				?dataset rdf:type <http://publishmydata.com/def/dataset#Dataset>
 }
+ORDER BY ?dataset

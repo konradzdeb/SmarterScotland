@@ -16,8 +16,6 @@
 #' @export
 #'
 #' @importFrom SPARQL SPARQL
-#' @importFrom checkmate assert_string
-#' @importFrom RCurl url.exists()
 #'
 #' @examples
 #' \dontrun{
@@ -29,7 +27,7 @@
 get_available_hierarchies <-
   function(endpoint = "http://statistics.gov.scot/sparql.csv") {
     # Validate endpoint
-    check_endpoint(x = endpoint, break = TRUE)
+    check_endpoint(endpoint = endpoint, stop_on_bad = TRUE)
 
     query <- read_query_file(query_file("get_available_frameworks"))
 

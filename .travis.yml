@@ -21,7 +21,6 @@ r_packages:
   - covr
 
 install:
-  - sudo apt-get install libboost-dev libboost-regex-dev
   - git clone --depth 1 https://github.com/r-lib/remotes && R CMD build --no-build-vignettes remotes && R CMD INSTALL remotes*tar.gz && rm -rf remotes remotes*tar.gz
   - R -e 'install.packages("curl")' -e 'remotes::install_deps(".", dependencies = TRUE)'
 

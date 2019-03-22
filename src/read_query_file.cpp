@@ -1,11 +1,8 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <algorithm>
-#include <cctype>
+#include <regex>
 #include <Rcpp.h>
-#include <boost/regex.hpp>
-#include <boost/algorithm/string/replace.hpp>
 
 //' @rdname utility_functions
 //' @param file_path File path string to source
@@ -13,13 +10,15 @@
 //'   comments and line breaks.
 // [[Rcpp::export]]
 
-
 Rcpp::String read_query_file(std::string file_path) {
 
   // Define regex to match lines with comments
-  const boost::regex re_comment("(^|\n)(\\s*--[^\n|$]*)(\n|$)", boost::regex::extended);
+  // Comments starting with --
+  std::regex re_comment_hyphen("(^|\n)(\\s*--[^\n|$]*)(\n|$)");
+  // Comments starting with ##
+  std::regex re_comment_hash("^#.*|^\\s*#");
   // Regular expressions to pass to replace_all line breaks or Tab
-  const boost::regex re_lineend("\n|\r|\t", boost::regex::extended);
+  std::regex re_lineend("\n|\r|\t");
 
   // Read file
   // source: https://doi.org/10.6084/m9.figshare.3407032.v1
@@ -28,10 +27,11 @@ Rcpp::String read_query_file(std::string file_path) {
   ss<<in.rdbuf();                       // scan file or reading buffer
 
   // Replace comments via regex replace
-  std::string result = boost::regex_replace(ss.str(), re_comment, "\\1 \\3");
+  std::string result = std::regex_replace(ss.str(), re_comment_hyphen, " ");
+  result = std::regex_replace(result, re_comment_hash, "");
 
   // Replace line breaks
-  result = boost::regex_replace(result, re_lineend, " ");
+  result = std::regex_replace(result, re_lineend, " ");
 
   // Return clean text
   return result;

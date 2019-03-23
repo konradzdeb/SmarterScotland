@@ -15,8 +15,7 @@
 #'
 #' @return A data framewith indicator values per selected geography.
 #'
-#' @importFrom assertthat assert_that
-#' @importFrom assertthat is.string
+#' @importFrom checkmate assert_string
 #'
 #' @export
 #'
@@ -26,8 +25,8 @@
 #' }
 get_geography_data <- function(indicator, geography) {
   # Check if all arguments were specificed
-  assert_that(is.string(indicator), is.string(geography),
-              msg = "Indicator name and geography name have to be strings.")
+  assert_string(indicator)
+  assert_string(geography)
 
   # TODO: Query and corresponding mechanism
   return(NULL)

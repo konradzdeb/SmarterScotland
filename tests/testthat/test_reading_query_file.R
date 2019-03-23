@@ -17,7 +17,7 @@ test_that(
 )
 
 test_that(desc = "Read query files are of length 1 (one line)",
-          code = expect_true(object = assertthat::is.scalar(read_query_file(
+          code = expect_true(object = checkmate::expect_scalar(read_query_file(
             query_file("qry_get_topics_regex.sparql")
           ))))
 

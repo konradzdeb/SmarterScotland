@@ -4,8 +4,7 @@
 \alias{get_available_datasets}
 \title{Get Available Data Sets}
 \usage{
-get_available_datasets(pattern,
-  endpoint = "http://statistics.gov.scot/sparql.csv")
+get_available_datasets(pattern)
 }
 \arguments{
 \item{pattern}{A optional pattern to match data set name.}

@@ -7,9 +7,6 @@
 #'   a data frame accounting for the available data sets, timespan and
 #'   geographies.
 #'
-#' @param endpoint A SPARQL endpoint, currently defaults to
-#'    \url{http://statistics.gov.scot/sparql}.
-#'
 #' @param which Defults \code{NULL} returns all subjects, a character value is
 #'    passed to \code{FILTER} in SPARQL query performing case insesitive regex
 #'    on filter categories.
@@ -27,8 +24,7 @@
 #' head(get_ToC(which = "pupil"), n = 5)
 get_ToC <-
   # FIXME: fix queries generating right results
-  function(endpoint = "http://statistics.gov.scot/sparql.csv",
-           which = NULL) {
+  function(which = NULL) {
     # Depending on the which value use defult or query with regex
     if (is.null(which)) {
       query <- read_query_file(query_file("qry_get_topics"))
@@ -42,7 +38,7 @@ get_ToC <-
 
     # Generating data.frame via SPARQL
     dta_res <- SPARQL(
-      url = endpoint,
+      url = getOption("SmarterScotland.endpoint"),
       query = query,
       ns = "sgdta",
       "<http://statistics.gov.scot/data/>",

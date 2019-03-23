@@ -4,13 +4,9 @@
 \alias{get_ToC}
 \title{Get TOC from statistics.gov.scot}
 \usage{
-get_ToC(endpoint = "http://statistics.gov.scot/sparql.csv",
-  which = NULL)
+get_ToC(which = NULL)
 }
 \arguments{
-\item{endpoint}{A SPARQL endpoint, currently defaults to
-\url{http://statistics.gov.scot/sparql}.}
-
 \item{which}{Defults \code{NULL} returns all subjects, a character value is
 passed to \code{FILTER} in SPARQL query performing case insesitive regex
 on filter categories.}

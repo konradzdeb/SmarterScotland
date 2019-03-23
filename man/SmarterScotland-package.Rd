@@ -20,6 +20,13 @@ For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}
 The following package is written in the open (both metaphorically and literally as I tend do undertake this development as a leisure reactivity while working on the Glasgow - Edinburgh commuter train), with big thanks to the whole Open Source community that contributed useful input through their questions, answers, discussions and comments via StackOverflow, GitHub and R-Help.
 }
 
+\section{Package options}{
+
+\describe{
+\item{`SmarterScotland.show_progress`}{Defaults to \code{http://statistics.gov.scot/sparql.csv}. If need can be changed \code{options(SmarterScotland.endpoint = "new_value")}}
+}
+}
+
 \author{
 \itemize{
 \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@me.com}

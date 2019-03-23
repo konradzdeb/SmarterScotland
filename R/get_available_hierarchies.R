@@ -5,9 +5,6 @@
 #'   correspond to the available best-fit geographies and can be used to aggregate
 #'   data zone level data.
 #'
-#' @param endpoint A SPARQL endpoint, currently defaults to
-#'    \url{http://statistics.gov.scot/sparql}.
-#'
 #' @details In practice, the function can be used to to inform aguments in
 #'   \code{\link[SmarterScotland]{get_geography_data}}.
 #'
@@ -25,14 +22,14 @@
 #' # 2      http://statistics.gov.scot/def/hierarchy/best-fit#council-area Best fit council area
 #' }
 get_available_hierarchies <-
-  function(endpoint = "http://statistics.gov.scot/sparql.csv") {
+  function() {
     # Validate endpoint
-    check_endpoint(endpoint = endpoint, stop_on_bad = TRUE)
+    check_endpoint(endpoint = getOption("SmarterScotland.endpoint"), stop_on_bad = TRUE)
 
     query <- read_query_file(query_file("get_available_frameworks"))
 
 
-    dta_res <- SPARQL(url = endpoint,
+    dta_res <- SPARQL(url = getOption("SmarterScotland.endpoint"),
                       query = query,
                       format = "csv")
 

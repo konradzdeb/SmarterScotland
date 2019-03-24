@@ -4,16 +4,17 @@
 \alias{check_endpoint}
 \title{Check SPARQL endpoint}
 \usage{
-check_endpoint(endpoint, stop_on_bad = FALSE, timeout = 1)
+check_endpoint(check_mode = c("warn", "stop", "ignore"), timeout = 1)
 }
 \arguments{
-\item{endpoint}{A SPARQL enpoint as string.}
-
-\item{stop_on_bad}{A logical, if \code{TRUE} function will
-call \code{\link[base]{stop}} if endpoint is not accessible.}
+\item{check_mode}{For \code{stop, warn} or \code{ignore}, decides whether to
+stop, warn or do nothing in case of broken endpoint url. \code{ignore}
+option ignores checking.}
 
 \item{timeout}{Timeout for a ping response,
 as in \code{\link[pingr]{timeout}}}
+
+\item{endpoint}{A SPARQL enpoint as string.}
 }
 \value{
 A logical.

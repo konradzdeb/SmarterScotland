@@ -14,6 +14,8 @@
 #' @export
 #'
 #' @importFrom pingr ping
+#' @importFrom iptools hostname_to_ip
+#' @importFrom urltools domain
 #' @importFrom checkmate assertString
 #'
 #' @examples
@@ -22,11 +24,18 @@
 #' }
 check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
                            timeout = 1) {
-  check_mode <- match.arg(check_mode)
+  if (missing(check_mode)) {
+    check_mode <- "warn"
+  } else {
+    check_mode <- match.arg(arg = check_mode)
+  }
+
+  # Read package option with endpoint URL
+  endpoint_domain <- domain(getOption("SmarterScotland.endpoint"))
 
   # Check if provided object is a string
   assertString(
-    x = getOption("SmarterScotland.endpoint"),
+    x = endpoint_domain,
     na.ok = FALSE,
     min.chars = 3,
     null.ok = FALSE
@@ -34,32 +43,30 @@ check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
 
   # Chek if url is accessible
   f_ping_fail <- function(timeout) {
-    sink(tempfile())
-    ping(
-      destination = getOption("SmarterScotland.endpoint"),
-      continuous = FALSE,
-      verbose = FALSE,
-      count = 1,
-      timeout = timeout
-    ) -> ping_fail
-    sink()
-    return(is.na(ping_fail))
+    if (unlist(hostname_to_ip(endpoint_domain)) != "Not resolved") {
+      ping(
+        destination = endpoint_domain,
+        continuous = FALSE,
+        verbose = FALSE,
+        count = 1,
+        timeout = timeout
+      ) -> ping_fail
+      return(is.na(ping_fail))
+    } else {
+      return(TRUE)
+    }
   }
 
   switch(
     check_mode,
     warn = if (f_ping_fail(timeout)) {
-      warning("Ping to ",
-              getOption("SmarterScotland.endpoint"),
-              " failed.")
+      warning("Ping to ", endpoint_domain, " failed.")
       FALSE
     } else {
       TRUE
     },
     stop = if (f_ping_fail(timeout)) {
-      stop("Ping to ",
-           getOption("SmarterScotland.endpoint"),
-           " failed.")
+      stop("Ping to ", endpoint_domain, " failed.")
     } else {
       TRUE
     },

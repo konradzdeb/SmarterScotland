@@ -16,7 +16,9 @@ Imports:
     checkmate (>= 1.8.5),
     Rcpp,
     RCurl,
-    utils
+    utils,
+    iptools,
+    urltools
 LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1

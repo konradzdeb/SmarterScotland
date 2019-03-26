@@ -12,36 +12,38 @@ test_that(desc = "Returns true for valid URL",
 
 test_that(desc = "Returns warning for invalid URL.",
           code = {
-            op_end_old <- getOption("SmarterScotland.endpoint")
+            op_old <- options()
             options(SmarterScotland.endpoint = "wrong endpoint url")
             expect_warning(object = check_endpoint(check_mode = "warn"),
                            regexp = "^Ping.*failed\\.$")
-            options(SmarterScotland.endpoint = op_end_old)
+            options(op_old)
           })
 
 test_that(desc = "Returns false for invalid URLs",
           code = {
-            op_end_old <- getOption("SmarterScotland.endpoint")
+            op_old <- options()
             options(SmarterScotland.endpoint = "wrong endpoint url")
-            expect_false(object =  check_endpoint())
-            options(SmarterScotland.endpoint = op_end_old)
+            expect_false(object =  suppressWarnings(check_endpoint()))
+            options(op_old)
           })
 
 test_that(desc = "Stops for invalid URLs",
           code = {
-            op_end_old <- getOption("SmarterScotland.endpoint")
+            op_old <- options()
             options(SmarterScotland.endpoint = "wrong endpoint url")
+            options(SmarterScotland.endpoint_check = "stop")
             expect_error(object = check_endpoint(check_mode = "stop"),
                          regexp = "^Ping.*failed\\.$")
-            options(SmarterScotland.endpoint = op_end_old)
+            options(op_old)
           })
 
 test_that(desc = "Returns TRUE for ignore",
           code = {
-            op_end_old <- getOption("SmarterScotland.endpoint")
-            options(SmarterScotland.endpoint = "http://statistics.invalid.com/url.to/sparql")
-            expect_true(object = check_endpoint(check_mode = "ignore"))
-            options(SmarterScotland.endpoint = op_end_old)
+            op_old <- options()
+            options(SmarterScotland.endpoint = "wrong url")
+            options(SmarterScotland.endpoint_check = "ignore")
+            expect_true(object = check_endpoint())
+            options(op_old)
           })
 
 

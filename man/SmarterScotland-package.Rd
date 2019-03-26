@@ -4,7 +4,7 @@
 \name{SmarterScotland-package}
 \alias{SmarterScotland}
 \alias{SmarterScotland-package}
-\title{Sourcing data from opendata.gov.scot}
+\title{SmarterScotland: Sourcing data from opendata.gov.scot}
 \description{
 SmarterScotland provides a suite of convenience functions
   facilitating sourcing data from the \href{http://statistics.gov.scot}{statistics.gov.scot}
@@ -23,7 +23,8 @@ The following package is written in the open (both metaphorically and literally 
 \section{Package options}{
 
 \describe{
-\item{`SmarterScotland.show_progress`}{Defaults to \code{http://statistics.gov.scot/sparql.csv}. If need can be changed \code{options(SmarterScotland.endpoint = "new_value")}}
+\item{`SmarterScotland.endpoint`}{Defaults to \code{http://statistics.gov.scot/sparql.csv}. If need can be changed \code{options(SmarterScotland.endpoint = "new_value")}}
+\item{`SmarterScotland.endpoint_check`}{Defaults to \code{warn} which results in warning if endpoint is not accessible. Other options are \code{stop} and \code{ignore} which respectively stop on errors or ignore checks.}
 }
 }
 
@@ -32,4 +33,3 @@ The following package is written in the open (both metaphorically and literally 
 \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@me.com}
 }
 }
-\keyword{internal}

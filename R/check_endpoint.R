@@ -24,11 +24,8 @@
 #' }
 check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
                            timeout = 1) {
-  if (missing(check_mode)) {
-    check_mode <- "warn"
-  } else {
-    check_mode <- match.arg(arg = check_mode)
-  }
+  check_mode <- getOption("SmarterScotland.endpoint_check")
+  check_mode <- match.arg(arg = check_mode)
 
   # Read package option with endpoint URL
   endpoint_domain <- domain(getOption("SmarterScotland.endpoint"))

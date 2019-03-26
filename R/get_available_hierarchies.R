@@ -24,14 +24,16 @@
 get_available_hierarchies <-
   function() {
     # Validate endpoint
-    check_endpoint(endpoint = getOption("SmarterScotland.endpoint"), stop_on_bad = TRUE)
+    check_endpoint()
 
     query <- read_query_file(query_file("get_available_frameworks"))
 
 
-    dta_res <- SPARQL(url = getOption("SmarterScotland.endpoint"),
-                      query = query,
-                      format = "csv")
+    dta_res <- SPARQL(
+      url = getOption("SmarterScotland.endpoint"),
+      query = query,
+      format = "csv"
+    )
 
     return(dta_res$results)
 

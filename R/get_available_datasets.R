@@ -14,13 +14,22 @@
 #' get_available_datasets(pattern = "health")
 #' }
 get_available_datasets <- function(pattern) {
-    # Source full list of data sets
-    qry <- read_query_file(query_file("get_available_datasets.sparql"))
-    dta_res <- SPARQL(url = getOption("SmarterScotland.endpoint"),
-                      query = qry,
-                      format = "csv")
-    dta_res <- dta_res$results
-    if (missing(pattern)) {
-      return(dta_res)
-    }
+  # Source full list of data sets
+  qry <-
+    read_query_file(query_file("get_available_datasets.sparql"))
+  dta_res <- suppressWarnings(SPARQL(
+    url = getOption("SmarterScotland.endpoint"),
+    query = qry,
+    format = "csv"
+  ))
+
+  dta_res <- dta_res$results
+  if (missing(pattern)) {
+    return(dta_res)
+  } else {
+    return(subset.data.frame(
+      x = dta_res,
+      subset = grepl(pattern = pattern, x = dta_res$dataset)
+    ))
+  }
 }

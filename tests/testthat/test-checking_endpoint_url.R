@@ -3,10 +3,10 @@ context("Endpoint checking")
 
 test_that(desc = "Returns true for valid URL",
           code = {
-            op_end_old <- getOption("SmarterScotland.endpoint")
+            op_old <- options()
             options(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql.csv")
             expect_true(object = check_endpoint())
-            options(SmarterScotland.endpoint = op_end_old)
+            options(op_old)
           })
 
 

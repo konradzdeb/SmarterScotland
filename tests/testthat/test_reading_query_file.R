@@ -17,9 +17,9 @@ test_that(
 )
 
 test_that(desc = "Read query files are of length 1 (one line)",
-          code = expect_true(object = checkmate::expect_scalar(read_query_file(
+          code = checkmate::expect_scalar(read_query_file(
             query_file("qry_get_topics_regex.sparql")
-          ))))
+          )))
 
 test_that(desc = "Importedquery files has no line breaks",
           code = expect_true(!grepl(

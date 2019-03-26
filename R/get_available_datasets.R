@@ -14,13 +14,13 @@
 #' get_available_datasets(pattern = "health")
 #' }
 get_available_datasets <- function(pattern) {
-  if (missing(pattern)) {
     # Source full list of data sets
-    qry <-
-      read_query_file(query_file("get_available_datasets.sparql"))
+    qry <- read_query_file(query_file("get_available_datasets.sparql"))
     dta_res <- SPARQL(url = getOption("SmarterScotland.endpoint"),
                       query = qry,
                       format = "csv")
-    return(dta_res)
-  }
+    dta_res <- dta_res$results
+    if (missing(pattern)) {
+      return(dta_res)
+    }
 }

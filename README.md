@@ -11,8 +11,8 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 [![Build
 Status](https://travis-ci.org/konradzdeb/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradzdeb/SmarterScotland)
 [![codecov](https://codecov.io/gh/konradzdeb/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradzdeb/SmarterScotland)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/konradzdeb/SmarterScotland?branch=master&svg=true)](https://ci.appveyor.com/project/konradzdeb/SmarterScotland)
+[![Build
+status](https://ci.appveyor.com/api/projects/status/i3mfbvchkyah6gmf?svg=true)](https://ci.appveyor.com/project/konradedgar/smarterscotland-yhq6y)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradzdeb/SmarterScotland)

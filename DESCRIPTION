@@ -12,8 +12,10 @@ Description: This package sources the publicly available data life outcomes,
 License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
+Depends:  R (>= 3.3.0)
 Imports:
     checkmate (>= 1.8.5),
+    pingr,
     Rcpp,
     RCurl,
     utils,

@@ -1,28 +1,20 @@
 os: linux
 dist: trusty
-
 language: R
-sudo: required
-cache: packages
+sudo: false
+latex: false
+fortran: false
 
-addons:
-  apt:
-    sources:
-      - sourceline: 'deb https://dl.bintray.com/libgit2/ci-dependencies trusty libgit2deps'
-        key_url: 'https://bintray.com/user/downloadSubjectPublicKey?username=bintray'
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-7
+jobs:
+  include:
+  - os: osx
+  - r: release 
+    after_success: 
+    - Rscript -e 'covr::codecov()'
+  - r: release
+    env:
+      - DEVEL_PACKAGES=true
+    r_github_packages:
+      - RcppCore/Rcpp
 
-env:
-  - CC=gcc-7 CXX=g++-7 CXX_STD=CXX11
 
-r_packages:
-  - covr
-
-install:
-  - git clone --depth 1 https://github.com/r-lib/remotes && R CMD build --no-build-vignettes remotes && R CMD INSTALL remotes*tar.gz && rm -rf remotes remotes*tar.gz
-  - R -e 'install.packages("curl")' -e 'remotes::install_deps(".", dependencies = TRUE)'
-
-after_success:
-  - Rscript -e 'library(covr); codecov()'

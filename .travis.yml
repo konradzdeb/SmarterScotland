@@ -4,6 +4,7 @@ language: R
 sudo: false
 latex: false
 fortran: false
+warnings_are_errors: false
 
 jobs:
   include:

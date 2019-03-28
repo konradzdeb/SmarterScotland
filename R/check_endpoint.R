@@ -7,7 +7,7 @@
 #'   stop, warn or do nothing in case of broken endpoint url. \code{ignore}
 #'   option ignores checking.
 #' @param timeout Timeout for a ping response,
-#'   as in \code{\link[pingr]{timeout}}
+#'   as in \code{\link[pingr]{ping}}
 #'
 #' @return A logical.
 #'

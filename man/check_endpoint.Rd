@@ -12,7 +12,7 @@ stop, warn or do nothing in case of broken endpoint url. \code{ignore}
 option ignores checking.}
 
 \item{timeout}{Timeout for a ping response,
-as in \code{\link[pingr]{timeout}}}
+as in \code{\link[pingr]{ping}}}
 
 \item{endpoint}{A SPARQL enpoint as string.}
 }

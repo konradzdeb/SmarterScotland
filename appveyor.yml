@@ -53,6 +53,3 @@ matrix:
 
   - R_VERSION: release
     R_ARCH: x64  
-
-matrix:
-  fast_finish: true

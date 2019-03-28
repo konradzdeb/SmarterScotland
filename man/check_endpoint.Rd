@@ -13,8 +13,6 @@ option ignores checking.}
 
 \item{timeout}{Timeout for a ping response,
 as in \code{\link[pingr]{ping}}}
-
-\item{endpoint}{A SPARQL enpoint as string.}
 }
 \value{
 A logical.
@@ -24,6 +22,6 @@ Function checks whether the provided endpoint is of online.
 }
 \examples{
 \dontrun{
-  check_endpoint("http://statistics.gov.scot/sparql")
+  check_endpoint()
 }
 }

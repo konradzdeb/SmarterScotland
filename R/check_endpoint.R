@@ -2,7 +2,6 @@
 #'
 #' @description Function checks whether the provided endpoint is of online.
 #'
-#' @param endpoint A SPARQL enpoint as string.
 #' @param check_mode For \code{stop, warn} or \code{ignore}, decides whether to
 #'   stop, warn or do nothing in case of broken endpoint url. \code{ignore}
 #'   option ignores checking.
@@ -20,7 +19,7 @@
 #'
 #' @examples
 #' \dontrun{
-#'   check_endpoint("http://statistics.gov.scot/sparql")
+#'   check_endpoint()
 #' }
 check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
                            timeout = 1) {

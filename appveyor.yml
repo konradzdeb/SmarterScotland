@@ -48,5 +48,11 @@ environment:
   global:
     WARNINGS_ARE_ERRORS: 1
 
-  matrix:
+matrix:
   - R_VERSION: 3.5.2
+
+  - R_VERSION: release
+    R_ARCH: x64  
+
+matrix:
+  fast_finish: true

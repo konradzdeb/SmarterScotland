@@ -12,15 +12,17 @@ Description: This package sources the publicly available data life outcomes,
 License: MIT + file LICENSE
 LazyData: TRUE
 Encoding: UTF-8
-Depends:  R (>= 3.3.0)
+Depends:  
+  R (>= 3.3.0),
+  SPARQL
 Imports:
-    checkmate (>= 1.8.5),
-    pingr,
-    Rcpp,
-    RCurl,
-    utils,
-    iptools,
-    urltools
+  checkmate (>= 1.8.5),
+  pingr,
+  Rcpp,
+  RCurl,
+  utils,
+  iptools,
+  urltools
 LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1
@@ -29,6 +31,4 @@ Suggests:
   rmarkdown,
   testthat
 VignetteBuilder: knitr
-Depends: 
-  SPARQL
 SystemRequirements: C++11

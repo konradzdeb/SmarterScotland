@@ -6,6 +6,19 @@ latex: false
 fortran: false
 warnings_are_errors: false
 
+# Attempt to force more recent c++ compiler
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
+    env:
+      - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+
+before_install:
+    - eval "${MATRIX_EVAL}"
+
 jobs:
   include:
   - os: osx

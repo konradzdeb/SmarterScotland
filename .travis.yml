@@ -8,7 +8,7 @@ fortran: false
 jobs:
   include:
   - os: osx
-  - r: release 
+  - r: 3.5.2
     after_success: 
     - Rscript -e 'covr::codecov()'
   - r: release

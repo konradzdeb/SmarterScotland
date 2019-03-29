@@ -11,7 +11,7 @@ compiler:
   - gcc
   - clang
 
-install:
+before_install:
 # /usr/bin/gcc is 4.6 always, but gcc-X.Y is available.
 - if [[ $CXX = g++ ]]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
 # /usr/bin/clang has a conflict with gcc, so use clang-X.Y.
@@ -26,9 +26,6 @@ addons:
     - gcc-4.9
     - g++-4.9
     - clang-3.5
-
-r_packages:
-  - knitr
 
 jobs:
   include:

@@ -31,4 +31,4 @@ Suggests:
   rmarkdown,
   testthat
 VignetteBuilder: knitr
-SystemRequirements: C++11
+SystemRequirements: C++12

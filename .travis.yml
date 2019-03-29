@@ -1,34 +1,23 @@
-os: linux
-dist: trusty
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
 language: R
 sudo: false
+cache: packages
+dist: trusty
 latex: false
 fortran: false
-warnings_are_errors: false
 
-# Attempt to force more recent c++ compiler
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-7
 
 jobs:
   include:
-  - os: osx
-  - r: release
-    env:
-      - CC=gcc-7
-      - CXX=g++-7
-    after_success: 
-    - Rscript -e 'covr::codecov()'
-  - r: release
-    env:
-      - DEVEL_PACKAGES=true
-      - CC=gcc-7
-      - CXX=g++-7
-    r_github_packages:
-      - RcppCore/Rcpp
+    - r: oldrel
+    - r: release
+      after_success:
+      - Rscript -e 'covr::codecov()'
+      warnings_are_errors: false
+    - os: osx
+      warnings_are_errors: false
 
+matrix:
+  fast_finish: true
 

@@ -7,6 +7,12 @@ dist: trusty
 latex: false
 fortran: false
 
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
 
 jobs:
   include:
@@ -17,6 +23,11 @@ jobs:
       warnings_are_errors: false
     - os: osx
       warnings_are_errors: false
+
+env:
+  global:
+    - CC=gcc-7
+    - CXX=g++-7
 
 matrix:
   fast_finish: true

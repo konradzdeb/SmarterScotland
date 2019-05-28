@@ -19,6 +19,10 @@ addons:
 r_binary_packages:
   - knitr
 
+# Use gcc 4.9
+before_install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
+
 jobs:
   include:
     - r: oldrel

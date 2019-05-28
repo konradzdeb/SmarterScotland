@@ -1,7 +1,7 @@
 context("Support Rcpp function reading query files")
 
 test_that(
-  "read_query_file function returns character vector",
+  "read_query_file returns character vector",
   expect_is(object = read_query_file(query_file(
     "qry_get_topics.sparql"
   )),
@@ -9,19 +9,23 @@ test_that(
 )
 
 test_that(
-  "Read query files have expected content",
+  "read_query_file vector has right content",
   expect_match(object = read_query_file(
     query_file("qry_get_topics_regex.sparql")
   ),
   regexp = "FILTER")
 )
 
-if (requireNamespace("checkmate", quietly = TRUE)) {
-  test_that(desc = "Read query files are of length 1 (one line)",
-            code = checkmate::expect_scalar(read_query_file(
-              query_file("qry_get_topics_regex.sparql")
-            )))
-}
+
+test_that(
+  desc = "read_query_file are of length 1 (one line)",
+  code = checkmate::expect_scalar(
+    x = read_query_file(query_file("qry_get_topics_regex.sparql")),
+    na.ok = FALSE,
+    null.ok = FALSE,
+    info = "Read query is not scalar"
+  )
+)
 
 test_that(desc = "Importedquery files has no line breaks",
           code = expect_true(!grepl(

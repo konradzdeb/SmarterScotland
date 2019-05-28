@@ -46,4 +46,4 @@ artifacts:
 
 environment:
   global:
-    WARNINGS_ARE_ERRORS:
+    WARNINGS_ARE_ERRORS: 1

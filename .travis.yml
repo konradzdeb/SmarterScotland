@@ -2,33 +2,37 @@
 
 language: R
 cache: packages
-dist: trusty
 latex: false
 fortran: false
-
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-  packages:
-    - gcc-4.9
-    - g++-4.9
-    - clang-3.5
 
 r_binary_packages:
   - knitr
 
-# Use gcc 4.9
-before_install:
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
-
 jobs:
   include:
     - r: oldrel
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
+      env:
+         - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+
     - r: release
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-5
+      env:
+         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
       after_success:
       - Rscript -e 'covr::codecov()'
       warnings_are_errors: true
+
     - os: osx
       warnings_are_errors: true
 

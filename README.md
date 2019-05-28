@@ -13,8 +13,7 @@ Status](https://travis-ci.org/konradzdeb/SmarterScotland.svg?branch=master)](htt
 [![codecov](https://codecov.io/gh/konradzdeb/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradzdeb/SmarterScotland)
 [![Build
 status](https://ci.appveyor.com/api/projects/status/i3mfbvchkyah6gmf?svg=true)](https://ci.appveyor.com/project/konradedgar/smarterscotland-yhq6y)
-[![License:
-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradzdeb/SmarterScotland)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/SmarterScotland)](https://cran.r-project.org/package=SmarterScotland)

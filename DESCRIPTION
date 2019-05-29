@@ -16,13 +16,14 @@ Depends:
   R (>= 3.3.0),
   SPARQL
 Imports: 
-  checkmate (>= 1.8.5),
-  iptools,
-  pingr,
-  Rcpp,
-  RCurl,
-  utils,
-  urltools
+    checkmate (>= 1.8.5),
+    iptools,
+    pingr,
+    Rcpp,
+    RCurl,
+    utils,
+    urltools,
+    glue
 LinkingTo: 
   Rcpp
 RoxygenNote: 6.1.1

@@ -17,11 +17,11 @@ Depends:
   SPARQL
 Imports: 
   checkmate (>= 1.8.5),
+  iptools,
   pingr,
   Rcpp,
   RCurl,
   utils,
-  iptools,
   urltools
 LinkingTo: 
   Rcpp

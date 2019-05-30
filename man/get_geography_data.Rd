@@ -28,9 +28,10 @@ The function fetches statistical data for a selected geography
   for a selected period for a selected indicator.
 }
 \details{
-In effect, the following function attempts to source all data
+The following function attempts to source all data
   available for a specific spatial framework for all periods for
-  selected spatial hierarchy.
+  selected spatial hierarchy or only for the selected period if the
+  \code{period} argument is provided.
 }
 \examples{
 \dontrun{

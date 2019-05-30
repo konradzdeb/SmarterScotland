@@ -16,14 +16,12 @@
 #'  available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 #'  data for 2nd quarters of 2001 and 2010 respectively.
 #'
-#' @details In effect, the following function attempts to source all data
+#' @details The following function attempts to source all data
 #'   available for a specific spatial framework for all periods for
-#'   selected spatial hierarchy.
+#'   selected spatial hierarchy or only for the selected period if the
+#'   \code{period} argument is provided.
 #'
 #' @return A data framewith indicator values per selected geography.
-#'
-#' @importFrom checkmate assert_string
-#' @importFrom checkmate test_character
 #'
 #' @export
 #'
@@ -32,20 +30,21 @@
 #' get_geography_data(indicator = "JSA", geography = "datazones")
 #' }
 get_geography_data <- function(indicator, hierarchy, period) {
+
   # Check if all arguments were specificed
   assert_string(x = indicator, na.ok = FALSE, null.ok = FALSE)
   assert_string(x = hierarchy, na.ok = FALSE, null.ok = FALSE)
 
+  # Import basic SPARQL query
+  sparql_query <- read_query_file(query_file("qry_get_geography_data"))
+
   # Check if period was provided and source relevant query
-  if (missing(period)) {
-    sparql_query <- read_query_file(query_file())
-  } else {
-    # Check if period is character, if not convert
+  if (!missing(period)) {
+    # Convert period to character if passed as an integer
     if (!test_character(x = period)) {
       period <- as.character(period)
     }
-    # Import SPARQL query with logic for period
-    sparql_query <- read_query_file(query_file())
+    # Expand query with the provided period data to filter per period.
   }
 
   # TODO: Query and corresponding mechanism

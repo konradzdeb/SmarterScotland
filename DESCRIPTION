@@ -28,9 +28,9 @@ LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1
 Suggests: 
-  httptest,
-  knitr,
-  rmarkdown,
-  testthat
+    httptest,
+    knitr,
+    rmarkdown,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
 SystemRequirements: C++11

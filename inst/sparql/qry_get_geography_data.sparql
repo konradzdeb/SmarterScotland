@@ -1,3 +1,9 @@
+# qry_get_geography_data.sparql
+# The query sources data available for geographies within a specific framework
+# The WHERE clause in the query is not closed as it can be expanded with
+# additional statements filtering query by date. This is done within the
+# get_geography_data function.
+
 PREFIX qb: <http://purl.org/linked-data/cube#>
 SELECT ?geo ?time ?value
 WHERE {

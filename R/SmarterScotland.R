@@ -23,4 +23,6 @@
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
+#' @importFrom checkmate assert_string
+#' @importFrom checkmate test_character
 "_PACKAGE"

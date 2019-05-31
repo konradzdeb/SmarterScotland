@@ -4,7 +4,8 @@
 \alias{check_endpoint}
 \title{Check SPARQL endpoint}
 \usage{
-check_endpoint(check_mode = c("warn", "stop", "ignore"), timeout = 1)
+check_endpoint(check_mode = c("warn", "stop", "ignore"), timeout = 1,
+  endpoint = getOption("SmarterScotland.endpoint"))
 }
 \arguments{
 \item{check_mode}{For \code{stop, warn} or \code{ignore}, decides whether to

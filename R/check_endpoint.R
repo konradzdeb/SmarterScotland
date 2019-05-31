@@ -5,8 +5,13 @@
 #' @param check_mode For \code{stop, warn} or \code{ignore}, decides whether to
 #'   stop, warn or do nothing in case of broken endpoint url. \code{ignore}
 #'   option ignores checking.
+#'
 #' @param timeout Timeout for a ping response,
 #'   as in \code{\link[pingr]{ping}}
+#'
+#' @endpoit Corresponds to \url{http://statistics.gov.scot/sparql.csv}
+#'   that is set up on package load and sourced via
+#'   \code{getOption("SmarterScotland.endpoint")}.
 #'
 #' @return A logical.
 #'
@@ -22,12 +27,14 @@
 #'   check_endpoint()
 #' }
 check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
-                           timeout = 1) {
+                           timeout = 1,
+                           endpoint = getOption("SmarterScotland.endpoint")) {
+  # FIXME: take fromoptions if missing
   check_mode <- getOption("SmarterScotland.endpoint_check")
   check_mode <- match.arg(arg = check_mode)
 
   # Read package option with endpoint URL
-  endpoint_domain <- domain(getOption("SmarterScotland.endpoint"))
+  endpoint_domain <- urltools::domain(endpoint)
 
   # Check if provided object is a string
   assertString(
@@ -39,14 +46,14 @@ check_endpoint <- function(check_mode = c("warn", "stop", "ignore"),
 
   # Chek if url is accessible
   f_ping_fail <- function(timeout) {
-    if (unlist(hostname_to_ip(endpoint_domain)) != "Not resolved") {
-      ping(
+    if (unlist(iptools::hostname_to_ip(endpoint_domain)) != "Not resolved") {
+      ping_fail <- pingr::ping(
         destination = endpoint_domain,
         continuous = FALSE,
         verbose = FALSE,
         count = 1,
         timeout = timeout
-      ) -> ping_fail
+      )
       return(is.na(ping_fail))
     } else {
       return(TRUE)

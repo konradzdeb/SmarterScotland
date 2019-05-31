@@ -4,11 +4,12 @@ language: R
 cache: packages
 latex: false
 fortran: false
+warnings_are_errors: true
 
 r_binary_packages:
   - knitr
 
-jobs:
+matrix:
   include:
     - r: oldrel
       addons:
@@ -17,8 +18,11 @@ jobs:
             - ubuntu-toolchain-r-test
           packages:
             - g++-4.9
-      env:
-         - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+          env:
+            - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9 && COMPILER=g++-4.9"
+            - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
+          before_install:
+            - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9
 
     - r: release
       addons:
@@ -27,19 +31,14 @@ jobs:
             - ubuntu-toolchain-r-test
           packages:
             - g++-5
-      env:
-         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
-      after_success:
-      - Rscript -e 'covr::codecov()'
-      warnings_are_errors: true
+          env:
+            - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5 && COMPILER=g++-4.9"
+            - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
+          before_install:
+            - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5      
+          after_success:
+            - Rscript -e 'covr::codecov()'
+          warnings_are_errors: true
 
     - os: osx
       warnings_are_errors: true
-
-matrix:
-  fast_finish: true
-
-env:
-  global:
-  - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
-

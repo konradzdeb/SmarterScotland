@@ -1,9 +1,6 @@
 README
 ================
 
-***The package is in an early development stage and was posted to
-facilitate collaboration.***
-
 [![Project Status: Concept – Minimal or no implementation has been done
 yet, or the repository is only intended to be a limited example, demo,
 or

@@ -2,9 +2,7 @@
 
 language: R
 cache: packages
-latex: false
-fortran: false
-warnings_are_errors: true
+sudo: required
 
 r_binary_packages:
   - knitr
@@ -12,33 +10,13 @@ r_binary_packages:
 matrix:
   include:
     - r: oldrel
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-4.9
-          env:
-            - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9 && COMPILER=g++-4.9"
-            - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
-          before_install:
-            - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9
+      dist: xenial
 
     - r: release
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-5
-          env:
-            - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5 && COMPILER=g++-4.9"
-            - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
-          before_install:
-            - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5      
-          after_success:
-            - Rscript -e 'covr::codecov()'
-          warnings_are_errors: true
+      dist: xenial
+      after_success:
+        - Rscript -e 'covr::codecov()'
+      warnings_are_errors: true
 
     - os: osx
       warnings_are_errors: true

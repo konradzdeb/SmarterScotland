@@ -3,6 +3,7 @@
 language: R
 cache: packages
 sudo: required
+latex: false
 
 r_binary_packages:
   - knitr

@@ -2,44 +2,32 @@
 
 language: R
 cache: packages
+sudo: required
 latex: false
-fortran: false
 
 r_binary_packages:
   - knitr
 
-jobs:
+matrix:
   include:
     - r: oldrel
+      dist: xenial
       addons:
         apt:
-          sources:
-            - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
-      env:
-         - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+            - libpoppler-cpp-dev
+            - libapparmor-dev 
 
     - r: release
+      dist: xenial
       addons:
         apt:
-          sources:
-            - ubuntu-toolchain-r-test
           packages:
-            - g++-5
-      env:
-         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
+            - libpoppler-cpp-dev
+            - libapparmor-dev 
       after_success:
-      - Rscript -e 'covr::codecov()'
+        - Rscript -e 'covr::codecov()'
       warnings_are_errors: true
 
     - os: osx
       warnings_are_errors: true
-
-matrix:
-  fast_finish: true
-
-env:
-  global:
-  - TRAVIS_CXXFLAGS="-Wall -Wextra -pedantic -Werror"
-

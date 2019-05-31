@@ -12,9 +12,19 @@ matrix:
   include:
     - r: oldrel
       dist: xenial
+      addons:
+        apt:
+          packages:
+            - libpoppler-cpp-dev
+            - libapparmor-dev 
 
     - r: release
       dist: xenial
+      addons:
+        apt:
+          packages:
+            - libpoppler-cpp-dev
+            - libapparmor-dev 
       after_success:
         - Rscript -e 'covr::codecov()'
       warnings_are_errors: true

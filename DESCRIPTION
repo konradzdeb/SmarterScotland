@@ -13,8 +13,8 @@ License: GPL-3
 LazyData: TRUE
 Encoding: UTF-8
 Depends: 
-  R (>= 3.3.0),
-  SPARQL
+  R     (>= 3.3.0),
+  httr  (>= 1.4.0)
 Imports: 
     checkmate (>= 1.8.5),
     iptools,

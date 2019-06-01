@@ -29,20 +29,25 @@ get_ToC <-
     if (is.null(which)) {
       query <- read_query_file(query_file("qry_get_topics"))
     } else {
-      gsub(
+      query <- gsub(
         pattern = "replaceWithKeyword",
         replacement = which,
         x = read_query_file(query_file("qry_get_topics_regex.sparql"))
-      ) -> query
+      )
     }
 
     # Generating data.frame via SPARQL
-    dta_res <- SPARQL(
+    # dta_res <- SPARQL(
+    #   url = getOption("SmarterScotland.endpoint"),
+    #   query = query,
+    #   ns = "sgdta",
+    #   "<http://statistics.gov.scot/data/>",
+    #   format = "csv"
+    # )
+
+    dta_res <- POST(
       url = getOption("SmarterScotland.endpoint"),
-      query = query,
-      ns = "sgdta",
-      "<http://statistics.gov.scot/data/>",
-      format = "csv"
+      body = query
     )
 
     # Return results

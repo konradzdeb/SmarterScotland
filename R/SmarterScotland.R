@@ -25,4 +25,5 @@
 #' @importFrom Rcpp sourceCpp
 #' @importFrom checkmate assert_string
 #' @importFrom checkmate test_character
+#' @importFrom httr POST
 "_PACKAGE"

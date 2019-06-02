@@ -7,8 +7,8 @@
 \title{SmarterScotland: Sourcing data from opendata.gov.scot}
 \description{
 SmarterScotland provides a suite of convenience functions
-  facilitating sourcing data from the \href{http://statistics.gov.scot}{statistics.gov.scot}
-  portal.
+  facilitating sourcing data from the
+  \href{http://statistics.gov.scot}{statistics.gov.scot} portal.
 }
 \details{
 For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}.
@@ -23,8 +23,15 @@ The following package is written in the open (both metaphorically and literally 
 \section{Package options}{
 
 \describe{
-\item{`SmarterScotland.endpoint`}{Defaults to \code{http://statistics.gov.scot/sparql.csv}. If need can be changed \code{options(SmarterScotland.endpoint = "new_value")}}
-\item{`SmarterScotland.endpoint_check`}{Defaults to \code{warn} which results in warning if endpoint is not accessible. Other options are \code{stop} and \code{ignore} which respectively stop on errors or ignore checks.}
+\item{\code{SmarterScotland.endpoint}}{Defaults to
+  \code{http://statistics.gov.scot/sparql}. If need can be changed by
+  modyfying \code{options(SmarterScotland.endpoint = "new_value")}. It's
+  highly unlikely that you will ever need to change this option.}
+
+\item{\code{SmarterScotland.response_check}}{Defaults to \code{warn}
+  which results in warning if endpoint is not accessible. Other options are
+  \code{stop} and \code{ignore} which respectively stop on errors or
+  ignore checks.}
 }
 }
 

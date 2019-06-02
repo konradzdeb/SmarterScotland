@@ -1,8 +1,8 @@
-#' SmarterScotland: Sourcing data from opendata.gov.scot
+#' @title SmarterScotland: Sourcing data from opendata.gov.scot
 #'
-#' SmarterScotland provides a suite of convenience functions
-#'   facilitating sourcing data from the \href{http://statistics.gov.scot}{statistics.gov.scot}
-#'   portal.
+#' @description SmarterScotland provides a suite of convenience functions
+#'   facilitating sourcing data from the
+#'   \href{http://statistics.gov.scot}{statistics.gov.scot} portal.
 #'
 #' @details For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}.
 #'   For other usage, including charting and more advanced functionalities see
@@ -17,13 +17,20 @@
 #'
 #' @section Package options:
 #' \describe{
-#' \item{`SmarterScotland.endpoint`}{Defaults to \code{http://statistics.gov.scot/sparql.csv}. If need can be changed \code{options(SmarterScotland.endpoint = "new_value")}}
-#' \item{`SmarterScotland.endpoint_check`}{Defaults to \code{warn} which results in warning if endpoint is not accessible. Other options are \code{stop} and \code{ignore} which respectively stop on errors or ignore checks.}
+#' \item{\code{SmarterScotland.endpoint}}{Defaults to
+#'   \code{http://statistics.gov.scot/sparql}. If need can be changed by
+#'   modyfying \code{options(SmarterScotland.endpoint = "new_value")}. It's
+#'   highly unlikely that you will ever need to change this option.}
+#'
+#' \item{\code{SmarterScotland.response_check}}{Defaults to \code{warn}
+#'   which results in warning if endpoint is not accessible. Other options are
+#'   \code{stop} and \code{ignore} which respectively stop on errors or
+#'   ignore checks.}
 #' }
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
 #' @importFrom checkmate assert_string
 #' @importFrom checkmate test_character
-#' @importFrom httr POST
+#' @importFrom httr POST accept_json warn_for_status stop_for_status
 "_PACKAGE"

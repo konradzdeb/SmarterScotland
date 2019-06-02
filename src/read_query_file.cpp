@@ -15,8 +15,8 @@ Rcpp::String read_query_file(std::string file_path) {
   // Define regex to match lines with comments
   // Comments starting with --
   std::regex re_comment_hyphen ("(^|\\n)(\\s*--[^\\n|$]*)(\\n|$)");
-  // Comments starting with ##
-  std::regex re_comment_hash ("^#.*|^\\s*#");
+  // Comments starting with #
+  std::regex re_comment_hash ("#.*|\\s*#.*");
   // Regular expressions to pass to replace_all line breaks or Tab
   std::regex re_lineend ("\\n|\\r|\\t");
 

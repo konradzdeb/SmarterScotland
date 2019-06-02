@@ -1,34 +1,31 @@
-context("Support Rcpp function reading query files")
+context("Cpp for reading queries")
 
-test_that(
-  "read_query_file returns character vector",
-  expect_is(object = read_query_file(query_file(
-    "qry_get_topics.sparql"
-  )),
-  class = "character")
-)
+test_that(desc = "Returns character vector",
+          code = expect_is(object = read_query_file(query_file(
+            "qry_get_topics.sparql"
+          )),
+          class = "character"))
 
-test_that(
-  "read_query_file vector has right content",
-  expect_match(object = read_query_file(
-    query_file("qry_get_topics_regex.sparql")
-  ),
-  regexp = "FILTER")
-)
+test_that(desc = "Has right content",
+          code = expect_match(object = read_query_file(
+            query_file("qry_get_topics_regex.sparql")
+          ), regexp = "FILTER"))
 
 
-test_that(
-  desc = "read_query_file are of length 1 (one line)",
-  code = checkmate::expect_scalar(
-    x = read_query_file(query_file("qry_get_topics_regex.sparql")),
-    na.ok = FALSE,
-    null.ok = FALSE,
-    info = "Read query is not scalar"
-  )
-)
+test_that(desc = "Queries are of length 1",
+          code = expect_length(object = read_query_file(
+            query_file("qry_get_topics_regex.sparql")
+          ), n = 1))
 
-test_that(desc = "Importedquery files has no line breaks",
+test_that(desc = "Query string files has no line breaks",
           code = expect_true(!grepl(
             x = read_query_file(query_file("qry_get_topics_regex.sparql")),
             pattern = "\\n"
+          )))
+
+test_that(desc = "Query string has no '#'",
+          code = expect_false(object = grepl(
+            pattern = "#",
+            x = read_query_file(query_file("get_available_frameworks")),
+            fixed = TRUE
           )))

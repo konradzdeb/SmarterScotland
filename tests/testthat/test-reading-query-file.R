@@ -23,11 +23,11 @@ test_that(desc = "Query string files has no line breaks",
             pattern = "\\n"
           )))
 
-test_that(desc = "Query string has no '#'",
+test_that(desc = "Query does not start with '#'",
           code = expect_false(object = grepl(
-            pattern = "#",
+            pattern = "^#|^\\s+#",
             x = read_query_file(query_file("get_available_frameworks")),
-            fixed = TRUE
+            fixed = FALSE
           )))
 
 test_that(desc = "No starting from space",

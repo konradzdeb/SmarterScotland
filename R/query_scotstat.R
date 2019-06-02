@@ -11,7 +11,6 @@
 #' @examples
 #' \dontrun{query_scotstat(read_query_file(query_file("get_available_frameworks")))}
 #'
-#' @rdname utility_functions
 #'
 query_scotstat <- function(query) {
   # Run query

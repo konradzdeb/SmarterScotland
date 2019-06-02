@@ -1,0 +1,154 @@
+{
+    "head": {
+        "vars": [
+            "s",
+            "p",
+            "o"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "o": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S01005312"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#measureType"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#dataSet"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/gender"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/gender/male"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/secondarySchoolStage"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                }
+            },
+            {
+                "s": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/pupil-attainment/government-year/2010-2011/S01005312/secondary-school-stage/s6/scqf-level/6-and-above/number-of-awards/3/gender/male/pupils/count"
+                },
+                "p": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/scqfLevel"
+                },
+                "o": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                }
+            }
+        ]
+    }
+}

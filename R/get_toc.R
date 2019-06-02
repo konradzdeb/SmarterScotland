@@ -22,11 +22,9 @@
 #' head(get_ToC(which = "pupil"), n = 5)
 #' # Get full list
 #' head(get_ToC(which = "pupil"), n = 5)
-get_ToC <-
-  # FIXME: fix queries generating right results
-  function(which = NULL) {
+get_ToC <- function(which = NULL) {
     # Depending on the which value use defult or query with regex
-    if (is.null(which)) {
+    if (missing(which)) {
       query <- read_query_file(query_file("qry_get_topics"))
     } else {
       query <- gsub(

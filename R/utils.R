@@ -3,11 +3,15 @@
 #' @description Small and handy utility functions usually not useful outside
 #'   the package enviornment.
 #'
+#' @details The functions are used to find and import query files saved as
+#'   \code{*.sparql} files. \code{\link{query_file}} is always used within
+#'   \code{\link{read_query_file}}.
+#'
 #' @name utility_functions
 NULL
 
 #' @rdname utility_functions
-#' @section query_file: Wrapper for the \code{system.file} function
+#' @section query_file: Wrapper for the \code{\link[base]{system.file}} function
 #'   passing path to a given query file and taking care of potentially missing
 #'   extensions.
 #' @param query_file_name Name of query file

@@ -19,13 +19,18 @@ query_file(query_file_name)
 Small and handy utility functions usually not useful outside
   the package enviornment.
 }
+\details{
+The functions are used to find and import query files saved as
+  \code{*.sparql} files. \code{\link{query_file}} is always used within
+  \code{\link{read_query_file}}.
+}
 \section{read_query_file}{
  C++ fast cleaner for query text file removing
   comments and line breaks.
 }
 
 \section{query_file}{
- Wrapper for the \code{system.file} function
+ Wrapper for the \code{\link[base]{system.file}} function
   passing path to a given query file and taking care of potentially missing
   extensions.
 }

@@ -29,3 +29,15 @@ test_that(desc = "Query string has no '#'",
             x = read_query_file(query_file("get_available_frameworks")),
             fixed = TRUE
           )))
+
+test_that(desc = "No starting from space",
+          code = expect_false(object = grepl(
+            pattern = "^\\s+",
+            x = read_query_file(query_file("get_available_frameworks"))
+          )))
+
+test_that(desc = "Does not end with space",
+          code = expect_false(object = grepl(
+            pattern = "\\s+&",
+            x = read_query_file(query_file("get_available_frameworks"))
+          )))

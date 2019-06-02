@@ -4,7 +4,9 @@
 \name{SmarterScotland-package}
 \alias{SmarterScotland}
 \alias{SmarterScotland-package}
-\title{SmarterScotland: Sourcing data from opendata.gov.scot}
+\title{SmarterScotland: Accessing opendata.gov.scot
+  \if{html}{\figure{logo.png}{options: alt="SmarterScotland logo" align="right"}}
+  \if{latex}{\figure{logo.png}{options: right}}}
 \description{
 SmarterScotland provides a suite of convenience functions
   facilitating sourcing data from the

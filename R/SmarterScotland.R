@@ -33,5 +33,5 @@
 #' @importFrom Rcpp sourceCpp
 #' @importFrom checkmate assert_string
 #' @importFrom checkmate test_character
-#' @importFrom httr POST accept_json warn_for_status stop_for_status
+#' @importFrom httr POST accept_json warn_for_status stop_for_status content
 "_PACKAGE"

@@ -12,8 +12,6 @@
 #'
 #' @export
 #'
-#' @importFrom SPARQL SPARQL
-#'
 #' @examples
 #' \dontrun{
 #' head(get_available_hierarchies())
@@ -21,20 +19,11 @@
 #' # 1 http://statistics.gov.scot/def/hierarchy/best-fit#health-board-area Best fit health board area
 #' # 2      http://statistics.gov.scot/def/hierarchy/best-fit#council-area Best fit council area
 #' }
-get_available_hierarchies <-
-  function() {
-    # Validate endpoint
-    check_endpoint()
+get_geography_hierarchies <- function() {
 
-    query <- read_query_file(query_file("get_available_frameworks"))
+  query <- read_query_file(query_file("get_available_frameworks"))
 
+  # Query Scotstat
+  response <- query_scotstat(query)
 
-    dta_res <- SPARQL(
-      url = getOption("SmarterScotland.endpoint"),
-      query = query,
-      format = "csv"
-    )
-
-    return(dta_res$results)
-
-  }
+}

@@ -1,0 +1,2 @@
+context("Getting spatial frameworks.")
+

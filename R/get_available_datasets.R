@@ -15,8 +15,7 @@
 #' }
 get_available_datasets <- function(pattern) {
   # Source full list of data sets
-  qry <-
-    read_query_file(query_file("get_available_datasets.sparql"))
+  query <- read_query_file(query_file("get_available_datasets.sparql"))
   dta_res <- suppressWarnings(SPARQL(
     url = getOption("SmarterScotland.endpoint"),
     query = qry,

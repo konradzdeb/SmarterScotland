@@ -8,8 +8,8 @@
   # https://github.com/tidyverse/dplyr/blob/a4980700383ada4e4f0eb39e501105d9e261ec0a/R/zzz.r
   op <- options()
   op.SmarterScotland <-
-    list(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql.csv",
-         SmarterScotland.endpoint_check = "warn")
+    list(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql",
+         SmarterScotland.response_check = "warn")
   toset <- !(names(op.SmarterScotland) %in% names(op))
   if (any(toset)) {
     options(op.SmarterScotland[toset])

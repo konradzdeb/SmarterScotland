@@ -1,0 +1,82 @@
+{
+    "head": {
+        "vars": [
+            "hierarchy",
+            "label"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#health-board-area"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit health board area"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#council-area"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit council area"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#community-health-partnership"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit CHP"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#electoral-ward"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit electoral ward"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#intermediate-zone"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit intermediate zone"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#country"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit country"
+                }
+            },
+            {
+                "hierarchy": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/hierarchy/best-fit#scottish-parliamentary-constituency"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Best fit Scottish parliamentary constituency"
+                }
+            }
+        ]
+    }
+}

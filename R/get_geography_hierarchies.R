@@ -21,9 +21,15 @@
 #' }
 get_geography_hierarchies <- function() {
 
+  # Get relevant query
   query <- read_query_file(query_file("get_available_frameworks"))
 
   # Query Scotstat
   response <- query_scotstat(query)
 
+  # Parse response
+  response_df <- parse_response(response)
+
+  # Return data frame
+  return(response_df)
 }

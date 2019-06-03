@@ -6,7 +6,7 @@ op_old <- options()
 
 # Assign package options
 setup({
-  options(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql.csv")
+  options(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql")
 })
 
 # Restore previous options

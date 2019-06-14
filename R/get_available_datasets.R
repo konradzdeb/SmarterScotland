@@ -14,21 +14,39 @@
 #' get_available_datasets(pattern = "health")
 #' }
 get_available_datasets <- function(pattern) {
-  # Source full list of data sets
-  query <- read_query_file(query_file("get_available_datasets.sparql"))
-  dta_res <- suppressWarnings(SPARQL(
-    url = getOption("SmarterScotland.endpoint"),
-    query = qry,
-    format = "csv"
-  ))
 
-  dta_res <- dta_res$results
+  # Source full list of data sets
+  query <-
+    read_query_file(query_file("get_available_datasets.sparql"))
+
+  # Query Scotstat
+  response <- query_scotstat(query)
+
+  # Parse response
+  response_df <- parse_response(response)
+
+  # Clean and prepare results data frame
+  results <- within(data = response_df,
+                    expr = {
+                      subject = substr(
+                        x = dataset.value,
+                        start = max(unlist(
+                          gregexpr(
+                            pattern = "/",
+                            text = dataset.value,
+                            fixed = TRUE
+                          )
+                        )) + 1,
+                        stop = nchar(dataset.value)
+                      )
+                    })
+
   if (missing(pattern)) {
-    return(dta_res)
+    return(results)
   } else {
     return(subset.data.frame(
-      x = dta_res,
-      subset = grepl(pattern = pattern, x = dta_res$dataset)
+      x = results,
+      subset = grepl(pattern = pattern, x = results$subject)
     ))
   }
 }

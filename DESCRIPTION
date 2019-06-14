@@ -16,14 +16,10 @@ Depends:
   R     (>= 3.3.0),
   httr  (>= 1.4.0)
 Imports: 
-    checkmate (>= 1.8.5),
-    iptools,
-    pingr,
-    Rcpp,
-    RCurl,
-    utils,
-    urltools,
-    glue
+  checkmate (>= 1.8.5),
+  Rcpp      (>= 1.0.1),
+  utils,
+  glue
 LinkingTo: 
   Rcpp
 RoxygenNote: 6.1.1

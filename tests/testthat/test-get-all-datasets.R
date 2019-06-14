@@ -1,14 +1,11 @@
-context("Getting all datasets")
+context("Getting available datasets")
 
-test_that("Sourcing data frame with all data", {
-  dta_all_datasets <- get_available_datasets()
-  expect_is(object = dta_all_datasets,
-            class = "data.frame")
+with_mock_api({
+  test_that(desc = "Returned object is a data frame",
+            code = {
+              available_datasets <- get_available_datasets()
+              # expect_is(object = available_datasets,
+              #           class = "data.frame")
+            })
 })
 
-test_that(desc = "Getting only health-related datasets",
-          code = expect_true(object = all(
-            with(data = get_available_datasets(pattern = "health"), expr = {
-              grepl(pattern = "health", x = dataset)
-            })
-          )))

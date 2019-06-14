@@ -4,8 +4,8 @@
 # Get old options
 op_old <- options()
 
-# Assign package options
 setup({
+  # Assign package options
   options(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql")
 })
 

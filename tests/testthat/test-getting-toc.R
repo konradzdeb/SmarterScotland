@@ -1,18 +1,23 @@
-context("SPARQL: Getting ToC")
+context("Getting ToC")
 
-test_that("TOC is a data.frame",
-          expect_is(object = get_ToC(),
-                    class = "data.frame"))
-
-test_that("The data frame has a sensible number of rows",
-          expect_gt(object = nrow(get_ToC()),
-                    expected = 10))
-
-test_that("Returned data has expected values",
-          expect_true(object = any(
-            grepl(
-              pattern = "pupil",
-              x = get_ToC(which = "pupil")[, 1],
-              ignore.case = TRUE
-            )
-          )))
+with_mock_api({
+  test_that(desc = "Obtained data frame",
+            code = {
+              dta_toc <- get_ToC()
+              expect_is(object = dta_toc,
+                        class = "data.frame")
+              expect_named(
+                object = dta_toc,
+                expected = c(
+                  "dimension.type",
+                  "dimension.value",
+                  "theme.type",
+                  "theme.value"
+                )
+              )
+              expect_length(
+                object = dta_toc,
+                n = 4
+              )
+            })
+})

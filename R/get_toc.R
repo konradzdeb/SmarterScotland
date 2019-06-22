@@ -34,21 +34,11 @@ get_ToC <- function(which = NULL) {
       )
     }
 
-    # Generating data.frame via SPARQL
-    # dta_res <- SPARQL(
-    #   url = getOption("SmarterScotland.endpoint"),
-    #   query = query,
-    #   ns = "sgdta",
-    #   "<http://statistics.gov.scot/data/>",
-    #   format = "csv"
-    # )
+    res <- query_scotstat(query = query)
 
-    dta_res <- POST(
-      url = getOption("SmarterScotland.endpoint"),
-      body = query
-    )
+    dta_res <- parse_response(x = res)
 
     # Return results
-    return(dta_res$results)
+    return(dta_res)
 
   }

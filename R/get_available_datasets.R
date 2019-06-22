@@ -15,8 +15,7 @@
 #' }
 get_available_datasets <- function(pattern) {
   # Source full list of data sets
-  query <-
-    read_query_file(query_file("get_available_datasets.sparql"))
+  query <- read_query_file(query_file("get_available_datasets.sparql"))
 
   # Query Scotstat
   response <- query_scotstat(query)
@@ -28,7 +27,8 @@ get_available_datasets <- function(pattern) {
   response_df <- as.data.frame(sapply(response_df, as.character),
                                stringsAsFactors = FALSE)
 
-  dput(x = response_df, file = "~/Desktop/response.R")
+  # Sileence R CMD check warning on using variables with no binding
+  dataset.value <- NULL
 
   # Clean and prepare results data frame
   results <- within(data = response_df,

@@ -9,7 +9,7 @@
 #'
 #' @param hierarchy \strong{Required.} A character corresponding to geography framework.
 #'   The list of available frameworks can be obtained through
-#'   \code{\link{get_available_hierarchies}}.
+#'   \code{\link{get_geography_hierarchies}}.
 #'
 #' @param period \strong{Optional.} A character vector corresponding to period(s)
 #'  for which the data should be sourced. This has to correspond to the

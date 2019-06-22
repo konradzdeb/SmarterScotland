@@ -1,11 +1,8 @@
 context("Getting available datasets")
 
 with_mock_api({
-  test_that(desc = "Returned object is a data frame",
+  test_that(desc = "Obtains data frame",
             code = {
-              available_datasets <- get_available_datasets()
-              # expect_is(object = available_datasets,
-              #           class = "data.frame")
+              dta_av_datasets <- get_available_datasets()
             })
 })
-

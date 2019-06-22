@@ -9,3 +9,6 @@
 ^vignettes/[.]install_extras$
 ^sessionInfoLog$
 ^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

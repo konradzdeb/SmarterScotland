@@ -7,9 +7,9 @@
 get_ToC(which = NULL)
 }
 \arguments{
-\item{which}{Defults \code{NULL} returns all subjects, a character value is
-passed to \code{FILTER} in SPARQL query performing case insesitive regex
-on filter categories.}
+\item{which}{Defults to \code{NULL} and returns all subjects, a character
+value is passed to \code{FILTER} in SPARQL query performing case insesitive
+regex on filter categories.}
 }
 \value{
 A \code{data.frame} with columns corresponding to table name,
@@ -24,8 +24,10 @@ Sources list of available data sets from statistics.gov.uk and returns
   geographies.
 }
 \examples{
+\dontrun{
 # Get list of themes with 'pupil' keyword
 head(get_ToC(which = "pupil"), n = 5)
 # Get full list
 head(get_ToC(which = "pupil"), n = 5)
+}
 }

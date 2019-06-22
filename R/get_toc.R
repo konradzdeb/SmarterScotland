@@ -7,9 +7,9 @@
 #'   a data frame accounting for the available data sets, timespan and
 #'   geographies.
 #'
-#' @param which Defults \code{NULL} returns all subjects, a character value is
-#'    passed to \code{FILTER} in SPARQL query performing case insesitive regex
-#'    on filter categories.
+#' @param which Defults to \code{NULL} and returns all subjects, a character
+#'   value is passed to \code{FILTER} in SPARQL query performing case insesitive
+#'   regex on filter categories.
 #'
 #' @return
 #' A \code{data.frame} with columns corresponding to table name,
@@ -18,10 +18,12 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' # Get list of themes with 'pupil' keyword
 #' head(get_ToC(which = "pupil"), n = 5)
 #' # Get full list
 #' head(get_ToC(which = "pupil"), n = 5)
+#' }
 get_ToC <- function(which = NULL) {
     # Depending on the which value use defult or query with regex
     if (missing(which)) {

@@ -6,9 +6,14 @@ src/*.o
 src/*.so
 src/*.dll
 inst/doc
+
 # Unesed data files
 *.rds
 *.rdb
 *.rdx
+
 # Ignore RStudio session log
 sessionInfoLog
+
+# Ignore VScode folder
+.vscode/

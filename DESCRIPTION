@@ -7,7 +7,7 @@ Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))
 Description: This package sources the publicly available data life outcomes, 
   demographic and administrative  data from the ScotStat portal for selected indicators, 
-  geographies and time periods. In addition the package offers basic visualisation and 
+  geographies and time periods. In addition, the package offers basic visualisation and 
   analytical functionalities.
 License: GPL-3
 LazyData: TRUE

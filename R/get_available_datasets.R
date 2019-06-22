@@ -14,7 +14,6 @@
 #' get_available_datasets(pattern = "health")
 #' }
 get_available_datasets <- function(pattern) {
-
   # Source full list of data sets
   query <-
     read_query_file(query_file("get_available_datasets.sparql"))
@@ -24,6 +23,12 @@ get_available_datasets <- function(pattern) {
 
   # Parse response
   response_df <- parse_response(response)
+
+  # Convert all columns to character
+  response_df <- as.data.frame(sapply(response_df, as.character),
+                               stringsAsFactors = FALSE)
+
+  dput(x = response_df, file = "~/Desktop/response.R")
 
   # Clean and prepare results data frame
   results <- within(data = response_df,

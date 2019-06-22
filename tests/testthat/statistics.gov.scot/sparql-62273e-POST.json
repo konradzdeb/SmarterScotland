@@ -1,0 +1,572 @@
+{
+    "head": {
+        "vars": [
+            "theme",
+            "dimension"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refArea"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refPeriod"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "measureType"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "count"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "ratio"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "secondarySchoolStage"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "scqfLevel"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "numberOfAwards"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "gender"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-leaver-destinations-followup"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refArea"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refPeriod"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "measureType"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "count"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "ratio"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percentage"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-female-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-male-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "rate-per-1-000-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "schoolType"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "gender"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "age"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "populationGroup"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-pupil-census"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refArea"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refPeriod"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "measureType"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "count"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "ratio"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "secondarySchoolStage"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "gender"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "populationGroup"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-em"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "school-leaver-destinations"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refArea"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "refPeriod"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "measureType"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "count"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "ratio"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "secondarySchoolStage"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "scqfLevel"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "numberOfAwards"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "pupil-attainment-asn"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "alcohol-use-ever-among-young-people-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "drug-use-behaviour-among-young-people-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "drinking-behaviour-among-young-people-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "smoking-prevalence-in-young-people-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "smoking-behaviour-and-self-rated-health-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "drug-use-behaviour-and-deprivation-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "drinking-behaviour-and-emotional-and-behavioural-problems-salsus"
+                }
+            },
+            {
+                "dimension": {
+                    "type": "literal",
+                    "value": "percent-of-pupils"
+                },
+                "theme": {
+                    "type": "literal",
+                    "value": "smoking-prevalence-and-deprivation-salsus"
+                }
+            }
+        ]
+    }
+}

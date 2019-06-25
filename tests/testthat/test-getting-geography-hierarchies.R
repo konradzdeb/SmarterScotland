@@ -11,6 +11,9 @@ with_mock_api({
 })
 
 without_internet({
-  expect_error(object = get_geography_hierarchies(),
-               regexp = "POST http://statistics.gov.scot/sparql")
+  test_that(
+    desc = "Errors on no connection",
+    code = expect_error(object = get_geography_hierarchies(),
+                        regexp = "POST\\s.*")
+  )
 })

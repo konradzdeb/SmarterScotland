@@ -52,3 +52,8 @@ with_mock_api({
               )))
             })
 })
+
+without_internet({
+  test_that(desc = "Returns error for no Internet",
+            code = expect_error(object = get_ToC()))
+})

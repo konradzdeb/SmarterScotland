@@ -1,6 +1,6 @@
 # qry_get_geography_data.sparql
 # Fetch statistical data for:
-# - selected geeography
+# - selected geography framework
 # - time period
 # - selected indicator
 # Used R function get_geography_data function.
@@ -18,10 +18,29 @@ PREFIX sdmx: <http://purl.org/linked-data/sdmx/2009/concept#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
+# Added for convenience 
+PREFIX dim: <http://purl.org/linked-data/sdmx/2009/dimension#>
 
 # Query
-SELECT ?geo ?time ?value
+SELECT DISTINCT ?geo ?time ?measure ?value ?age ?gender
 WHERE {
-	?geo
+
+	?x dim:refArea ?refArea .	
+	?x dim:refArea/rdfs:label ?geo .
+
+	?x qb:dataSet <http://statistics.gov.scot/data/job-seekers-allowance> .
+	
+	?x dim:refPeriod/rdfs:label ?time .
+	
+	?x qb:measureType/rdfs:label ?measure .
+
+	?x <http://statistics.gov.scot/def/dimension/age>/rdfs:label ?age .
+
+	?x <http://statistics.gov.scot/def/dimension/gender>/rdfs:label ?gender .
+
+	?x <http://statistics.gov.scot/def/measure-properties/count> |
+			 <http://statistics.gov.scot/def/measure-properties/ratio>	?value .
+	
+	FILTER (?time IN ("2001-Q1", "2001-Q2"))
+	FILTER (?geo IN ("S01001912"))
 }

@@ -7,7 +7,8 @@
 get_geography_data(indicator, hierarchy, period)
 }
 \arguments{
-\item{indicator}{\strong{Required.} A character vector with the name of indicator to be sourced from the
+\item{indicator}{\strong{Required.} A character vector with the name of
+indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 
 \item{hierarchy}{\strong{Required.} A character corresponding to geography framework.
@@ -20,12 +21,12 @@ available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 data for 2nd quarters of 2001 and 2010 respectively.}
 }
 \value{
-A data framewith indicator values per selected geography.
+A data frame.
 }
 \description{
 The function fetches statistical data for a selected geography
   framework from: \href{http://statistics.gov.scot}{statistics.gov.scot}
-  for a selected period for a selected indicator.
+  for a selected period for a chosen indicator.
 }
 \details{
 The following function attempts to source all data

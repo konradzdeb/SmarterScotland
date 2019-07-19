@@ -2,9 +2,10 @@
 #'
 #' @description The function fetches statistical data for a selected geography
 #'   framework from: \href{http://statistics.gov.scot}{statistics.gov.scot}
-#'   for a selected period for a selected indicator.
+#'   for a selected period for a chosen indicator.
 #'
-#' @param indicator \strong{Required.} A character vector with the name of indicator to be sourced from the
+#' @param indicator \strong{Required.} A character vector with the name of
+#'   indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
 #' @param hierarchy \strong{Required.} A character corresponding to geography framework.
@@ -21,7 +22,7 @@
 #'   selected spatial hierarchy or only for the selected period if the
 #'   \code{period} argument is provided.
 #'
-#' @return A data framewith indicator values per selected geography.
+#' @return A data frame.
 #'
 #' @export
 #'

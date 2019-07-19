@@ -1,0 +1,16 @@
+# The query gets dimensions of a specific data set
+
+# Prefixes
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dim: <http://purl.org/linked-data/sdmx/2009/dimension#>
+
+
+# Query
+
+SELECT DISTINCT ?property ?label 
+WHERE {
+  ?x qb:dataSet <http://statistics.gov.scot/data/Life-Expectancy> .
+  ?x ?property ?p .
+  ?property rdfs:label ?label .
+}

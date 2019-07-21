@@ -6,6 +6,7 @@ with_mock_api({
               dta_toc <- get_ToC()
               expect_is(object = dta_toc,
                         class = "data.frame")
+
               expect_named(
                 object = dta_toc,
                 expected = c(

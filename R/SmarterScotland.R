@@ -34,4 +34,6 @@
 #' @importFrom checkmate assert_string test_character
 #' @importFrom httr POST accept_json warn_for_status stop_for_status content
 #' @importFrom stats var
+#' @importFrom glue glue
+#' @importFrom gtools smartbind
 "_PACKAGE"

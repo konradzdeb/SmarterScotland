@@ -19,14 +19,11 @@ parse_response <- function(x) {
   # Extract results and convert to data frames
   lst_results <- lapply(X = response_content$results$bindings,
                         FUN = as.data.frame)
-  # Check if columns numbers across all data frames in the list are identical
-  if (var(sapply(lst_results, ncol)) == 0) {
-    # Bind results to one data frame
-    results <-  do.call("rbind", lst_results)
-    return(results)
-  } else {
-    warning("Filed to create a data frame. Returning parsed response content",
-            call. = TRUE)
+  results <-  try(do.call("smartbind", lst_results))
+  if (class(results) == "try-error") {
+    warning("Failed to create data frame, returning response content.")
     return(response_content)
+  } else {
+    return(results)
   }
 }

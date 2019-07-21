@@ -6,31 +6,34 @@
 #' @param data_set String corresponding to \code{subject} column derived via
 #'   \code{\link[SmarterScotland]{get_available_datasets}}.
 #' @param property_values A boolean. Defults to \code{FALSE}. If \code{TRUE}
-#'   the function will return values for each available property.
+#'   the function will return values for each available property. The match
+#'   is case sensitive
+#'
+#' @details Please note that for some of the data sets case is significant. For
+#'   instance \code{life-expectancy} will match
+#'   \url{http://statistics.gov.scot/data/life-expectancy} whereas
+#'   \code{Life-Expectancy} will match
+#'   \url{http://statistics.gov.scot/data/Life-Expectancy} the first data set
+#'   is obsolute and maintained by The Scottish Government for the backward
+#'   compatibility. If in doubt paste \code{dataset.value} \code{URI} obtained
+#'   via the  \code{\link[SmarterScotland]{get_available_datasets}} function.
 #'
 #' @return A data frame.
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' get_data_properties(data_set = "life-expectancy")
-#' get_data_properties(data_set = "life-expectancy", property_values = TRUE)
+#' get_data_properties(data_set = "Life-Expectancy")
+#' get_data_properties(data_set = "Life-Expectancy", property_values = TRUE)
 #' }
-get_data_properties <- function(data_set, property_values = TRUE) {
+get_data_properties <- function(data_set, property_values = FALSE) {
 
   # Get data set URI
   available_data_sets <- get_available_datasets()
-  # Sileence R CMD check warning on using variables with no binding
-  dataset.value <- NULL
-  subject <- NULL
+
   # Get data set URI
-  data_set_uri <-
-    subset.data.frame(
-      x = available_data_sets,
-      subset = subject == data_set,
-      select = dataset.value,
-      drop = TRUE
-    )
+  data_set_uri <- available_data_sets$dataset.value[
+    available_data_sets$subject == data_set]
 
   # Prepare variables to construct query
   if (isFALSE(property_values)) {
@@ -57,5 +60,4 @@ get_data_properties <- function(data_set, property_values = TRUE) {
 
   # Return response object
   return(response_df)
-
 }

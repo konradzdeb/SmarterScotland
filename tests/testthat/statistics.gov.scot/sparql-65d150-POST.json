@@ -591,6 +591,12 @@
             {
                 "dataset": {
                     "type": "uri",
+                    "value": "http://statistics.gov.scot/data/exports-by-local-authority"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/feeling-safe-when-alone-at-home---scottish-household-survey"
                 }
             },
@@ -1474,6 +1480,24 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/smoking-sscq"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/social-security-scotland-feedback-complaint-outcomes"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/social-security-scotland-feedback-complaints"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/social-security-scotland-feedback-compliments"
                 }
             },
             {

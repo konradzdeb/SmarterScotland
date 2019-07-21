@@ -1,0 +1,2273 @@
+{
+    "head": {
+        "vars": [
+            "property",
+            "label",
+            "value"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "type"
+                },
+                "value": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Observation"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Cunninghame North"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Cumbernauld and Kilsyth"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Cowdenbeath"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dumbarton"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dumfriesshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Cunninghame South"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Clackmannanshire and Dunblane"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Clydebank and Milngavie"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Carrick, Cumnock and Doon Valley"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Coatbridge and Chryston"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Clydesdale"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Central"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Eastern"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Eastwood"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Pentlands"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Southern"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Northern and Leith"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dundee City West"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dunfermline"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dundee City East"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "East Lothian"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "East Kilbride"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Shetland"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Western Isles"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Orkney"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeen Donside"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeen South and North Kincardine"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeen Central"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Forth Valley"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Grampian"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dumfries and Galloway"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Borders"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Lothian"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Highland"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Argyll and Bute"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Ayr"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Angus South"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Angus North and Mearns"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Caithness, Sutherland and Ross"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Banffshire and Buchan Coast"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeenshire West"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeenshire East"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Almond Valley"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Airdrie and Shotts"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Perthshire North"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Perthshire South and Kinross-shire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Paisley"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Renfrewshire South"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Rutherglen"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Renfrewshire North and West"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Moray"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Motherwell and Wishaw"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Midlothian South, Tweeddale and Lauderdale"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Midlothian North and Musselburgh"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Orkney Islands"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "North East Fife"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Fife"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Tayside"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Perth and Kinross"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Strathkelvin and Bearsden"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Provan"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Skye, Lochaber and Badenoch"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Shetland Islands"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Uddingston and Bellshill"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Stirling"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Anniesland"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Cathcart"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Galloway and West Dumfries"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Falkirk West"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Maryhill and Springburn"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Kelvin"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Na h-Eileanan an Iar"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh Western"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Falkirk East"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Ettrick, Roxburgh and Berwickshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Kirkcaldy"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Kilmarnock and Irvine Valley"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Inverness and Nairn"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Mid Fife and Glenrothes"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Linlithgow"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Shettleston"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Southside"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow Pollok"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Hamilton, Larkhall and Stonehouse"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Greenock and Inverclyde"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Scotland"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "East Ayrshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "East Renfrewshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Clackmannanshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "North Lanarkshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "West Dunbartonshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow City"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "West Lothian"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Greater Glasgow and Clyde"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Lanarkshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeenshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "City of Edinburgh"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "South Lanarkshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Aberdeen City"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "East Dunbartonshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Ayrshire and Arran"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Dundee City"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Angus"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Renfrewshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Inverclyde"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Midlothian"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Na h-Eileanan Siar"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Falkirk"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Scottish Borders"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "South Ayrshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "North Ayrshire"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Unit of Measure"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Years"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Period"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "2014-2016"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#measureType"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "measure type"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Count"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#measureType"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "measure type"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "95% Lower Confidence Limit"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#measureType"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "measure type"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "95% Upper Confidence Limit"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#dataSet"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "data set"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Life Expectancy"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "65-69"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "60-64"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "70-74"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "55-59"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "5-9"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "20-24"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "85-89"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "25-29"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "75-79"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "80-84"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "10-14"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "15-19"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "90+"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "0"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "1-4"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "45-49"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "40-44"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "50-54"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "30-34"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/age"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Age"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "35-39"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/sex"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Sex"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Female"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/sex"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Sex"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Male"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Remote rural"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "All"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Large urban areas"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Other urban areas"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Accessible rural"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Remote small towns"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/urbanRuralClassification"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Urban Rural Classification"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Accessible small towns"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "All"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "5 - least deprived"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "2"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "3"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "1 - most deprived"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/simdQuintiles"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "SIMD quintiles"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "4"
+                }
+            }
+        ]
+    }
+}

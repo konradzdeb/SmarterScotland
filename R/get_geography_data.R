@@ -8,7 +8,7 @@
 #'   indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
-#' @param hierarchy \strong{Required.} A character corresponding to geography framework.
+#' @param geography \strong{Required.} A character corresponding to geography framework.
 #'   The list of available frameworks can be obtained through
 #'   \code{\link{get_geography_hierarchies}}.
 #'
@@ -28,25 +28,67 @@
 #'
 #' @examples
 #' \dontrun{
-#' get_geography_data(indicator = "JSA", geography = "datazones")
+#' get_geography_data(data_set = "alcohol-related-discharge",
+#'                    geography = "datazones")
 #' }
-get_geography_data <- function(indicator, hierarchy, period) {
-
-  # Check if all arguments were specificed
-  assert_string(x = indicator, na.ok = FALSE, null.ok = FALSE)
-  assert_string(x = hierarchy, na.ok = FALSE, null.ok = FALSE)
+get_geography_data <- function(indicator, geography, period) {
+  # Check if all arguments were specified
+  assert_string(x = indicator,
+                na.ok = FALSE,
+                null.ok = FALSE)
+  assert_string(x = geography,
+                na.ok = FALSE,
+                null.ok = FALSE)
 
   # Import basic SPARQL query
-  sparql_query <- read_query_file(query_file("qry_get_geography_data"))
+  query <- read_query_file(query_file("qry_get_geography_data"))
 
-  # Check if period was provided and source relevant query
+  # Check if period was provided and input in the query
   if (!missing(period)) {
     # Convert period to character if passed as an integer
     if (!test_character(x = period)) {
       period <- as.character(period)
     }
     # Expand query with the provided period data to filter per period.
+    period <-
+      paste("FILTER (?time IN (",
+            paste(paste0("\"", period, "\""), collapse = ", "),
+            "))",
+            collapse = "")
+  } else {
+    period <- ""
   }
+
+  # Check data set properties and construct relevant SPARQL calls for each
+  dta_properties <- get_data_properties(data_set = data_set)
+
+  # Construct variable names
+  var_nms <-
+    paste(paste0("?", tolower(
+      make.names(dta_properties$label.value)
+    )),
+    collapse = " ")
+
+  # TODO: Fixed call generation
+  where_calls <- paste(
+    mapply(
+      FUN = function(x, y) {
+        paste("?x",
+              paste(paste0("<", x, ">/rdfs:label"), y), ".")
+      },
+      dta_properties$property.value,
+      var_nms,
+      USE.NAMES = FALSE,
+      SIMPLIFY = TRUE
+    ),
+    collapse = " "
+  )
+
+  # Replace query content
+  query <- glue(query, .open = "[", .close = "]")
+
+  # Query Scotstat
+  response <- query_scotstat(query)
 
   # TODO: Query and corresponding mechanism
   return(NULL)

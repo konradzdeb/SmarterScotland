@@ -5,11 +5,14 @@
 # - selected indicator
 # Used R function get_geography_data function.
 
+# Prefixes
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 # Query
 SELECT DISTINCT [var_nms]
 WHERE {
 
-  [where_calls]
-	
+  [where_call]
+
 	[period]
 }

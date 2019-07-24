@@ -65,12 +65,12 @@ get_geography_data <- function(indicator, geography, period) {
   # Construct variable names
   var_nms <-
     paste(paste0("?", tolower(
-      make.names(dta_properties$label.value)
-    )),
-    collapse = " ")
+      make.names(dta_properties$label.value, allow_ = TRUE)
+    )))
+  var_nms <- gsub(pattern = ".", replacement = "_", fixed = TRUE, x = var_nms)
 
-  # TODO: Fixed call generation
-  where_calls <- paste(
+  # Generate where clauses
+  where_call <- paste(
     mapply(
       FUN = function(x, y) {
         paste("?x",
@@ -83,6 +83,9 @@ get_geography_data <- function(indicator, geography, period) {
     ),
     collapse = " "
   )
+
+  # Collapse names to insert in select statement
+  var_nms <- paste(var_nms, collapse = " ")
 
   # Replace query content
   query <- glue(query, .open = "[", .close = "]")

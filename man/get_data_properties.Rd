@@ -10,7 +10,7 @@ get_data_properties(data_set, property_values = FALSE)
 \item{data_set}{String corresponding to \code{subject} column derived via
 \code{\link[SmarterScotland]{get_available_datasets}}.}
 
-\item{property_values}{A boolean. Defults to \code{FALSE}. If \code{TRUE}
+\item{property_values}{A boolean. Defaults to \code{FALSE}. If \code{TRUE}
 the function will return values for each available property. The match
 is case sensitive}
 }
@@ -27,7 +27,7 @@ Please note that for some of the data sets case is significant. For
   \url{http://statistics.gov.scot/data/life-expectancy} whereas
   \code{Life-Expectancy} will match
   \url{http://statistics.gov.scot/data/Life-Expectancy} the first data set
-  is obsolute and maintained by The Scottish Government for the backward
+  is obsolete and maintained by The Scottish Government for the backward
   compatibility. If in doubt paste \code{dataset.value} \code{URI} obtained
   via the  \code{\link[SmarterScotland]{get_available_datasets}} function.
 }

@@ -4,14 +4,14 @@
 \alias{get_geography_data}
 \title{Get Geography Data}
 \usage{
-get_geography_data(indicator, hierarchy, period)
+get_geography_data(indicator, geography, period)
 }
 \arguments{
 \item{indicator}{\strong{Required.} A character vector with the name of
 indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 
-\item{hierarchy}{\strong{Required.} A character corresponding to geography framework.
+\item{geography}{\strong{Required.} A character corresponding to geography framework.
 The list of available frameworks can be obtained through
 \code{\link{get_geography_hierarchies}}.}
 
@@ -36,6 +36,7 @@ The following function attempts to source all data
 }
 \examples{
 \dontrun{
-get_geography_data(indicator = "JSA", geography = "datazones")
+get_geography_data(data_set = "alcohol-related-discharge",
+                   geography = "datazones")
 }
 }

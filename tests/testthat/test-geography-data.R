@@ -1,4 +1,4 @@
-context("Souring data per hierarchy")
+context("Sourcing data per hierarchy")
 
 test_that(desc = "Errors on non-character indicator", {
   expect_error(object = get_geography_data(indicator = 1),

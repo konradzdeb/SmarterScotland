@@ -88,15 +88,18 @@ get_geography_data <- function(data_set, geography, period) {
               paste(paste0("<", x, ">/rdfs:label"), y), ".")
       },
       dta_properties$property.value,
-      unlist(strsplit(x = var_nms, split = "\\s")),
+      var_nms,
       USE.NAMES = FALSE,
       SIMPLIFY = TRUE
     ),
     collapse = " "
   )
 
+# Collapse variable names for SELECT statement
+  var_nms <- paste(var_nms, collapse = " ")
+
   # Replace query content
-  query <- glue(query, .open = "[", .close = "]")
+  query <- glue(query_orig, .open = "[", .close = "]")
 
   # Query Scotstat
   response <- query_scotstat(query)

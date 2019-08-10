@@ -13,3 +13,4 @@
 ^docs$
 ^pkgdown$
 ^\.vscode
+^data-raw$

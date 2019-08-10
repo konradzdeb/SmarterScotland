@@ -12,7 +12,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT [var_nms]
 WHERE {
 
-  [where_call]
+  [where_vars_call]
 
 	[period]
 }

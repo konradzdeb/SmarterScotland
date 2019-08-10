@@ -8,9 +8,8 @@
 #'   indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
-#' @param geography \strong{Required.} A character corresponding to geography framework.
-#'   The list of available frameworks can be obtained through
-#'   \code{\link{get_geography_hierarchies}}.
+#' @param geography \strong{Required.} A character vector corresponding to
+#'   geographies for which to derive the data this can be a common
 #'
 #' @param period \strong{Optional.} A character vector corresponding to period(s)
 #'  for which the data should be sourced. This has to correspond to the
@@ -18,9 +17,16 @@
 #'  data for 2nd quarters of 2001 and 2010 respectively.
 #'
 #' @details The following function attempts to source all data
-#'   available for a specific spatial framework for all periods for
-#'   selected spatial hierarchy or only for the selected period if the
-#'   \code{period} argument is provided.
+#'   available for a specific geographies for the provided period. The period
+#'   and geography names are used in SPARQL via \code{FILTER} clause where
+#'   vector values are used to construct and if statement. Those values are
+#'   optional but it's recommended that are those are recommend as without those
+#'   the query would attempt to return all data set values for all period for
+#'   all geographies.
+#'
+#' @section Available Geographies and Data:
+#' Helper functions and static data sets useful in identifying available
+#'  geographies and data sets are provided in this package.
 #'
 #' @return A data frame.
 #'
@@ -41,20 +47,14 @@ get_geography_data <- function(data_set, geography, period) {
                 null.ok = FALSE)
 
   # Import basic SPARQL query
-  query_orig <- read_query_file(query_file("qry_get_geography_data"))
+  query_orig <-
+    read_query_file(query_file("qry_get_geography_data"))
 
   # Check if period was provided and input in the query
   if (!missing(period)) {
-    # Convert period to character if passed as an integer
-    if (!test_character(x = period)) {
-      period <- as.character(period)
-    }
     # Expand query with the provided period data to filter per period.
-    period <-
-      paste("FILTER (?time IN (",
-            paste(paste0("\"", period, "\""), collapse = ", "),
-            "))",
-            collapse = "")
+    filter_st_time <- construct_filter(sparql_variable = "time",
+                                       filter_values = period)
   } else {
     period <- ""
   }
@@ -66,6 +66,10 @@ get_geography_data <- function(data_set, geography, period) {
 
   # Check data set properties and construct relevant SPARQL calls for each
   dta_properties <- get_data_properties(data_set = data_set)
+
+  # Get data set URI
+  data_set_URI <-
+    paste0("<http://statistics.gov.scot/data/", data_set, ">")
 
   # Construct variable names
   var_nms <-
@@ -84,8 +88,17 @@ get_geography_data <- function(data_set, geography, period) {
   where_vars_call <- paste(
     mapply(
       FUN = function(x, y) {
-        paste("?x",
-              paste(paste0("<", x, ">/rdfs:label"), y), ".")
+        # If desired force x to return a label
+        if (grepl(
+          pattern = paste("refArea", "unitMeasure", "refPeriod", sep = "|"),
+          x = x,
+          ignore.case = TRUE
+        )) {
+          x <- paste0("<", x, ">/rdfs:label")
+        } else {
+          x <- paste0("<", x, ">")
+        }
+        paste("?x", x, y, ".")
       },
       dta_properties$property.value,
       var_nms,
@@ -95,7 +108,16 @@ get_geography_data <- function(data_set, geography, period) {
     collapse = " "
   )
 
-# Collapse variable names for SELECT statement
+  # Replace ?data_set with the call to URI
+  where_vars_call <-
+    sub(
+      pattern = "?data_set",
+      replacement = data_set_URI,
+      x = where_vars_call,
+      fixed = TRUE
+    )
+
+  # Collapse variable names for SELECT statement
   var_nms <- paste(var_nms, collapse = " ")
 
   # Replace query content
@@ -107,5 +129,6 @@ get_geography_data <- function(data_set, geography, period) {
   # Prepare response
   results <- parse_response(response)
 
+  # Return query results
   return(results)
 }

@@ -41,7 +41,7 @@ get_geography_data <- function(data_set, geography, period) {
                 null.ok = FALSE)
 
   # Import basic SPARQL query
-  query <- read_query_file(query_file("qry_get_geography_data"))
+  query_orig <- read_query_file(query_file("qry_get_geography_data"))
 
   # Check if period was provided and input in the query
   if (!missing(period)) {

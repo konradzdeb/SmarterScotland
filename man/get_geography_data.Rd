@@ -4,10 +4,10 @@
 \alias{get_geography_data}
 \title{Get Geography Data}
 \usage{
-get_geography_data(indicator, geography, period)
+get_geography_data(data_set, geography, period)
 }
 \arguments{
-\item{indicator}{\strong{Required.} A character vector with the name of
+\item{data_set}{\strong{Required.} A character vector with the name of
 indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 

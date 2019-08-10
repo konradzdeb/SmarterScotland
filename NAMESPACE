@@ -2,8 +2,8 @@
 
 export(get_ToC)
 export(get_available_datasets)
+export(get_available_geographies)
 export(get_data_properties)
-export(get_geography_code_register)
 export(get_geography_data)
 export(get_geography_hierarchies)
 importFrom(Rcpp,sourceCpp)

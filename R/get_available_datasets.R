@@ -46,6 +46,20 @@ get_available_datasets <- function(pattern) {
                       )
                     })
 
+  results$dataset.type <- NULL
+
+  # Clean names
+  results <-
+    setNames(
+      object = results,
+      nm = sub(
+        pattern = ".",
+        replacement = "_",
+        x = names(results),
+        fixed = TRUE
+      )
+    )
+
   if (missing(pattern)) {
     return(results)
   } else {

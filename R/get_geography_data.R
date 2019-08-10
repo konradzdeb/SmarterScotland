@@ -4,7 +4,7 @@
 #'   framework from: \href{http://statistics.gov.scot}{statistics.gov.scot}
 #'   for a selected period for a chosen indicator.
 #'
-#' @param indicator \strong{Required.} A character vector with the name of
+#' @param data_set \strong{Required.} A character vector with the name of
 #'   indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
@@ -31,9 +31,9 @@
 #' get_geography_data(data_set = "alcohol-related-discharge",
 #'                    geography = "datazones")
 #' }
-get_geography_data <- function(indicator, geography, period) {
+get_geography_data <- function(data_set, geography, period) {
   # Check if all arguments were specified
-  assert_string(x = indicator,
+  assert_string(x = data_set,
                 na.ok = FALSE,
                 null.ok = FALSE)
   assert_string(x = geography,
@@ -59,6 +59,11 @@ get_geography_data <- function(indicator, geography, period) {
     period <- ""
   }
 
+  # Create a filter for geography
+  if (!missing(geography)) {
+
+  }
+
   # Check data set properties and construct relevant SPARQL calls for each
   dta_properties <- get_data_properties(data_set = data_set)
 
@@ -67,25 +72,28 @@ get_geography_data <- function(indicator, geography, period) {
     paste(paste0("?", tolower(
       make.names(dta_properties$label.value, allow_ = TRUE)
     )))
-  var_nms <- gsub(pattern = ".", replacement = "_", fixed = TRUE, x = var_nms)
+  var_nms <-
+    gsub(
+      pattern = ".",
+      replacement = "_",
+      fixed = TRUE,
+      x = var_nms
+    )
 
   # Generate where clauses
-  where_call <- paste(
+  where_vars_call <- paste(
     mapply(
       FUN = function(x, y) {
         paste("?x",
               paste(paste0("<", x, ">/rdfs:label"), y), ".")
       },
       dta_properties$property.value,
-      var_nms,
+      unlist(strsplit(x = var_nms, split = "\\s")),
       USE.NAMES = FALSE,
       SIMPLIFY = TRUE
     ),
     collapse = " "
   )
-
-  # Collapse names to insert in select statement
-  var_nms <- paste(var_nms, collapse = " ")
 
   # Replace query content
   query <- glue(query, .open = "[", .close = "]")
@@ -93,6 +101,8 @@ get_geography_data <- function(indicator, geography, period) {
   # Query Scotstat
   response <- query_scotstat(query)
 
-  # TODO: Query and corresponding mechanism
-  return(NULL)
+  # Prepare response
+  results <- parse_response(response)
+
+  return(results)
 }

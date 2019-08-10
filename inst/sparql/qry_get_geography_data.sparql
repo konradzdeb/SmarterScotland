@@ -14,5 +14,5 @@ WHERE {
 
   [where_vars_call]
 
-	[period]
+	[filter_st_time]
 }

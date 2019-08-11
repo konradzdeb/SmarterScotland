@@ -15,8 +15,11 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
+library(httptest)
+start_vignette("basic-usage")
+
 # Load package
-require("SmarterScotland")
+library("SmarterScotland")
 ```
 
 # Introduction
@@ -24,20 +27,34 @@ require("SmarterScotland")
 The following packages makes use of the SPARQL [^1] language queries in order to query the data available through the [statistics.gov.scot](http://statistics.gov.scot) portal [^2]. In effect, the app works as a wrapper for SPARQL queries providing a suite of common functionalities relevant to how the Scottish public data is being utilises.
 
 [^1]: Detailed information on the SPARQL is available through [W3C pages](https://www.w3.org/TR/rdf-sparql-query/).
-[^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government, policy papers and relevant legislation is available through [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
+[^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government that can be accessed through the [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
 
-## What data is available
+## Available Data
 
-The function `get_ToC` provides a simple mechanism generating information on the initial data that is available through the [statistics.gov.scot](http://statistics.gov.scot). For instance the query below will return a list of indicators for which the keyword *pupil* was found.
+The pacakge comes with an embeded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) enpoint. 
 
-```{r get_ToC_example1, eval=FALSE, include=FALSE}
-head(get_ToC(which = "pupil"))
+### Data sets
+
+To see the list of available data sets refer to the `available_data_sets` objects.
+
+```{r show_available_data}
+data("available_data_sets")
+knitr::kable(head(available_data_sets))
 ```
 
-A more informative approach to sourcing the relevant data relies on producing a matrix of indicators available across specific geographies. This is shown below.
+### Geographies
+
+Similar techniques can be used to obtain a list of available geographies.
+
+```{r show_available_geographies}
+data("available_data_sets")
+knitr::kable(head(available_data_sets))
+```
 
 # Sample queries
 
-## Available geographies
+The above can be used to construct sample queries.
 
-The list of available geographies can be sourced with use of the query below.
+```{r end-setup, include=FALSE}
+end_vignette()
+```

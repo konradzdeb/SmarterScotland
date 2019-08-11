@@ -7,8 +7,7 @@ Authors@R: person("Konrad", "Zdeb", email = "konrad.zdeb@me.com",
                   role = c("aut", "cre"))
 Description: This package sources the publicly available data life outcomes, 
   demographic and administrative  data from the ScotStat portal for selected indicators, 
-  geographies and time periods. In addition, the package offers basic visualisation and 
-  analytical functionalities.
+  geographies and time periods. 
 License: GPL-3
 LazyData: TRUE
 Encoding: UTF-8
@@ -25,9 +24,10 @@ LinkingTo:
   Rcpp
 RoxygenNote: 6.1.1
 Suggests: 
-    httptest,
-    knitr,
-    rmarkdown,
-    testthat (>= 2.1.0)
+    httptest  (>= 3.2.1),
+    knitr     (>= 1.24),
+    rmarkdown (>= 1.14),
+    rdflib    (>= 0.2.2),
+    testthat  (>= 2.1.0)
 VignetteBuilder: knitr
 SystemRequirements: C++11

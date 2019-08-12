@@ -32,7 +32,7 @@ get_data_properties <- function(data_set, property_values = FALSE) {
   available_data_sets <- get_available_datasets()
 
   # Get data set URI
-  data_set_uri <- available_data_sets$dataset.value[
+  data_set_uri <- available_data_sets$dataset_value[
     available_data_sets$subject == data_set]
 
   # Prepare variables to construct query

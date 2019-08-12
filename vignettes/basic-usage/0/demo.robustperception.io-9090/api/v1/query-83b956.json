@@ -1,0 +1,52 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "vector",
+        "result": [
+            {
+                "metric": {
+                    "__name__": "go_goroutines",
+                    "instance": "demo.robustperception.io:9090",
+                    "job": "prometheus"
+                },
+                "value": [
+                    1565522757,
+                    "295"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_goroutines",
+                    "instance": "demo.robustperception.io:9091",
+                    "job": "pushgateway"
+                },
+                "value": [
+                    1565522757,
+                    "122"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_goroutines",
+                    "instance": "demo.robustperception.io:9093",
+                    "job": "alertmanager"
+                },
+                "value": [
+                    1565522757,
+                    "36"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "go_goroutines",
+                    "instance": "demo.robustperception.io:9100",
+                    "job": "node"
+                },
+                "value": [
+                    1565522757,
+                    "9"
+                ]
+            }
+        ]
+    }
+}

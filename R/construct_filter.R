@@ -15,7 +15,9 @@
 #' @return A character scalar corresponding to SPARQL filter expression.
 #'
 #' @examples
-#' construct_filter(sparql_variable = "time", filter_values = c(2011, 2012))
+#' # This function is not exported from the package as it's mostly used
+#' # internally.
+#' SmarterScotland:::construct_filter(sparql_variable = "time", filter_values = c(2011, 2012))
 construct_filter <- function(sparql_variable, filter_values) {
   # Check that passed sparql variable is a scalar
   assertScalar(x = sparql_variable)

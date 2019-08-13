@@ -26,7 +26,8 @@ Suggests:
     knitr (>= 1.24),
     rdflib (>= 0.2.2),
     rmarkdown (>= 1.14),
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    spelling
 LinkingTo: 
     Rcpp
 VignetteBuilder: 
@@ -35,3 +36,4 @@ Encoding: UTF-8
 LazyData: TRUE
 RoxygenNote: 6.1.1
 SystemRequirements: C++11
+Language: en-GB

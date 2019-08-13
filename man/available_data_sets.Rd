@@ -6,7 +6,7 @@
 \title{Available data sets.}
 \format{A data frame with 270 rows and 2 variables:
 \describe{
-  \item{dataset.value"}{URI}
+  \item{dataset_value}{URI}
   \item{subject}{Shortened name}
 }}
 \source{

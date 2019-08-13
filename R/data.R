@@ -5,7 +5,7 @@
 #'
 #' @format A data frame with 270 rows and 2 variables:
 #' \describe{
-#'   \item{dataset.value}{URI}
+#'   \item{dataset_value}{URI}
 #'   \item{subject}{Shortened name}
 #' }
 #' @source \url{https://statistics.gov.scot/}
@@ -21,5 +21,8 @@
 #' @format A data frame with three columns:
 #' \describe{
 #'   \item{geography}{Geography URI}
+#'   \item{property}{Geography Property such as label or official name}
+#'   \item{value}{Property value}
 #' }
 #' @source \url{https://statistics.gov.scot/}
+"standard_geography_code_register"

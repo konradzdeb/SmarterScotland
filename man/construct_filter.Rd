@@ -26,5 +26,5 @@ For instace, arguments \code{sparql_variable = "time"} and
   \code{FILTER (?time IN ( "2011, 2012" ))}.
 }
 \examples{
-construct_filter(sparql_variable = "time", filter_values = c(2011, 2012))
+SmarterScotland:::construct_filter(sparql_variable = "time", filter_values = c(2011, 2012))
 }

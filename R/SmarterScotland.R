@@ -33,7 +33,7 @@
 #' @importFrom Rcpp sourceCpp
 #' @importFrom checkmate assert_string test_character assertScalar assert_vector
 #' @importFrom httr POST accept_json warn_for_status stop_for_status content
-#' @importFrom stats var
+#' @importFrom stats var setNames
 #' @importFrom glue glue
 #' @importFrom gtools smartbind
 "_PACKAGE"

@@ -1,0 +1,10 @@
+# Prepare geography register data
+# The query has almost no dynamic components and works by 
+# formatting geography n-triple data set. 
+
+
+# Query
+SELECT ?geography ?property ?value
+WHERE {
+    ?geography ?property ?value
+    }

@@ -11,15 +11,12 @@ A data frame.
 }
 \description{
 The function sources available goegraphies from
-  \emph{Standard Geography Code Register}.
+  \emph{Standard Geography Code Register} so it cab be loaded in the package
+  using \code{data(available_geographies)} command.
 }
 \details{
-The \emph{Standard Geography Code Register} is available in the
-  package and can be loaded using \code{data(available_geographies)} command.
-  This function can be used to refresh this data set. The geographies data
-  is not updated freauently and is fairly big so in majority of cases it is
-  likely that users will find it easier to use the data set available in the
-  package.
+For structure of the data look at
+  \code{\link[SmarterScotland]{standard_geography_code_register}}.
 }
 \examples{
 \dontrun{

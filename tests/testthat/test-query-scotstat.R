@@ -14,8 +14,7 @@ test_that(
   code =
     expect_condition(
       query_scotstat(query = "SELECTTTTT * { ?s ?p ?o } LIMIT 10"),
-      regexp = "Bad\\s[rR]equest.*",
-      class = "http_400"
+      regexp = "^(Bad\\s[rR]equest)|(Timeout\\swas\\sreached).*"
     )
 )
 

@@ -9,7 +9,8 @@
   op <- options()
   op.SmarterScotland <-
     list(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql",
-         SmarterScotland.response_check = "warn")
+         SmarterScotland.response_check = "warn",
+         SmarterScotland.geography_match_msg = TRUE)
   toset <- !(names(op.SmarterScotland) %in% names(op))
   if (any(toset)) {
     options(op.SmarterScotland[toset])

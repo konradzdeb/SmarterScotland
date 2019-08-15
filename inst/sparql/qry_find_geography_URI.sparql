@@ -1,0 +1,10 @@
+# Search label and official name of geography and tries to identify 
+# Corresponding URI
+
+SELECT DISTINCT ?geography ?property ?value
+WHERE {
+  ?geography ?property ?value
+  FILTER(regex(str(?property), "label|officialname"))
+  FILTER(?value = '[geo_name]')
+  FILTER(regex(str(?geography), "statistical-geography" ) )
+}

@@ -4,6 +4,9 @@ language: R
 cache: packages
 sudo: required
 
+r_packages:
+  - stringi
+
 r_binary_packages:
   - knitr
 

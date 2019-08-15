@@ -23,14 +23,14 @@ and interrogating data available through the
 
 ``` r
 if ("devtools" %in% rownames(installed.packages())) {
-  devtools::install_github(repo = "konradedgar/SmarterScotland", build_vignettes = TRUE)
+  devtools::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE)
 } else {
   install.packages("devtools")
-  devtools::install_github(repo ="konradedgar/SmarterScotland", build_vignettes = TRUE)
+  devtools::install_github(repo ="konradzdeb/SmarterScotland", build_vignettes = TRUE)
 }
 ```
 
-## Other projects
+## Other similar projects
 
   - [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)
   - [eurostat](https://cran.r-project.org/web/packages/eurostat/index.html)

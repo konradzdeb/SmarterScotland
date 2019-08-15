@@ -4,7 +4,7 @@
 #'   the \emph{Standard Geography Code Register}.For URI's function returned
 #'   passed values.
 #'
-#' @details The function is mostly used internally to make useing
+#' @details The functionnn is mostly used internally to make useing
 #'   \code{\link[SmarterScotland]{get_geography_data}} more user friendly. The
 #'   function can be used in isolation to convenintely get URIs for the
 #'   colloquial geography names.
@@ -25,13 +25,18 @@
 #' @export
 #'
 #' @examples
-#' match_geography_URI(geography = c("Edinburgh", "Glasgow"))
+#' find_geography_URI(geography = c("Edinburgh", "Glasgow"))
 find_geography_URI <- function(geography, database = "internal") {
+
+
   # Determine search type
   chosen_search_type <-
     match.arg(arg = database,
               choices = c("internal", "scotstat", "both"))
 
+  # Silence R CMD check warning
+  # geography <- NULL
+  value <- NULL
   f_internal_match <- function(x) {
     res_sbst <- subset.data.frame(x = standard_geography_code_register,
                                   subset = value == x,
@@ -55,6 +60,7 @@ find_geography_URI <- function(geography, database = "internal") {
               perl = TRUE)) {
       return(x)
     } else {
+      # TODO: Create remaining search methods
       res_search <- switch(search_type,
                            internal = f_internal_match(x))
     }
@@ -72,7 +78,5 @@ find_geography_URI <- function(geography, database = "internal") {
   )
   # Return value with clean names
   res <- unlist(res)
-  return(
-    res[order(res, na.last = NA)]
-  )
+  return(res[order(res, na.last = NA)])
 }

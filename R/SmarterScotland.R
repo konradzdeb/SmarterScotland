@@ -28,8 +28,8 @@
 #'   \code{stop} and \code{ignore} which respectively stop on errors or
 #'   ignore checks.}
 #'
-#' \iten{\code{SmarterScotland.geography_match_msg}}{Shows geography URIs for
-#'   which there is match in the stored data set.}
+#' \item{\code{SmarterScotland.geography_match_msg}}{Shows geography URIs for
+#'   which there is matchhh in the stored data set.}
 #' }
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE
@@ -40,3 +40,7 @@
 #' @importFrom glue glue
 #' @importFrom gtools smartbind
 "_PACKAGE"
+
+if (getRversion() >= "2.15.1") {
+  utils::globalVariables(c("standard_geography_code_register"))
+}

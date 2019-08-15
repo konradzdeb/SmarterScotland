@@ -10,6 +10,7 @@
   op.SmarterScotland <-
     list(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql",
          SmarterScotland.response_check = "warn",
+         # TODO: display warning formultiple matches
          SmarterScotland.geography_match_msg = TRUE)
   toset <- !(names(op.SmarterScotland) %in% names(op))
   if (any(toset)) {

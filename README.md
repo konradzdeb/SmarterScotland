@@ -25,7 +25,8 @@ and interrogating data available through the
 if (isFALSE("remotes" %in% rownames(installed.packages()))) {
   install.packages("remotes")
 }
-remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE, dependencies = TRUE)
+remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE,
+                        dependencies = TRUE)
 ```
 
 ## Other similar projects

@@ -3,14 +3,8 @@
 language: R
 cache: packages
 sudo: required
-
-addons:
-  apt:
-    packages:
-      - librdf0-dev
-      - libv8-dev
-      - libjq-dev
-      - libdb-dev
+latex: false
+fortran: false
 
 r_binary_packages:
   - rmarkdown
@@ -35,3 +29,11 @@ matrix:
 
     - os: osx
       warnings_are_errors: true
+
+addons:
+  apt:
+    packages:
+      - librdf0-dev
+      - libv8-dev
+      - libjq-dev
+      - libdb-dev

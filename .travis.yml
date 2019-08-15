@@ -12,6 +12,7 @@ r_binary_packages:
   - knitr
   - xml2
   - hunspell
+  - V8
 
 r_github_packages:
   - jimhester/covr

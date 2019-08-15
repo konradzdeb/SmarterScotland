@@ -22,12 +22,11 @@ and interrogating data available through the
 ## Installation
 
 ``` r
-if ("devtools" %in% rownames(installed.packages())) {
-  devtools::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE)
-} else {
-  install.packages("devtools")
-  devtools::install_github(repo ="konradzdeb/SmarterScotland", build_vignettes = TRUE)
+if (isFALSE("remotes" %in% rownames(installed.packages()))) {
+  install.packages("remotes")
 }
+remotes::install_github(repo = "konradzdeb/SmarterScotland", 
+                        build_vignettes = TRUE, dependencies = TRUE)
 ```
 
 ## Other similar projects

@@ -34,6 +34,9 @@ The following package is written in the open (both metaphorically and literally 
   which results in warning if endpoint is not accessible. Other options are
   \code{stop} and \code{ignore} which respectively stop on errors or
   ignore checks.}
+
+\item{\code{SmarterScotland.geography_match_msg}}{Shows geography URIs for
+  which there is matchhh in the stored data set.}
 }
 }
 

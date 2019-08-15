@@ -9,6 +9,7 @@ apt_packages:
 
 r_binary_packages:
   - hunspell
+  - xml2
   - rmarkdown
   - tinytex
   - knitr

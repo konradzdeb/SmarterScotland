@@ -1,0 +1,153 @@
+{
+    "head": {
+        "vars": [
+            "geography",
+            "property",
+            "value"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000065"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000065"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19001549"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19001549"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000510"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000510"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000899"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000899"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000018"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000018"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Glasgow"
+                }
+            }
+        ]
+    }
+}

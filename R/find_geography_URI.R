@@ -27,8 +27,6 @@
 #' @examples
 #' find_geography_URI(geography = c("Edinburgh", "Glasgow"))
 find_geography_URI <- function(geography, database = "internal") {
-
-
   # Determine search type
   chosen_search_type <-
     match.arg(arg = database,
@@ -42,6 +40,16 @@ find_geography_URI <- function(geography, database = "internal") {
                                   subset = value == x,
                                   select = geography)
     unname(res_sbst)
+  }
+
+  f_scotstat_match <- function(x) {
+    geo_name <- x
+    qry_search_geo <-  read_query_file(query_file("qry_find_geography_URI"))
+    qry_search_geo <- glue(qry_search_geo, .open = "[", .close = "]")
+    response <- query_scotstat(qry_search_geo)
+    results <- parse_response(response)
+    setNames(object = results$geography.value,
+             nm = make.names(results$value.value, unique = TRUE))
   }
 
   # Create search function
@@ -60,11 +68,15 @@ find_geography_URI <- function(geography, database = "internal") {
               perl = TRUE)) {
       return(x)
     } else {
-      # TODO: Create remaining search methods
-      res_search <- switch(search_type,
-                           internal = f_internal_match(x))
+      res_search <- switch(
+        search_type,
+        internal = f_internal_match(x),
+        scotstat = f_scotstat_match(x),
+        both = c(f_internal_match(x),
+                 f_scotstat_match(x))
+      )
     }
-    unique(res_search)
+    res_search
   }
 
 
@@ -76,7 +88,9 @@ find_geography_URI <- function(geography, database = "internal") {
     SIMPLIFY = TRUE,
     USE.NAMES = TRUE
   )
-  # Return value with clean names
-  res <- unlist(res)
+
+  # Return values in order
+  res <- unlist(x = res, use.names = TRUE)
+  res <- res[!duplicated(res)]
   return(res[order(res, na.last = NA)])
 }

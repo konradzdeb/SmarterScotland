@@ -15,7 +15,6 @@ test_that(desc = "Passed URI returns self", code = {
     "http://statistics.gov.scot/id/statistical-geography/S13000442",
     "http://statistics.gov.scot/id/statistical-geography/S13002136",
     "https://statistics.gov.scot/id/statistical-geography/S19001473",
-    "http://statistics.gov.scot/id/statistical-geography/S01011122",
     "http://statistics.gov.scot/id/statistical-geography/S01009180",
     "http://statistics.gov.scot/id/statistical-geography/S13000310"
   )
@@ -42,3 +41,28 @@ test_that(
     check.attributes = FALSE
   )
 )
+
+with_mock_api({
+  res_geo_search_scotstat <-
+    find_geography_URI(geography = c("Edinburgh", "Glasgow"),
+                       database = "scotstat")
+  expect_length(object = res_geo_search_scotstat,
+                n = length(unique(res_geo_search_scotstat)))
+  expect_named(object = res_geo_search_scotstat)
+})
+
+with_mock_api({
+  res_geo_search_scotstat_both <-
+    find_geography_URI(geography = c("Edinburgh", "Glasgow"),
+                       database = "both")
+  expect_length(object = res_geo_search_scotstat_both,
+                n = length(unique(res_geo_search_scotstat_both)))
+  expect_named(object = res_geo_search_scotstat_both)
+})
+
+without_internet({
+  expect_error(object = find_geography_URI(
+    geography = c("Edinburgh", "Glasgow"),
+    database = "scotstat"
+  ))
+})

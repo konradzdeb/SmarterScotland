@@ -1,0 +1,265 @@
+{
+    "head": {
+        "vars": [
+            "geography",
+            "property",
+            "value"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S37000012"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S37000012"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000059"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000059"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19001502"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19001502"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20001198"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20001198"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000550"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000550"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000855"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S19000855"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20000463"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20000463"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20000682"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S20000682"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000012"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            },
+            {
+                "geography": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S22000012"
+                },
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.data.gov.uk/def/statistical-geography#officialname"
+                },
+                "value": {
+                    "type": "literal",
+                    "value": "Edinburgh"
+                }
+            }
+        ]
+    }
+}

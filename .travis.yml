@@ -7,7 +7,6 @@ sudo: required
 addons:
   apt:
     packages:
-      - libxml2-dev
       - librdf0-dev
       - libv8-dev
       - libjq-dev
@@ -17,6 +16,7 @@ r_binary_packages:
   - rmarkdown
   - tinytex
   - knitr
+  - xml2
 
 r_github_packages:
   - jimhester/covr

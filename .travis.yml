@@ -4,17 +4,18 @@ language: R
 cache: packages
 sudo: required
 
-apt_packages:
-  - libv8-dev
+addons:
+  apt:
+    packages:
+      - librdf0-dev
+      - libv8-dev
+      - libjq-dev
+      - libdb-dev
 
 r_binary_packages:
-  - jsonld
-  - hunspell
-  - xml2
   - rmarkdown
   - tinytex
   - knitr
-  - V8
 
 matrix:
   include:

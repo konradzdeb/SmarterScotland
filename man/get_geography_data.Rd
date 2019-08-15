@@ -12,7 +12,8 @@ indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 
 \item{geography}{\strong{Required.} A character vector corresponding to
-geographies for which to derive the data this can be a common}
+geographies for which to derive the data or URI corresponding to a
+specific geography. Colloquial}
 
 \item{period}{\strong{Optional.} A character vector corresponding to period(s)
 for which the data should be sourced. This has to correspond to the
@@ -28,20 +29,16 @@ The function fetches statistical data for a selected geography
   for a selected period for a chosen indicator.
 }
 \details{
-The following function attempts to source all data
-  available for a specific geographies for the provided period. The period
-  and geography names are used in SPARQL via \code{FILTER} clause where
-  vector values are used to construct and if statement. Those values are
-  optional but it's recommended that are those are recommend as without those
-  the query would attempt to return all data set values for all period for
-  all geographies.
+The following function attempts to source all data available for
+  specific geographies for the provided period periods. Colloquial
+  geography names are matched with URI values in
+  \emph{Standard Geography Code Register}. A well known locality name like
+  \emph{Edinburgh} may match multiple URIs. Have a look at
+  \code{\link[SmarterScotland]{available_data_sets}} documentations to
+  explore data available in the package and
+  \code{\link[SmarterScotland]{get_available_datasets}} function to get most
+  recent list.
 }
-\section{Available Geographies and Data}{
-
-Helper functions and static data sets useful in identifying available
- geographies and data sets are provided in this package.
-}
-
 \examples{
 \dontrun{
 get_geography_data(data_set = "alcohol-related-discharge",

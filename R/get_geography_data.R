@@ -9,24 +9,24 @@
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
 #' @param geography \strong{Required.} A character vector corresponding to
-#'   geographies for which to derive the data this can be a common
+#'   geographies for which to derive the data or URI corresponding to a
+#'   specific geography. Colloquial
 #'
 #' @param period \strong{Optional.} A character vector corresponding to period(s)
 #'  for which the data should be sourced. This has to correspond to the
 #'  available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 #'  data for 2nd quarters of 2001 and 2010 respectively.
 #'
-#' @details The following function attempts to source all data
-#'   available for a specific geographies for the provided period. The period
-#'   and geography names are used in SPARQL via \code{FILTER} clause where
-#'   vector values are used to construct and if statement. Those values are
-#'   optional but it's recommended that are those are recommend as without those
-#'   the query would attempt to return all data set values for all period for
-#'   all geographies.
+#' @details The following function attempts to source all data available for
+#'   specific geographies for the provided period periods. Colloquial
+#'   geography names are matched with URI values in
+#'   \emph{Standard Geography Code Register}. A well known locality name like
+#'   \emph{Edinburgh} may match multiple URIs. Have a look at
+#'   \code{\link[SmarterScotland]{available_data_sets}} documentations to
+#'   explore data available in the package and
+#'   \code{\link[SmarterScotland]{get_available_datasets}} function to get most
+#'   recent list.
 #'
-#' @section Available Geographies and Data:
-#' Helper functions and static data sets useful in identifying available
-#'  geographies and data sets are provided in this package.
 #'
 #' @return A data frame.
 #'
@@ -51,17 +51,19 @@ get_geography_data <- function(data_set, geography, period) {
     read_query_file(query_file("qry_get_geography_data"))
 
   # Check if period was provided and input in the query
-  if (!missing(period)) {
+  if (missing(period)) {
+    period <- ""
+  } else {
     # Expand query with the provided period data to filter per period.
     filter_st_time <- construct_filter(sparql_variable = "time",
                                        filter_values = period)
-  } else {
-    period <- ""
   }
 
   # Create a filter for geography
-  if (!missing(geography)) {
-
+  if (missing(geography)) {
+    geography <- ""
+  } else {
+    # Get list of URIs corresponding to the matched geographies
   }
 
   # Check data set properties and construct relevant SPARQL calls for each

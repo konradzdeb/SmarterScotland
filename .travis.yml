@@ -6,17 +6,24 @@ sudo: required
 latex: false
 fortran: false
 
+addons:
+  apt:
+    packages:
+      - librdf0-dev
+      - libv8-dev
+      - libjq-dev
+      - libdb-dev
+    update: true
+
 r_binary_packages:
   - rmarkdown
   - tinytex
   - knitr
   - xml2
   - hunspell
-  - V8
 
 r_github_packages:
   - jimhester/covr
-  - ropensci/jsonld
 
 matrix:
   include:
@@ -31,11 +38,3 @@ matrix:
 
     - os: osx
       warnings_are_errors: true
-
-addons:
-  apt:
-    packages:
-      - librdf0-dev
-      - libv8-dev
-      - libjq-dev
-      - libdb-dev

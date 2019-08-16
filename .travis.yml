@@ -11,8 +11,10 @@ sudo: true
 fortran: false
 
 before_install:
+  - sudo apt-get update
   - tlmgr install index
-
+  - Rscript -e 'update.packages(ask = FALSE)'
+    
 addons:
   apt:
     sources:
@@ -35,7 +37,7 @@ r_github_packages:
   - jimhester/covr
 
 before_install:
-  Rscript -e 'update.packages(ask = FALSE)'
+  
 
 matrix:
   include:

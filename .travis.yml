@@ -41,8 +41,6 @@ matrix:
   include:
     - r: oldrel
       dist: xenial
-      r_binary_packages:
-        - jsonld
 
     - r: release
       script:

@@ -31,7 +31,6 @@ r_binary_packages:
 
 r_github_packages:
   - jimhester/covr
-  - ropensci/jsonld  
 
 matrix:
   include:
@@ -46,9 +45,6 @@ matrix:
       script:
         - R CMD build . --compact-vignettes=gs+qpdf
         - R CMD check *tar.gz --as-cran
-      before_install:
-        - sudo apt-get update
-        - tlmgr install index
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
       warnings_are_errors: true

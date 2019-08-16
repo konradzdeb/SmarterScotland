@@ -24,6 +24,7 @@ r_binary_packages:
   - rmarkdown
   - tinytex
   - knitr
+  - xml2
 
 r_github_packages:
   - jimhester/covr

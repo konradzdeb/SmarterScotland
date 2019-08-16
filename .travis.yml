@@ -17,9 +17,13 @@ before_install:
 
 addons:
   apt:
+    update: true
     sources:
       - ubuntu-toolchain-r-test
     packages:
+      - libgs-dev
+      - qpdf
+      - ghostscript
       - librdf0-dev
       - libv8-dev
       - libjq-dev
@@ -49,7 +53,5 @@ matrix:
       after_success:
         - Rscript -e 'covr::codecov()'
       warnings_are_errors: true
-    -r: devel
-     dist: xenial
     - os: osx
       warnings_are_errors: true

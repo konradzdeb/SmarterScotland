@@ -41,6 +41,8 @@ matrix:
   include:
     - r: oldrel
       dist: xenial
+      r_binary_packages:
+        - jsonld
 
     - r: release
       script:
@@ -50,6 +52,9 @@ matrix:
       after_success:
         - Rscript -e 'covr::codecov()'
       warnings_are_errors: true
+
+    -r: devel
+     dist: xenial
 
     - os: osx
       warnings_are_errors: true

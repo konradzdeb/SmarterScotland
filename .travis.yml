@@ -10,9 +10,6 @@ sudo: true
 
 fortran: false
 
-before_install:
-  - Rscript -e 'update.packages(ask = FALSE)'
-
 addons:
   apt:
     update: true
@@ -46,6 +43,7 @@ matrix:
       before_install:
         - sudo apt-get update
         - tlmgr install index
+        - Rscript -e 'update.packages(ask = FALSE)'
 
     - r: release
       script:

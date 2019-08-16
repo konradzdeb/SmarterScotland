@@ -13,12 +13,8 @@ addons:
   apt:
     packages:
       - libgs-dev
-      - qpdf
-      - ghostscript
       - librdf0-dev
       - libv8-dev
-      - libjq-dev
-      - libdb-dev
       - libxml2-dev
 
 r_binary_packages:
@@ -40,7 +36,6 @@ matrix:
       warnings_are_errors: false
     - r: release
       script:
-        - R CMD build . --compact-vignettes=gs+qpdf
         - R CMD check *tar.gz --as-cran
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'

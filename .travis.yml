@@ -35,6 +35,7 @@ r_binary_packages:
 
 r_github_packages:
   - jimhester/covr
+  - ropensci/jsonld  
 
 matrix:
   include:
@@ -44,7 +45,6 @@ matrix:
         - sudo apt-get update
         - tlmgr install index
         - Rscript -e 'update.packages(ask = FALSE)'
-        - Rscript --version
 
     - r: release
       script:
@@ -55,7 +55,7 @@ matrix:
         - sudo apt-get update
         - tlmgr install index
       after_success:
-        - Rscript -e 'covr::codecov()'
+        - Rscript -e 'covr::codecov(type = "all")'
       warnings_are_errors: true
 
     - os: osx

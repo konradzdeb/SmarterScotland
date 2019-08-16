@@ -6,7 +6,7 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 
-sudo: false
+sudo: true
 fortran: false
 
 addons:
@@ -35,11 +35,6 @@ r_github_packages:
 matrix:
   include:
     - r: oldrel
-      dist: bionic
-      r_binary_packages:
-        - jsonld  
-      before_install:
-        - Rscript -e 'update.packages(ask = FALSE)'
 
     - r: release
       script:

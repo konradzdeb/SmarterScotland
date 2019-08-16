@@ -14,5 +14,7 @@ WHERE {
 
   [where_vars_call]
 
-	[filter_st_time]
+	[filter_time]
+
+	[filter_geographies]
 }

@@ -12,6 +12,10 @@
 #'   geographies for which to derive the data or URI corresponding to a
 #'   specific geography. Colloquial
 #'
+#' @param measure \strong{Required.} A character scalar pertaining to
+#'   \emph{count} or \emph{ratio} and
+#'   # TODO: Finish this argument
+#'
 #' @param period \strong{Optional.} A character vector corresponding to period(s)
 #'  for which the data should be sourced. This has to correspond to the
 #'  available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
@@ -35,102 +39,108 @@
 #' @examples
 #' \dontrun{
 #' get_geography_data(data_set = "alcohol-related-discharge",
-#'                    geography = "datazones")
+#'                    geography = "Edinburgh")
 #' }
-get_geography_data <- function(data_set, geography, period) {
-  # Check if all arguments were specified
-  assert_string(x = data_set,
-                na.ok = FALSE,
-                null.ok = FALSE)
-  assert_string(x = geography,
-                na.ok = FALSE,
-                null.ok = FALSE)
+get_geography_data <-
+  function(data_set, geography, period, measure = "count") {
+    # Check if all arguments were specified
+    assert_string(x = data_set,
+                  na.ok = FALSE,
+                  null.ok = FALSE)
+    assert_string(x = geography,
+                  na.ok = FALSE,
+                  null.ok = FALSE)
 
-  # Import basic SPARQL query
-  query_orig <-
-    read_query_file(query_file("qry_get_geography_data"))
+    # Import basic SPARQL query
+    query_orig <-
+      read_query_file(query_file("qry_get_geography_data"))
 
-  # Check if period was provided and input in the query
-  if (missing(period)) {
-    period <- ""
-  } else {
-    # Expand query with the provided period data to filter per period.
-    filter_st_time <- construct_filter(sparql_variable = "time",
-                                       filter_values = period)
-  }
+    # Check if period was provided and input in the query
+    if (missing(period)) {
+      filter_time <- ""
+    } else {
+      # Expand query with the provided period data to filter per period.
+      filter_time <- construct_filter(sparql_variable = "time",
+                                      filter_values = period)
+    }
 
-  # Create a filter for geography
-  if (missing(geography)) {
-    geography <- ""
-  } else {
-    # Get list of URIs corresponding to the matched geographies
-  }
+    # Create a filter for geography
+    if (missing(geography)) {
+      geographies_URIs <- ""
+    } else {
+      # Get list of URIs corresponding to the matched geographies
+      geographies_URIs <- find_geography_URI(geography = geography,
+                                             database = "internal")
+      filter_geographies <-
+        construct_filter(sparql_variable = "reference_area",
+                         filter_values = geographies_URIs)
+    }
 
-  # Check data set properties and construct relevant SPARQL calls for each
-  dta_properties <- get_data_properties(data_set = data_set)
+    # Check data set properties and construct relevant SPARQL calls for each
+    dta_properties <- get_data_properties(data_set = data_set)
 
-  # Get data set URI
-  data_set_URI <-
-    paste0("<http://statistics.gov.scot/data/", data_set, ">")
+    # Get data set URI
+    data_set_URI <-
+      paste0("<http://statistics.gov.scot/data/", data_set, ">")
 
-  # Construct variable names
-  var_nms <-
-    paste(paste0("?", tolower(
-      make.names(dta_properties$label.value, allow_ = TRUE)
-    )))
-  var_nms <-
-    gsub(
-      pattern = ".",
-      replacement = "_",
-      fixed = TRUE,
-      x = var_nms
+    # Construct variable names
+    var_nms <-
+      paste(paste0("?", tolower(
+        make.names(dta_properties$label.value, allow_ = TRUE)
+      )))
+    var_nms <-
+      gsub(
+        pattern = ".",
+        replacement = "_",
+        fixed = TRUE,
+        x = var_nms
+      )
+
+    # Generate where clauses
+    where_vars_call <- paste(
+      mapply(
+        FUN = function(x, y) {
+          # If desired force x to return a label
+          if (grepl(
+            pattern = paste("refArea", "unitMeasure", "refPeriod", sep = "|"),
+            x = x,
+            ignore.case = TRUE
+          )) {
+            x <- paste0("<", x, ">/rdfs:label")
+          } else {
+            x <- paste0("<", x, ">")
+          }
+          paste("?x", x, y, ".")
+        },
+        dta_properties$property.value,
+        var_nms,
+        USE.NAMES = FALSE,
+        SIMPLIFY = TRUE
+      ),
+      collapse = " "
     )
 
-  # Generate where clauses
-  where_vars_call <- paste(
-    mapply(
-      FUN = function(x, y) {
-        # If desired force x to return a label
-        if (grepl(
-          pattern = paste("refArea", "unitMeasure", "refPeriod", sep = "|"),
-          x = x,
-          ignore.case = TRUE
-        )) {
-          x <- paste0("<", x, ">/rdfs:label")
-        } else {
-          x <- paste0("<", x, ">")
-        }
-        paste("?x", x, y, ".")
-      },
-      dta_properties$property.value,
-      var_nms,
-      USE.NAMES = FALSE,
-      SIMPLIFY = TRUE
-    ),
-    collapse = " "
-  )
+    # Replace ?data_set with the call to URI
+    where_vars_call <-
+      sub(
+        pattern = "?data_set",
+        replacement = data_set_URI,
+        x = where_vars_call,
+        fixed = TRUE
+      )
 
-  # Replace ?data_set with the call to URI
-  where_vars_call <-
-    sub(
-      pattern = "?data_set",
-      replacement = data_set_URI,
-      x = where_vars_call,
-      fixed = TRUE
-    )
+    # Collapse variable names for SELECT statement
+    var_nms <- paste(var_nms, collapse = " ")
 
-  # Collapse variable names for SELECT statement
-  var_nms <- paste(var_nms, collapse = " ")
+    # Replace query content
+    query <- glue(query_orig, .open = "[", .close = "]")
 
-  # Replace query content
-  query <- glue(query_orig, .open = "[", .close = "]")
+    # Query Scotstat
+    response <- query_scotstat(query)
 
-  # Query Scotstat
-  response <- query_scotstat(query)
+    # Prepare response
+    results <- parse_response(response)
 
-  # Prepare response
-  results <- parse_response(response)
-
-  # Return query results
-  return(results)
-}
+    # Return query results
+    return(results)
+  }

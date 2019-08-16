@@ -41,7 +41,6 @@ matrix:
   include:
     - r: oldrel
       dist: xenial
-
     - r: release
       script:
         - R CMD build . --compact-vignettes=gs+qpdf
@@ -50,9 +49,7 @@ matrix:
       after_success:
         - Rscript -e 'covr::codecov()'
       warnings_are_errors: true
-
     -r: devel
      dist: xenial
-
     - os: osx
       warnings_are_errors: true

@@ -17,14 +17,6 @@ addons:
       - libv8-dev
       - libxml2-dev
 
-r_binary_packages:
-  - rmarkdown
-  - tinytex
-  - knitr
-  - xml2
-  - hunspell
-  - V8
-
 r_github_packages:
   - jimhester/covr
 

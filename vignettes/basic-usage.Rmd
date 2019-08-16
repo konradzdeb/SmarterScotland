@@ -29,7 +29,7 @@ The following packages makes use of the SPARQL [^1] language queries in order to
 
 ## Available Data
 
-The pacakge comes with an embeded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) enpoint. 
+The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. 
 
 ### Data sets
 

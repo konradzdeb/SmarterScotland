@@ -1,6 +1,6 @@
 #' @title Query Scotstat Repository
 #'
-#' @description Send query to Scotat data.
+#' @description Send query to ScotStat data.
 #'
 #' @details Query Scotstat data using via \code{\link[httr]{POST}} function.
 #'

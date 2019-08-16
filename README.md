@@ -12,6 +12,8 @@ status](https://ci.appveyor.com/api/projects/status/i3mfbvchkyah6gmf?svg=true)](
 [![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradzdeb/SmarterScotland)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/SmarterScotland)](https://cran.r-project.org/package=SmarterScotland)
+[![Codacy
+Badge](https://api.codacy.com/project/badge/Grade/6f71a0627210489e9a68157a85a4a92b)](https://www.codacy.com/app/konradzdeb/SmarterScotland?utm_source=github.com&utm_medium=referral&utm_content=konradzdeb/SmarterScotland&utm_campaign=Badge_Grade)
 
 ## Overview
 
@@ -32,4 +34,4 @@ remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = T
 ## Other similar projects
 
   - [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)
-  - [eurostat](https://cran.r-project.org/web/packages/eurostat/index.html)
+  - [Eurostat](https://cran.r-project.org/web/packages/eurostat/index.html)

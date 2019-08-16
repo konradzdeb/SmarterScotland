@@ -7,8 +7,8 @@
 #'   a data frame accounting for the available data sets, timespan and
 #'   geographies.
 #'
-#' @param which Defults to \code{NULL} and returns all subjects, a character
-#'   value is passed to \code{FILTER} in SPARQL query performing case insesitive
+#' @param which Defaults to \code{NULL} and returns all subjects, a character
+#'   value is passed to \code{FILTER} in SPARQL query performing case insensitive
 #'   regex on filter categories.
 #'
 #' @return
@@ -25,7 +25,7 @@
 #' head(get_ToC(which = "pupil"), n = 5)
 #' }
 get_ToC <- function(which = NULL) {
-    # Depending on the which value use defult or query with regex
+    # Depending on the which value use default or query with regex
     if (missing(which)) {
       query <- read_query_file(query_file("qry_get_topics"))
     } else {

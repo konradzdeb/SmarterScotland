@@ -1,7 +1,7 @@
 #' @title Handy utility functions
 #'
 #' @description Small and handy utility functions usually not useful outside
-#'   the package enviornment.
+#'   the package environment.
 #'
 #' @details The functions are used to find and import query files saved as
 #'   \code{*.sparql} files. \code{\link{query_file}} is always used within

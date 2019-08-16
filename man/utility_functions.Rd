@@ -17,7 +17,7 @@ query_file(query_file_name)
 }
 \description{
 Small and handy utility functions usually not useful outside
-  the package enviornment.
+  the package environment.
 }
 \details{
 The functions are used to find and import query files saved as

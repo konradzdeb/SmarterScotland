@@ -4,22 +4,22 @@
 #'   the \emph{Standard Geography Code Register}.For URI's function returned
 #'   passed values.
 #'
-#' @details The functionnn is mostly used internally to make useing
+#' @details The function is mostly used internally to make using
 #'   \code{\link[SmarterScotland]{get_geography_data}} more user friendly. The
-#'   function can be used in isolation to convenintely get URIs for the
+#'   function can be used in isolation to conveniently get URIs for the
 #'   colloquial geography names.
 #'
 #' @param geography A character vector of geography names. URIs starting with
 #'   \code{http} are returned as such without searching the data set.
 #'
-#' @param database Can be one of the following \emph{internal, scotstat, both.}
-#'   Dafults to \emph{internal} that reflects an exteract of Standard Geography
-#'   Code Register. Option \emph{scotstat} searches acroess the
+#' @param database Can be one of the following \emph{internal, ScotStat, both.}
+#'   Defaults to \emph{internal} that reflects an extract of Standard Geography
+#'   Code Register. Option \emph{ScotStat} searches across the
 #'   \url{https://statistics.gov.scot/}.
 #'
 #' @return A named character vector of unique geography URIs. For multiple
 #'   matches names will be numbered - string \emph{'Edinburgh'} will
-#'   match multiple geographies that will be naned
+#'   match multiple geographies that will be named
 #'   \emph{'Edinburgh1', 'Edinburgh2', ...}
 #'
 #' @export

@@ -4,7 +4,7 @@
 \alias{get_geography_data}
 \title{Get Geography Data}
 \usage{
-get_geography_data(data_set, geography, period)
+get_geography_data(data_set, geography, period, measure = "count")
 }
 \arguments{
 \item{data_set}{\strong{Required.} A character vector with the name of
@@ -19,6 +19,10 @@ specific geography. Colloquial}
 for which the data should be sourced. This has to correspond to the
 available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 data for 2nd quarters of 2001 and 2010 respectively.}
+
+\item{measure}{\strong{Required.} A character scalar pertaining to
+\emph{count} or \emph{ratio} and
+# TODO: Finish this argument}
 }
 \value{
 A data frame.

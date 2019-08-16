@@ -1,6 +1,6 @@
 #' @title Get Available Geographies
 #'
-#' @description The function sources available goegraphies from
+#' @description The function sources available geographies from
 #'   \emph{Standard Geography Code Register} so it cab be loaded in the package
 #'   using \code{data(available_geographies)} command.
 #'

@@ -24,11 +24,11 @@ library("SmarterScotland")
 # Introduction 
 
 
-# Explorig [statistics.gov.scot](http://statistics.gov.scot)
+# Exploring [statistics.gov.scot](http://statistics.gov.scot)
 
 ## Data sets
 
-Addittonally, the function `get_ToC` provides a simple mechanism generating information on the initial data that is available through the [statistics.gov.scot](http://statistics.gov.scot). For instance the query below will return a list of indicators for which the keyword *pupil* was found. Expectdely, the returned data sets will mostly correspond to educational attainment. The query sources available data via SPARQL end point and does not rely on stored data sets.
+Additionally, the function `get_ToC` provides a simple mechanism generating information on the initial data that is available through the [statistics.gov.scot](http://statistics.gov.scot). For instance the query below will return a list of indicators for which the keyword *pupil* was found. Expectedly, the returned data sets will mostly correspond to educational attainment. The query sources available data via SPARQL end point and does not rely on stored data sets.
 
 ```{r get_available_data_example}
 available_data_education <- get_available_datasets(pattern = "pupil")

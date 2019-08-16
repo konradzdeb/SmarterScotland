@@ -13,7 +13,7 @@ query_scotstat(query)
 A response object derived via \code{\link[httr]{POST}} function.
 }
 \description{
-Send query to Scotat data.
+Send query to ScotStat data.
 }
 \details{
 Query Scotstat data using via \code{\link[httr]{POST}} function.

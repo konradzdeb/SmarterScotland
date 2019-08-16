@@ -21,7 +21,7 @@ This query derives \code{SPARQL} filter statement using the
   \code{IN} syntax.
 }
 \details{
-For instace, arguments \code{sparql_variable = "time"} and
+For instance, arguments \code{sparql_variable = "time"} and
   \code{filter_values = c(2011, 2012)} will result in a expression
   \code{FILTER (?time IN ( "2011, 2012" ))}.
 }

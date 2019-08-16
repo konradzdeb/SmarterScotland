@@ -27,7 +27,7 @@ The following package is written in the open (both metaphorically and literally 
 \describe{
 \item{\code{SmarterScotland.endpoint}}{Defaults to
   \code{http://statistics.gov.scot/sparql}. If need can be changed by
-  modyfying \code{options(SmarterScotland.endpoint = "new_value")}. It's
+  modifying \code{options(SmarterScotland.endpoint = "new_value")}. It's
   highly unlikely that you will ever need to change this option.}
 
 \item{\code{SmarterScotland.response_check}}{Defaults to \code{warn}
@@ -36,7 +36,7 @@ The following package is written in the open (both metaphorically and literally 
   ignore checks.}
 
 \item{\code{SmarterScotland.geography_match_msg}}{Shows geography URIs for
-  which there is matchhh in the stored data set.}
+  which there is match in the stored data set.}
 }
 }
 

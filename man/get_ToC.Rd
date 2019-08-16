@@ -7,8 +7,8 @@
 get_ToC(which = NULL)
 }
 \arguments{
-\item{which}{Defults to \code{NULL} and returns all subjects, a character
-value is passed to \code{FILTER} in SPARQL query performing case insesitive
+\item{which}{Defaults to \code{NULL} and returns all subjects, a character
+value is passed to \code{FILTER} in SPARQL query performing case insensitive
 regex on filter categories.}
 }
 \value{

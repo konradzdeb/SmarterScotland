@@ -1,26 +1,28 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+language: r
 
-language: R
-cache: packages
-sudo: required
-latex: false
+cache: 
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+  packages: true
+
+sudo: true
+
 fortran: false
 
-addons:
-  apt:
-    packages:
-      - librdf0-dev
-      - libv8-dev
-      - libjq-dev
-      - libdb-dev
-    update: true
+before_install:
+  - tlmgr install index
+
+apt-packages:
+  - librdf0-dev
+  - libv8-dev
+  - libjq-dev
+  - libdb-dev
 
 r_binary_packages:
   - rmarkdown
   - tinytex
   - knitr
-  - xml2
-  - hunspell
 
 r_github_packages:
   - jimhester/covr

@@ -1,13 +1,15 @@
 #' @title SmarterScotland: Accessing opendata.gov.scot
-#'   \if{html}{\figure{logo.png}{options: alt="SmarterScotland logo" align="right"}}
-#'   \if{latex}{\figure{logo.png}{options: right}}
+#'
 #' @description SmarterScotland provides a suite of convenience functions
 #'   facilitating sourcing data from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot} portal.
 #'
+#'  \if{html}{\figure{logo.png}{options: alt="Smarter Scotland Logo" align="right"}}
+#'
 #' @details For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}.
 #'   For other usage, including charting and more advanced functionalities see
 #'  \code{vignette("other-functions", package = "SmarterScotland")}.
+#'
 #'
 #' @author \itemize{
 #' \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@@me.com}

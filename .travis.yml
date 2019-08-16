@@ -1,6 +1,6 @@
 language: r
 
-cache: 
+cache:
   directories:
     - $TRAVIS_BUILD_DIR/packrat/src
     - $TRAVIS_BUILD_DIR/packrat/lib
@@ -14,7 +14,7 @@ before_install:
   - sudo apt-get update
   - tlmgr install index
   - Rscript -e 'update.packages(ask = FALSE)'
-    
+
 addons:
   apt:
     sources:
@@ -24,13 +24,13 @@ addons:
       - libv8-dev
       - libjq-dev
       - libdb-dev
-      - libxml2-dev  
+      - libxml2-dev
 
 r_binary_packages:
   - rmarkdown
   - tinytex
   - knitr
-  - xml2  
+  - xml2
   - hunspell
   - V8
 
@@ -38,7 +38,7 @@ r_github_packages:
   - jimhester/covr
 
 before_install:
-  
+
 
 matrix:
   include:
@@ -46,6 +46,9 @@ matrix:
       dist: xenial
 
     - r: release
+      script:
+        - R CMD build . --compact-vignettes=gs+qpdf
+        - R CMD check *tar.gz --as-cran
       dist: xenial
       after_success:
         - Rscript -e 'covr::codecov()'

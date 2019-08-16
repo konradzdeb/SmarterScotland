@@ -41,6 +41,8 @@ matrix:
   include:
     - r: oldrel
       dist: bionic
+      r_binary_packages:
+        - jsonld  
       before_install:
         - sudo apt-get update
         - tlmgr install index

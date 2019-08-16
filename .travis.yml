@@ -18,6 +18,7 @@ apt-packages:
   - libv8-dev
   - libjq-dev
   - libdb-dev
+  - libxml2-dev  
 
 r_binary_packages:
   - rmarkdown

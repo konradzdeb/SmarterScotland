@@ -40,7 +40,7 @@ r_github_packages:
 matrix:
   include:
     - r: oldrel
-      dist: xenial
+      dist: bionic
       before_install:
         - sudo apt-get update
         - tlmgr install index
@@ -50,7 +50,6 @@ matrix:
       script:
         - R CMD build . --compact-vignettes=gs+qpdf
         - R CMD check *tar.gz --as-cran
-      dist: xenial
       before_install:
         - sudo apt-get update
         - tlmgr install index

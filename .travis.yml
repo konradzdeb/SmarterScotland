@@ -13,12 +13,16 @@ fortran: false
 before_install:
   - tlmgr install index
 
-apt-packages:
-  - librdf0-dev
-  - libv8-dev
-  - libjq-dev
-  - libdb-dev
-  - libxml2-dev  
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - librdf0-dev
+      - libv8-dev
+      - libjq-dev
+      - libdb-dev
+      - libxml2-dev  
 
 r_binary_packages:
   - rmarkdown

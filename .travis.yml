@@ -6,15 +6,11 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 
-sudo: true
-
+sudo: false
 fortran: false
 
 addons:
   apt:
-    update: true
-    sources:
-      - ubuntu-toolchain-r-test
     packages:
       - libgs-dev
       - qpdf
@@ -44,8 +40,6 @@ matrix:
       r_binary_packages:
         - jsonld  
       before_install:
-        - sudo apt-get update
-        - tlmgr install index
         - Rscript -e 'update.packages(ask = FALSE)'
 
     - r: release

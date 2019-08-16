@@ -34,8 +34,10 @@ r_github_packages:
 
 matrix:
   include:
+    - r: 3.4
+      warnings_are_errors: false
     - r: oldrel
-
+      warnings_are_errors: false
     - r: release
       script:
         - R CMD build . --compact-vignettes=gs+qpdf
@@ -43,6 +45,5 @@ matrix:
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
       warnings_are_errors: true
-
     - os: osx
       warnings_are_errors: true

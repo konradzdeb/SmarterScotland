@@ -19,6 +19,9 @@ NULL
 #'   underscore. Collections of special characters are replaced with one
 #'   underscore character.
 make_SPARQL_variable_names <- function(x) {
+  assert_character(x = x,
+                   min.chars = 4,
+                   all.missing = FALSE)
   x <- gsub(pattern = "[^[:alnum:]]|[[:digit:]]+",
             replacement = "_",
             x = tolower(x))
@@ -47,8 +50,15 @@ make_SPARQL_variable_names <- function(x) {
 #'   \code{/rdfs:label}. This behaviour can be controlled via
 #'   \code{SmarterScotland.suffix_rdf} option.
 create_URI <- function(x) {
+
+  assert_character(x = x,
+                   min.chars = 4,
+                   all.missing = FALSE)
+
   suffix_rdf <- getOption("SmarterScotland.suffix_rdf")
+
   x <- trimws(x = x)
+
   missing_prefix <-
     grep(
       pattern = "^http",

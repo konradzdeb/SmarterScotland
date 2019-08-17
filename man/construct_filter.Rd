@@ -4,7 +4,7 @@
 \alias{construct_filter}
 \title{Construct SPARQL filter}
 \usage{
-construct_filter(sparql_variable, filter_values)
+construct_filter(sparql_variable, filter_values, use_str = FALSE)
 }
 \arguments{
 \item{sparql_variable}{A character scalar to be used in \code{IN} clause,
@@ -12,6 +12,9 @@ without ?.}
 
 \item{filter_values}{A vector of filter values to be verified against in the
 filter statement.}
+
+\item{use_str}{A logical, defaults to \code{FALSE}, if \code{TRUE} it
+produces \code{str(?variable)} instead of \code{?variable}.}
 }
 \value{
 A character scalar corresponding to SPARQL filter expression.

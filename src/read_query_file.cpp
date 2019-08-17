@@ -4,7 +4,7 @@
 #include <regex>
 #include <Rcpp.h>
 
-//' @rdname utility_functions
+//' @rdname query_file_functions
 //' @param file_path File path string to source
 //' @section read_query_file: C++ fast cleaner for query text file removing
 //'   comments and line breaks.

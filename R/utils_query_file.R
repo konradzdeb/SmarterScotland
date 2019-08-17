@@ -1,4 +1,4 @@
-#' @title Handy utility functions
+#' @title Query File Utilities
 #'
 #' @description Small and handy utility functions usually not useful outside
 #'   the package environment.
@@ -7,10 +7,10 @@
 #'   \code{*.sparql} files. \code{\link{query_file}} is always used within
 #'   \code{\link{read_query_file}}.
 #'
-#' @name utility_functions
+#' @name query_file_functions
 NULL
 
-#' @rdname utility_functions
+#' @rdname query_file_functions
 #' @section query_file: Wrapper for the \code{\link[base]{system.file}} function
 #'   passing path to a given query file and taking care of potentially missing
 #'   extensions.

@@ -32,6 +32,10 @@
 #'
 #' \item{\code{SmarterScotland.geography_match_msg}}{Shows geography URIs for
 #'   which there is match in the stored data set.}
+#'
+#'  \item{\code{SmarterScotland.suffix_rdf}}{When constructing URI appends
+#'  \code{/rdfs:label} to selected strings. Defaults to \code{TRUE}; most likely
+#'  you don't have a need to change this.}
 #' }
 #'
 #' @useDynLib SmarterScotland, .registration = TRUE

@@ -7,13 +7,13 @@
 get_geography_data(data_set, geography, period, measure = "count")
 }
 \arguments{
-\item{data_set}{\strong{Required.} A character vector with the name of
+\item{data_set}{\strong{Required.} A character scalar with the name of
 indicator to be sourced from the
 \href{http://statistics.gov.scot}{statistics.gov.scot}.}
 
 \item{geography}{\strong{Required.} A character vector corresponding to
 geographies for which to derive the data or URI corresponding to a
-specific geography. Colloquial}
+specific geography.}
 
 \item{period}{\strong{Optional.} A character vector corresponding to period(s)
 for which the data should be sourced. This has to correspond to the
@@ -21,8 +21,8 @@ available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 data for 2nd quarters of 2001 and 2010 respectively.}
 
 \item{measure}{\strong{Required.} A character scalar pertaining to
-\emph{count} or \emph{ratio} and
-# TODO: Finish this argument}
+measure to be sources, usually \emph{count} or \emph{ratio}. Defaults to
+\emph{count}.}
 }
 \value{
 A data frame.

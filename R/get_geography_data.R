@@ -4,17 +4,17 @@
 #'   framework from: \href{http://statistics.gov.scot}{statistics.gov.scot}
 #'   for a selected period for a chosen indicator.
 #'
-#' @param data_set \strong{Required.} A character vector with the name of
+#' @param data_set \strong{Required.} A character scalar with the name of
 #'   indicator to be sourced from the
 #'   \href{http://statistics.gov.scot}{statistics.gov.scot}.
 #'
 #' @param geography \strong{Required.} A character vector corresponding to
 #'   geographies for which to derive the data or URI corresponding to a
-#'   specific geography. Colloquial
+#'   specific geography.
 #'
 #' @param measure \strong{Required.} A character scalar pertaining to
-#'   \emph{count} or \emph{ratio} and
-#'   # TODO: Finish this argument
+#'   measure to be sources, usually \emph{count} or \emph{ratio}. Defaults to
+#'   \emph{count}.
 #'
 #' @param period \strong{Optional.} A character vector corresponding to period(s)
 #'  for which the data should be sourced. This has to correspond to the
@@ -84,17 +84,7 @@ get_geography_data <-
       paste0("<http://statistics.gov.scot/data/", data_set, ">")
 
     # Construct variable names
-    var_nms <-
-      paste(paste0("?", tolower(
-        make.names(dta_properties$label.value, allow_ = TRUE)
-      )))
-    var_nms <-
-      gsub(
-        pattern = ".",
-        replacement = "_",
-        fixed = TRUE,
-        x = var_nms
-      )
+    var_nms <- make_SPARQL_variable_names(x = dta_properties$label.value)
 
     # Generate where clauses
     where_vars_call <- paste(

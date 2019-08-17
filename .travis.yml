@@ -33,5 +33,6 @@ matrix:
         - Rscript -e 'covr::codecov(type = "all")'
       warnings_are_errors: true
     - r: devel
+      warnings_are_errors: false
     - os: osx
       warnings_are_errors: true

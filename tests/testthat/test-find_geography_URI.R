@@ -42,6 +42,12 @@ test_that(
   )
 )
 
+test_that(desc = "Message for multiple URIs",
+          code = expect_message(
+            object = find_geography_URI(geography = "Edinburgh", database = "internal"),
+            regexp = "Geography\\s'Edinburgh.*"
+          ))
+
 with_mock_api({
   res_geo_search_scotstat <-
     find_geography_URI(geography = c("Edinburgh", "Glasgow"),

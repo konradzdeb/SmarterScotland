@@ -10,7 +10,8 @@
          SmarterScotland.response_check = "warn",
          # TODO: display warning formultiple matches
          SmarterScotland.geography_match_msg = TRUE,
-         SmarterScotland.suffix_rdf = TRUE
+         # FIXME: rdfs suffixs should be used when possble
+         SmarterScotland.suffix_rdf = FALSE
          )
   toset <- !(names(op.SmarterScotland) %in% names(op))
   if (any(toset)) {

@@ -44,12 +44,16 @@ find_geography_URI <- function(geography, database = "internal") {
 
   f_scotstat_match <- function(x) {
     geo_name <- x
-    qry_search_geo <-  read_query_file(query_file("qry_find_geography_URI"))
-    qry_search_geo <- glue(qry_search_geo, .open = "[", .close = "]")
+    qry_search_geo <-
+      read_query_file(query_file("qry_find_geography_URI"))
+    qry_search_geo <-
+      glue(qry_search_geo, .open = "[", .close = "]")
     response <- query_scotstat(qry_search_geo)
     results <- parse_response(response)
-    setNames(object = results$geography.value,
-             nm = make.names(results$value.value, unique = TRUE))
+    setNames(
+      object = results$geography.value,
+      nm = make.names(results$value.value, unique = TRUE)
+    )
   }
 
   # Create search function
@@ -75,6 +79,11 @@ find_geography_URI <- function(geography, database = "internal") {
         both = c(f_internal_match(x),
                  f_scotstat_match(x))
       )
+    }
+    if (getOption("SmarterScotland.geography_match_msg") &&
+        any(dim(res_search) > 1,
+            length(res_search) > 1)) {
+      message("Geography '", x, "' matched multiple URIs")
     }
     res_search
   }

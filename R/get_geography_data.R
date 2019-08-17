@@ -84,25 +84,38 @@ get_geography_data <-
       paste0("<http://statistics.gov.scot/data/", data_set, ">")
 
     # Construct variable names
-    var_nms <- make_SPARQL_variable_names(x = dta_properties$label.value)
+    var_nms <-
+      make_SPARQL_variable_names(x = dta_properties$label.value)
+
+    # Selected properties
+    selected_properties <- sapply(
+      X = dta_properties$property.value,
+      FUN = function(x) {
+        if (grepl(pattern = "measure-properties",x = x)) {
+          if (grepl(pattern = measure, x = x)) {
+            x
+          } else {
+            NULL
+          }
+        } else {
+          x
+        }
+      }
+    )
+
+    indx_measure_remove <- which(sapply(selected_properties, is.null))
+    var_nms <- var_nms[-indx_measure_remove]
+
+    selected_properties <- Filter(Negate(is.null), selected_properties)
 
     # Generate where clauses
     where_vars_call <- paste(
       mapply(
         FUN = function(x, y) {
-          # If desired force x to return a label
-          if (grepl(
-            pattern = paste("refArea", "unitMeasure", "refPeriod", sep = "|"),
-            x = x,
-            ignore.case = TRUE
-          )) {
-            x <- paste0("<", x, ">/rdfs:label")
-          } else {
-            x <- paste0("<", x, ">")
-          }
+          x <- create_URI(x)
           paste("?x", x, y, ".")
         },
-        dta_properties$property.value,
+        selected_properties,
         var_nms,
         USE.NAMES = FALSE,
         SIMPLIFY = TRUE

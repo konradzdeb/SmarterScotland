@@ -16,7 +16,7 @@
   if (any(toset)) {
     options(op.SmarterScotland[toset])
   }
-# TODO: conditionally import isFALSE from backports
+  backports::import(pkgname, c("isFALSE"))
 }
 
 # Clean up C++ code

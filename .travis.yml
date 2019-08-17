@@ -21,6 +21,7 @@ r_github_packages:
   - jimhester/covr
 
 matrix:
+  fast_finish: true
   include:
     - r: 3.4
       warnings_are_errors: false

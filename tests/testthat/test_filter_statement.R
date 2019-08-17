@@ -23,10 +23,20 @@ test_that(
 )
 
 test_that(
-  desc = "Content is OK",
+  desc = "Filter content is OK",
   code = expect_equal(
     object = construct_filter(sparql_variable = "time",
                               filter_values = 2001:2002),
     expected = "FILTER (?time IN ('2001', '2002'))"
+  )
+)
+
+test_that(
+  desc = "Filter content contains str",
+  code = expect_equal(
+    object = construct_filter(sparql_variable = "time",
+                              filter_values = 2001:2002,
+                              use_str = TRUE),
+    expected = "FILTER (str(?time) IN ('2001', '2002'))"
   )
 )

@@ -16,6 +16,7 @@
   if (any(toset)) {
     options(op.SmarterScotland[toset])
   }
+# TODO: conditionally import isFALSE from backports
 }
 
 # Clean up C++ code

@@ -71,6 +71,7 @@ get_geography_data <-
       # Get list of URIs corresponding to the matched geographies
       geographies_URIs <- find_geography_URI(geography = geography,
                                              database = "internal")
+      # FIXME: check if needed to use str()
       filter_geographies <-
         construct_filter(sparql_variable = "reference_area",
                          filter_values = geographies_URIs)

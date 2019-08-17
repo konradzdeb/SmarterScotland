@@ -36,4 +36,8 @@ matrix:
     - r: devel
       warnings_are_errors: false
     - os: osx
+      r:  release
+      warnings_are_errors: true
+    - os: osx
+      r:  oldrel
       warnings_are_errors: true

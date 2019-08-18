@@ -31,7 +31,7 @@ matrix:
       script:
         - R CMD build .
         - R CMD check *.tar.gz --as-cran
-        - PKG_TARBALL=$(ls -1t *.tar.gz | head -n 1)
+        - PKG_TARBALL=$(ls -d -1t "$PWD/"*.tar.gz | head -n 1)
         - echo $PKG_TARBALL
       after_success: Rscript -e 'covr::codecov(type = "all")'
       before_deploy:
@@ -40,7 +40,7 @@ matrix:
         provider: script
         skip_cleanup: true
         keep_history: true
-        script: Rscript -e 'pkgdown::deploy_site_github(tarball = Sys.getenv("PKG_TARBALL"), verbose = TRUE)'
+        script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false

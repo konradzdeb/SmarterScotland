@@ -29,8 +29,8 @@ matrix:
       warnings_are_errors: false
     - r: release
       script:
-        - R CMD check *tar.gz --as-cran
         - R CMD build . --no-build-vignettes --no-manual
+        - R CMD check *.tar.gz --as-cran
         - PKG_TARBALL=$(ls -1t *.tar.gz | head -n 1)
         - echo $PKG_TARBAL
       after_success: Rscript -e 'covr::codecov(type = "all")'

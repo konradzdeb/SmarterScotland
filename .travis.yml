@@ -73,7 +73,7 @@ matrix:
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
       warnings_are_errors: true
-      - r: devel
+    - r: devel
       warnings_are_errors: false
     - os: osx
       r:  release

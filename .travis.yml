@@ -63,8 +63,10 @@ matrix:
   fast_finish: true
   include:
     - r: 3.4
+      env: BUILD_PKGDOWN=FALSE
       warnings_are_errors: false
     - r: oldrel
+      env: BUILD_PKGDOWN=FALSE
       warnings_are_errors: false
     - r: release
       script:
@@ -72,12 +74,16 @@ matrix:
         - R CMD check *.tar.gz --as-cran
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
+        - env: BUILD_PKGDOWN=FALSE
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false
+      env: BUILD_PKGDOWN=FALSE
     - os: osx
       r:  release
       warnings_are_errors: true
+      env: BUILD_PKGDOWN=FALSE
     - os: osx
       r:  oldrel
       warnings_are_errors: true
+      env: BUILD_PKGDOWN=FALSE

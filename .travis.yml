@@ -42,7 +42,9 @@ matrix:
         keep_history: true
         local-dir: docs
         on:
-          branch: gh-pages
+          branches:
+            only:
+              - gh-pages
         script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
       warnings_are_errors: true
     - r: devel

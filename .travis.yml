@@ -43,7 +43,7 @@ matrix:
         keep_history: false
         on:
           branch:
-            - gh-pages
+            - master
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false

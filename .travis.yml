@@ -41,7 +41,7 @@ matrix:
         skip_cleanup: true
         keep_history: true
         script:
-          - Rscript --verbose -e 'Sys.getenv("PKG_TARBALL")'
+          - Rscript -e 'Sys.getenv("PKG_TARBALL")'
           - Rscript -e 'pkgdown::deploy_site_github(tarball = Sys.getenv("PKG_TARBALL"), verbose = TRUE)'
       warnings_are_errors: true
     - r: devel

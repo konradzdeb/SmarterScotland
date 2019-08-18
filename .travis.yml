@@ -35,6 +35,7 @@ matrix:
       before_deploy:
         - Rscript -e 'remotes::install_cran("pkgdown")'
         - R CMD INSTALL .
+        - export PKG_TARBALL=$(Rscript -e 'pkg <- devtools::as.package("."); cat(paste0(pkg$package,"_",pkg$version,".tar.gz"))')
       deploy:
         provider: script
         script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'

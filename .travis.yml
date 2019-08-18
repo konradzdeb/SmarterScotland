@@ -19,6 +19,7 @@ addons:
 
 r_github_packages:
   - jimhester/covr
+  - r-lib/pkgdown
 
 matrix:
   fast_finish: true
@@ -33,16 +34,16 @@ matrix:
         - R CMD check *.tar.gz --as-cran
         - PKG_TARBALL=$(ls -d -1t "$PWD/"*.tar.gz | head -n 1)
         - echo $PKG_TARBALL
-      after_success: Rscript -e 'covr::codecov(type = "all")'
-      before_deploy:
-        - Rscript -e 'remotes::install_cran("pkgdown")'
-        - Rscript --verbose -e 'Sys.getenv("PKG_TARBALL")'
+      after_success:
+        - Rscript -e 'covr::codecov(type = "all")'
+        - Rscript -e 'pkgdown::build_site()'
       deploy:
-        provider: script
+        provider: pages
         skip_cleanup: true
-        keep_history: true
-        script:
-          - Rscript -e 'pkgdown::deploy_site_github(tarball = Sys.getenv("PKG_TARBALL"), verbose = TRUE)'
+        keep_history: false
+        on:
+          branch:
+            - gh-pages
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false

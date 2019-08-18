@@ -31,12 +31,13 @@ after_script: R -q -e 'tic::after_script()'
 language: r
 sudo: false
 cache: packages
-latex: false
+latex: true
 
 #env
 env:
   global:
   - MAKEFLAGS="-j 2"
+  - BUILD_PKGDOWN=FALSE
 
 cache:
   directories:
@@ -44,8 +45,6 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 
-sudo: true
-fortran: false
 
 addons:
   apt:
@@ -63,10 +62,8 @@ matrix:
   fast_finish: true
   include:
     - r: 3.4
-      env: BUILD_PKGDOWN=FALSE
       warnings_are_errors: false
     - r: oldrel
-      env: BUILD_PKGDOWN=FALSE
       warnings_are_errors: false
     - r: release
       script:
@@ -74,16 +71,13 @@ matrix:
         - R CMD check *.tar.gz --as-cran
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
-        - env: BUILD_PKGDOWN=FALSE
+        - env: BUILD_PKGDOWN=TRUE
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false
-      env: BUILD_PKGDOWN=FALSE
     - os: osx
       r:  release
       warnings_are_errors: true
-      env: BUILD_PKGDOWN=FALSE
     - os: osx
       r:  oldrel
       warnings_are_errors: true
-      env: BUILD_PKGDOWN=FALSE

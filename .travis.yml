@@ -32,19 +32,12 @@ matrix:
         - R CMD check *tar.gz --as-cran
       after_success:
         - Rscript -e 'covr::codecov(type = "all")'
-      before_deploy:
+      before_cache:
         - Rscript -e 'remotes::install_cran("pkgdown")'
-        - R CMD INSTALL .
-        - Rscript -e 'pkgdown::build_site()'
       deploy:
         provider: script
-        script: Rscript -e 'pkgdown::deploy_site_github()'
+        script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
         skip_cleanup: true
-        github-token: $GITHUB_TOKEN
-        local_dir: "docs"
-          keep-history: true
-       on:
-         branch: gh-pages
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false

@@ -36,12 +36,12 @@ matrix:
       after_success: Rscript -e 'covr::codecov(type = "all")'
       before_deploy:
         - Rscript -e 'remotes::install_cran("pkgdown")'
+        - Rscript --verbose -e 'Sys.getenv("PKG_TARBALL")'
       deploy:
         provider: script
         skip_cleanup: true
         keep_history: true
         script:
-          - Rscript -e 'Sys.getenv("PKG_TARBALL")'
           - Rscript -e 'pkgdown::deploy_site_github(tarball = Sys.getenv("PKG_TARBALL"), verbose = TRUE)'
       warnings_are_errors: true
     - r: devel

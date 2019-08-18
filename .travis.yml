@@ -28,16 +28,22 @@ matrix:
     - r: oldrel
       warnings_are_errors: false
     - r: release
-      script: R CMD check *tar.gz --as-cran
+      script:
+        - R CMD check *tar.gz --as-cran
+        - R CMD build . --no-build-vignettes --no-manual
+        - PKG_TARBALL=$(ls -1t *.tar.gz | head -n 1)
+        - echo "${PKG_TARBAL}"
       after_success: Rscript -e 'covr::codecov(type = "all")'
       before_deploy:
         - Rscript -e 'remotes::install_cran("pkgdown")'
-        - PKG_TARBALL=$(ls -1t *.tar.gz | head -n 1);
-        - echo $PKG_TARBALL
       deploy:
-        provider: script
-        script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
+        provider: pages
         skip_cleanup: true
+        keep_history: true
+        local-dir: docs
+        on:
+          branch: gh-pages
+        script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
       warnings_are_errors: true
     - r: devel
       warnings_are_errors: false

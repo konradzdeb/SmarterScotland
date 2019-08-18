@@ -38,7 +38,7 @@ env:
   global:
   - MAKEFLAGS="-j 2"
 
-ache:
+cache:
   directories:
     - $TRAVIS_BUILD_DIR/packrat/src
     - $TRAVIS_BUILD_DIR/packrat/lib

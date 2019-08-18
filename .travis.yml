@@ -41,7 +41,7 @@ matrix:
         skip_cleanup: true
         keep_history: true
         script:
-          - Rscript --verbose -e 'Sys.getenvs("PKG_TARBALL")'
+          - Rscript --verbose -e 'Sys.getenv("PKG_TARBALL")'
           - Rscript -e 'pkgdown::deploy_site_github(tarball = "/home/travis/build/konradzdeb/SmarterScotland/SmarterScotland_0.0.0.9007.tar.gz", verbose = TRUE)'
       warnings_are_errors: true
     - r: devel

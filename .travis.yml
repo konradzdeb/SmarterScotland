@@ -32,6 +32,7 @@ addons:
       - librdf0-dev
       - libv8-dev
       - libxml2-dev
+      - libgit2-dev
 
 r_github_packages:
   - jimhester/covr

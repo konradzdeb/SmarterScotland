@@ -19,7 +19,10 @@
 #' @examples
 #' # This function is not exported from the package as it's mostly used
 #' # internally.
-#' SmarterScotland:::construct_filter(sparql_variable = "time", filter_values = c(2011, 2012))
+#' SmarterScotland:::construct_filter(sparql_variable = "time",
+#'                                    filter_values = c(2011, 2012))
+#' SmarterScotland:::construct_filter(sparql_variable = "time", use_str = TRUE,
+#'                                    filter_values = c(2011, 2012))
 construct_filter <-
   function(sparql_variable, filter_values, use_str = FALSE) {
     # Check that passed sparql variable is a scalar

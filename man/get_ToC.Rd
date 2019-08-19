@@ -28,6 +28,6 @@ Sources list of available data sets from statistics.gov.uk and returns
 # Get list of themes with 'pupil' keyword
 head(get_ToC(which = "pupil"), n = 5)
 # Get full list
-head(get_ToC(which = "pupil"), n = 5)
+head(get_ToC(), n = 5)
 }
 }

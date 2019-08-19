@@ -22,7 +22,7 @@
 #' # Get list of themes with 'pupil' keyword
 #' head(get_ToC(which = "pupil"), n = 5)
 #' # Get full list
-#' head(get_ToC(which = "pupil"), n = 5)
+#' head(get_ToC(), n = 5)
 #' }
 get_ToC <- function(which = NULL) {
     # Depending on the which value use default or query with regex

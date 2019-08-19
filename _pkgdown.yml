@@ -6,3 +6,4 @@ development:
 template:
   params:
     bootswatch: paper
+    ganalytics: UA-129716792-2

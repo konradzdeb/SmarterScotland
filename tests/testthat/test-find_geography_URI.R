@@ -53,7 +53,7 @@ test_that(
 with_mock_api({
   res_geo_search_scotstat <-
     find_geography_URI(geography = c("Edinburgh", "Glasgow"),
-                       database = "scotstat")
+                       database = "online")
   expect_length(object = res_geo_search_scotstat,
                 n = length(unique(res_geo_search_scotstat)))
   expect_named(object = res_geo_search_scotstat)
@@ -71,7 +71,7 @@ with_mock_api({
 without_internet({
   expect_error(object = find_geography_URI(
     geography = c("Edinburgh", "Glasgow"),
-    database = "scotstat"
+    database = "online"
   ))
 })
 
@@ -82,3 +82,9 @@ with_mock_api({
   ),
   regexp = "^Geography.*")
 })
+
+expect_error(object = find_geography_URI(
+  geography = c("Edinburgh", "Glasgow"),
+  database = "wrong"
+),
+regexp = "^\\'arg\\'\\sshould\\sbe.*")

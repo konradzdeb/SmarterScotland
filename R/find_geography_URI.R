@@ -14,8 +14,8 @@
 #'
 #' @param database Can be one of the following \emph{internal, ScotStat, both.}
 #'   Defaults to \emph{internal} that reflects an extract of Standard Geography
-#'   Code Register. Option \emph{ScotStat} searches across the
-#'   \url{https://statistics.gov.scot/}.
+#'   Code Register. Option \emph{online} searches across the
+#'   \href{https://statistics.gov.scot/}{Statistics.gov.scot}.
 #'
 #' @return A named character vector of unique geography URIs. For multiple
 #'   matches names will be numbered - string \emph{'Edinburgh'} will
@@ -30,7 +30,7 @@ find_geography_URI <- function(geography, database = "internal") {
   # Determine search type
   chosen_search_type <-
     match.arg(arg = database,
-              choices = c("internal", "scotstat", "both"))
+              choices = c("internal", "online", "both"))
 
   # Silence R CMD check warning
   # geography <- NULL
@@ -75,7 +75,7 @@ find_geography_URI <- function(geography, database = "internal") {
       res_search <- switch(
         search_type,
         internal = f_internal_match(x),
-        scotstat = f_scotstat_match(x),
+        online = f_scotstat_match(x),
         both = c(f_internal_match(x),
                  f_scotstat_match(x))
       )

@@ -1,10 +1,13 @@
 #' @title Query Scotstat Repository
 #'
-#' @description Send query to ScotStat data.
+#' @description Send query to statistics.gov.scot.
 #'
-#' @details Query Scotstat data using via \code{\link[httr]{POST}} function.
+#' @details Query Scotstat data using \code{\link[httr]{POST}} function
+#'  available in \code{\link[httr]{httr}} package. The functions reads the 
+#'  \code{SmarterScotland.endpooint} option values and uses the provided
+#'  endpoint to send query to statistics.gov.scot.
 #'
-#' @param query SPARQL query string
+#' @param A character scalar corresponding to SPARQL query string.
 #'
 #' @return A response object derived via \code{\link[httr]{POST}} function.
 #'

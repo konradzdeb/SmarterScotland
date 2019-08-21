@@ -12,8 +12,8 @@ find_geography_URI(geography, database = "internal")
 
 \item{database}{Can be one of the following \emph{internal, ScotStat, both.}
 Defaults to \emph{internal} that reflects an extract of Standard Geography
-Code Register. Option \emph{ScotStat} searches across the
-\url{https://statistics.gov.scot/}.}
+Code Register. Option \emph{online} searches across the
+\href{https://statistics.gov.scot/}{Statistics.gov.scot}.}
 }
 \value{
 A named character vector of unique geography URIs. For multiple

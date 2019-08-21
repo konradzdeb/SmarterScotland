@@ -1,0 +1,557 @@
+{
+    "head": {
+        "vars": [
+            "type",
+            "count",
+            "reference_area",
+            "unit_of_measure",
+            "reference_period",
+            "measure_type",
+            "data_set"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "581"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "437"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "557"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "526"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "440"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "364"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/1997-1998"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "327"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/1998-1999"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "385"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/1999-2000"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "379"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2000-2001"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "393"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2001-2002"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "398"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2002-2003"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "411"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2003-2004"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "498"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2004-2005"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "455"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2005-2006"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "562"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2006-2007"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "630"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2007-2008"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "447"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2013-2014"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "461"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2014-2015"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "430"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2015-2016"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "399"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/hospital-discharges"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2016-2017"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                }
+            }
+        ]
+    }
+}

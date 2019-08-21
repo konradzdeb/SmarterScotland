@@ -22,4 +22,21 @@ test_that(desc = "Not trying to run for more than one argument",
             expect_error(get_geography_data(data_set = "abc", geography = c("a", "b")))
           })
 
-test_that
+with_mock_api({
+  test_that(desc = "Valid object is generated",
+            code = {
+              geo_dta_res <-
+                get_geography_data(data_set = "alcohol-related-discharge",
+                                   geography = "East Lothian")
+              expect_is(object = geo_dta_res, class = "data.frame")
+              expect_length(object = geo_dta_res, n = 13)
+            })
+})
+
+without_internet({
+  test_that(desc = "Errores on no net",
+            code = expect_error(
+              object =  get_geography_data(data_set = "alcohol-related-discharge",
+                                           geography = "East Lothian")
+            ))
+})

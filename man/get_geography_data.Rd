@@ -46,6 +46,6 @@ The following function attempts to source all data available for
 \examples{
 \dontrun{
 get_geography_data(data_set = "alcohol-related-discharge",
-                   geography = "Edinburgh")
+                   geography = "East Lothian")
 }
 }

@@ -9,6 +9,12 @@
             {
                 "dataset": {
                     "type": "uri",
+                    "value": "http://statistics.gov.scot/data/6-in-1-immunisation"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/Life-Expectancy"
                 }
             },
@@ -82,6 +88,12 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/best-start-grant"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/best-start-grant-expenditure"
                 }
             },
             {

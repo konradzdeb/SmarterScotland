@@ -39,7 +39,7 @@
 #' @examples
 #' \dontrun{
 #' get_geography_data(data_set = "alcohol-related-discharge",
-#'                    geography = "Edinburgh")
+#'                    geography = "East Lothian")
 #' }
 get_geography_data <-
   function(data_set, geography, period, measure = "count") {
@@ -71,10 +71,10 @@ get_geography_data <-
       # Get list of URIs corresponding to the matched geographies
       geographies_URIs <- find_geography_URI(geography = geography,
                                              database = "internal")
-      # FIXME: check if needed to use str()
       filter_geographies <-
         construct_filter(sparql_variable = "reference_area",
-                         filter_values = geographies_URIs)
+                         filter_values = geographies_URIs,
+                         use_str = TRUE)
     }
 
     # Check data set properties and construct relevant SPARQL calls for each

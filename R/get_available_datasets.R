@@ -1,11 +1,19 @@
-#' @title Get Available Data Sets
+#' @title Getting Available Data Sets
 #'
-#' @description Function sources data available at
+#' @description Function sources data sets available at
 #'   \url{https://statistics.gov.scot/}.
 #'
-#' @param pattern A optional pattern to match data set name.
+#' @details The functions executes simple SPARQL query to source distinct
+#'   values for the objects of \code{rdf:type} defines as
+#'   \code{<http://publishmydata.com/def/dataset#Dataset>}. The sourced
+#'   values can be used in function 
+#'   \code{\link[SmarterScotland]{get_geography_data}} and other functions to
+#'   filter the query results to a specific data set.
 #'
-#' @return A data frame
+#' @param pattern A optional pattern to match data set name.
+#' @param ... Other options passed to \code{\link[base:grep]{grepl}}
+#'
+#' @return A data frame with data set names and URIs. 
 #'
 #' @export
 #'
@@ -27,7 +35,7 @@ get_available_datasets <- function(pattern) {
   response_df <- as.data.frame(sapply(response_df, as.character),
                                stringsAsFactors = FALSE)
 
-  # Sileence R CMD check warning on using variables with no binding
+  # Silence R CMD check warning on using variables with no binding
   dataset.value <- NULL
 
   # Clean and prepare results data frame

@@ -2,19 +2,29 @@
 % Please edit documentation in R/get_available_datasets.R
 \name{get_available_datasets}
 \alias{get_available_datasets}
-\title{Get Available Data Sets}
+\title{Getting Available Data Sets}
 \usage{
 get_available_datasets(pattern)
 }
 \arguments{
 \item{pattern}{A optional pattern to match data set name.}
+
+\item{...}{Other options passed to \code{\link[base:grep]{grepl}}}
 }
 \value{
-A data frame
+A data frame with data set names and URIs.
 }
 \description{
-Function sources data available at
+Function sources data sets available at
   \url{https://statistics.gov.scot/}.
+}
+\details{
+The functions executes simple SPARQL query to source distinct
+  values for the objects of \code{rdf:type} defines as
+  \code{<http://publishmydata.com/def/dataset#Dataset>}. The sourced
+  values can be used in function 
+  \code{\link[SmarterScotland]{get_geography_data}} and other functions to
+  filter the query results to a specific data set.
 }
 \examples{
 \dontrun{

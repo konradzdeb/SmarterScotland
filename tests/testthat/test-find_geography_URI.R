@@ -76,15 +76,25 @@ without_internet({
 })
 
 with_mock_api({
-  expect_message(object =     find_geography_URI(
-    geography = c("Edinburgh", "Glasgow"),
-    database = "both"
-  ),
-  regexp = "^Geography.*")
+  test_that(
+    desc = "Message is returned",
+    code =
+      expect_message(
+        object =     find_geography_URI(
+          geography = c("Edinburgh", "Glasgow"),
+          database = "both"
+        ),
+        regexp = "^Geography.*"
+      )
+  )
 })
-
-expect_error(object = find_geography_URI(
-  geography = c("Edinburgh", "Glasgow"),
-  database = "wrong"
-),
-regexp = "^\\'arg\\'\\sshould\\sbe.*")
+test_that(
+  desc = "Errores on no Internet",
+  code = expect_error(
+    object = find_geography_URI(
+      geography = c("Edinburgh", "Glasgow"),
+      database = "wrong"
+    ),
+    regexp = "^\\'arg\\'\\sshould\\sbe.*"
+  )
+)

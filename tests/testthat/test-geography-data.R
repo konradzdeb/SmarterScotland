@@ -23,14 +23,13 @@ test_that(desc = "Not trying to run for more than one argument",
           })
 
 with_mock_api({
-  test_that(desc = "Valid object is generated",
-            code = {
-              geo_dta_res <-
-                get_geography_data(data_set = "alcohol-related-discharge",
-                                   geography = "East Lothian")
-              expect_is(object = geo_dta_res, class = "data.frame")
-              expect_length(object = geo_dta_res, n = 13)
-            })
+  options(SmarterScotland.suffix_rdf = FALSE)
+  geo_dta_res <-
+    get_geography_data(data_set = "alcohol-related-discharge",
+                       geography = "East Lothian")
+  expect_is(object = geo_dta_res, class = "data.frame")
+  expect_length(object = geo_dta_res, n = 13)
+
 })
 
 without_internet({

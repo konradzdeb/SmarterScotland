@@ -19,17 +19,20 @@ test_that(desc = "URI handles existing prefix",
           ))
 
 test_that(desc = "rdfs:label materialises",
-          code = expect_identical(
-            object = create_URI(
-              x = c(
-                "http://www.abc.com/refArea",
-                "www.abc.com/unitMeasure",
-                "http://www.abc.com/refPeriod"
+          code = {
+            options(SmarterScotland.suffix_rdf = TRUE)
+            expect_identical(
+              object = create_URI(
+                x = c(
+                  "http://www.abc.com/refArea",
+                  "www.abc.com/unitMeasure",
+                  "http://www.abc.com/refPeriod"
+                )
+              ),
+              expected = c(
+                "<http://www.abc.com/refArea>/rdfs:label",
+                "<http://www.abc.com/unitMeasure>/rdfs:label",
+                "<http://www.abc.com/refPeriod>/rdfs:label"
               )
-            ),
-            expected = c(
-              "<http://www.abc.com/refArea>/rdfs:label",
-              "<http://www.abc.com/unitMeasure>/rdfs:label",
-              "<http://www.abc.com/refPeriod>/rdfs:label"
             )
-          ))
+          })

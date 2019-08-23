@@ -54,7 +54,13 @@ data("standard_geography_code_register")
 knitr::kable(head(standard_geography_code_register))
 ```
 
-More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using 
+### Live reference data
+
+More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies` sources and parses Standard Geography Code Register. Seaching for tematic data sets can be achived simply using queries, as shown below. 
+
+```{r search_jsa_data}
+get_available_datasets(pattern = "job")
+```
 
 ```{r end-setup, include=FALSE}
 end_vignette()

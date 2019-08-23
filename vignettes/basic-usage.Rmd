@@ -1,9 +1,10 @@
 ---
 title: "Basic Usage"
+author: "Konrad Zdeb"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Basic Usage}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -37,6 +38,8 @@ To see the list of available data sets refer to the `available_data_sets` object
 
 ```{r show_available_data}
 data("available_data_sets")
+```
+```{r table_available_data, echo=FALSE}
 knitr::kable(head(available_data_sets))
 ```
 
@@ -45,11 +48,13 @@ knitr::kable(head(available_data_sets))
 Similar techniques can be used to obtain a list of available geographies.
 
 ```{r show_available_geographies}
-data("available_data_sets")
-knitr::kable(head(available_data_sets))
+data("standard_geography_code_register")
+```
+```{r table_available_geographies, echo=FALSE}
+knitr::kable(head(standard_geography_code_register))
 ```
 
-The above can be used to construct sample queries.
+More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using 
 
 ```{r end-setup, include=FALSE}
 end_vignette()

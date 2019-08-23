@@ -47,9 +47,8 @@ get_geography_data <-
     assert_string(x = data_set,
                   na.ok = FALSE,
                   null.ok = FALSE)
-    assert_string(x = geography,
-                  na.ok = FALSE,
-                  null.ok = FALSE)
+    assert_character(x = geography,
+                     null.ok = FALSE)
 
     # Import basic SPARQL query
     query_orig <-

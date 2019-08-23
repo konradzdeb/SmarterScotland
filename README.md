@@ -13,13 +13,13 @@ status](https://ci.appveyor.com/api/projects/status/i3mfbvchkyah6gmf?svg=true)](
 [![CRAN
 status](https://www.r-pkg.org/badges/version/SmarterScotland)](https://cran.r-project.org/package=SmarterScotland)
 
-## Overview
+# Overview
 
 The SmarterScotland package provides a convenient interface for sourcing
 and interrogating data available through the
 [statistics.gov.scot](http://statistics.gov.scot).
 
-## Installation
+# Installation
 
 ``` r
 if (isFALSE("remotes" %in% rownames(installed.packages()))) {
@@ -28,6 +28,28 @@ if (isFALSE("remotes" %in% rownames(installed.packages()))) {
 remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE,
                         dependencies = TRUE)
 ```
+
+# Example
+
+``` r
+library(SmarterScotland)
+dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
+                                        geography = "Glasgow City",
+                                        measure = "count")
+```
+
+``` r
+head(dta_Glasgow_Crime[ ,c("reference_period.value","count.value")])
+```
+
+| reference\_period.value                                     | count.value |
+| :---------------------------------------------------------- | :---------- |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 90211       |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 4110        |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 1755        |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 57603       |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 14093       |
+| <http://reference.data.gov.uk/id/government-year/1996-1997> | 12650       |
 
 ## Other similar projects
 

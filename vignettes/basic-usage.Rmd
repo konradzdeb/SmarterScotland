@@ -5,8 +5,10 @@ date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Basic Usage}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include = FALSE}
@@ -56,11 +58,33 @@ knitr::kable(head(standard_geography_code_register))
 
 ### Live reference data
 
-More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies` sources and parses Standard Geography Code Register. Seaching for tematic data sets can be achived simply using queries, as shown below. 
+More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies` sources and parses Standard Geography Code Register. Searching for thematic data sets can be achieved simply using queries, as shown below. 
 
-```{r search_jsa_data}
-get_available_datasets(pattern = "job")
+```{r search_jsa_data, results='hide'}
+get_available_datasets(pattern = "pupil")
 ```
+```{r search_jsa_data_results, echo=FALSE}
+knitr::kable(get_available_datasets(pattern = "pupil"))
+```
+
+Additional information on the available data can be gathered by following the links returned in the data set above. For instance [http://statistics.gov.scot/data/pupil-attainment-asn](http://statistics.gov.scot/data/pupil-attainment-asn) points to *Pupil Attainment (English and Maths)* data set.
+
+# Sourcing Geography Data
+
+Likely, one of the most useful functions offered in the package would be concerned with sourcing data for specific geographies. Example below illustrates sourcing *Pupil Attainment (English and Maths)* data for geographies where official name or label matches *East Lothian*. 
+
+```{r source_edinburgh_JSA}
+dta_Edinburgh_JSA <- get_geography_data(data_set = "pupil-attainment-asn",
+                                        geography = "East Lothian")
+```
+```{r show_edinburgh_JSA, echo=FALSE}
+knitr::kable(head(dta_Edinburgh_JSA))
+```
+
+## Pre-processing
+
+A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to quickly obtain data set with no URI strings.
+
 
 ```{r end-setup, include=FALSE}
 end_vignette()
@@ -68,3 +92,4 @@ end_vignette()
 
 [^1]: Detailed information on the SPARQL is available through [W3C pages](https://www.w3.org/TR/rdf-sparql-query/).
 [^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government that can be accessed through the [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
+[^3]: This is currently being developed; this behaviour will be controlled by `SmarterScotland.suffix_rdf` option.

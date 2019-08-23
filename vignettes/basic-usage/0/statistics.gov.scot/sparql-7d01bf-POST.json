@@ -1,0 +1,3530 @@
+{
+    "head": {
+        "vars": [
+            "type",
+            "count",
+            "reference_area",
+            "unit_of_measure",
+            "reference_period",
+            "measure_type",
+            "data_set",
+            "secondary_school_stage",
+            "scqf_level",
+            "number_of_awards"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "7"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "5"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "65"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "149"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "158"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "3"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "41"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "97"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "98"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "9"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "25"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "23"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "15"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "28"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "48"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "7"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "11"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "20"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "5"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "8"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "6"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "12"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "16"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "15"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "32"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "33"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "10"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "20"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "20"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000010"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "7"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "4"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "51"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "119"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "110"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/3-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "35"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "80"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "70"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/4-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "8"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "22"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "17"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s4"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/5-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "11"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "23"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "42"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "4"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "10"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "19"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "0"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "4"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "8"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s5"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "4"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "9"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "12"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/7-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/1"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "2"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "8"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "22"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "26"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/3"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2008-2009"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "1"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2009-2010"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "7"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2010-2011"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "14"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2011-2012"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    "type": "literal",
+                    "value": "15"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S16000102"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/pupils"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/government-year/2012-2013"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "secondary_school_stage": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/secondary-school-stage/s6"
+                },
+                "scqf_level": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/scqf-level/6-and-above"
+                },
+                "number_of_awards": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/number-of-awards/5"
+                }
+            }
+        ]
+    }
+}

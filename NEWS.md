@@ -7,3 +7,7 @@
 
 * Created package pages via `pkgdown`
 * Integrated automatic page deployment via `tic` and Travis
+
+# SmarterScotland 0.0.9008
+
+* Added `pre_process_data` function

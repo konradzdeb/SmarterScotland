@@ -13,6 +13,9 @@ function.}
 
 \item{clean_URI_strings}{Defaults to \code{TRUE}; removes initial part of
 URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.}
+
+\item{remove_cols}{Removes redundant columns, such as columns with value
+\code{URI} only.}
 }
 \value{
 A data frame.

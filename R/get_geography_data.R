@@ -161,6 +161,11 @@ get_geography_data <-
     # Prepare response
     results <- parse_response(response)
 
+    # Check whether to pre-process
+    if (pre_process_results) {
+      results <- pre_process_results(x = results, ...)
+    }
+
     # Return query results
     return(results)
   }

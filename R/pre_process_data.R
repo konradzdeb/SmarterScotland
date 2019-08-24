@@ -9,7 +9,7 @@
 #'   function.
 #' @param clean_URI_strings Defaults to \code{TRUE}; removes initial part of
 #'   URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.
-#' @parm remove_cols Removes redundant columns, such as columns with value
+#' @param remove_cols Removes redundant columns, such as columns with value
 #'   \code{URI} only.
 #'
 #' @return A data frame.

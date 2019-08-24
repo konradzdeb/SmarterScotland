@@ -23,8 +23,10 @@
 #'
 #' @param pre_process_results A logical, defaults to \code{FALSE}. If
 #'   \code{TRUE} will apply \code{\link[SmarterScotland]{pre_process_data}}
-#'   function to the results, clearning data frame from URI strings and leaving
-#'   only value columns.
+#'   function to the results, removing from data frame columns with
+#'   information on types \emph{(uri, literal, ...)} and leaving only value
+#'   and dimension columns. The function can also remove initial part of URI for
+#'   value and dimension columns.
 #'
 #' @param ... Options passed to \code{\link[SmarterScotland]{pre_process_data}},
 #'   ignored if \code{pre_process_results} is \code{FALSE}.

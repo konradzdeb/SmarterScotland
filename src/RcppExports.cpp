@@ -5,6 +5,17 @@
 
 using namespace Rcpp;
 
+// clean_URI_string
+Rcpp::StringVector clean_URI_string(Rcpp::StringVector x);
+RcppExport SEXP _SmarterScotland_clean_URI_string(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::StringVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(clean_URI_string(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 // read_query_file
 Rcpp::String read_query_file(std::string file_path);
 RcppExport SEXP _SmarterScotland_read_query_file(SEXP file_pathSEXP) {
@@ -18,6 +29,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_SmarterScotland_clean_URI_string", (DL_FUNC) &_SmarterScotland_clean_URI_string, 1},
     {"_SmarterScotland_read_query_file", (DL_FUNC) &_SmarterScotland_read_query_file, 1},
     {NULL, NULL, 0}
 };

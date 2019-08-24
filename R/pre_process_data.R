@@ -5,9 +5,12 @@
 #'   and returns pre-processed data set with the following changes.
 #'
 #' @param x A data frame, usually obtained via
-#' @param clean_URI_strings Defaults to \code{TRUE}; removes
-#'   \code{http://purl.org/linked-data/cube#} from
-#'   \code{http://purl.org/linked-data/cube#Observation}.
+#'   \code{\link[SmarterScotland]{get_geography_data}} or other data sourcing
+#'   function.
+#' @param clean_URI_strings Defaults to \code{TRUE}; removes initial part of
+#'   URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.
+#' @parm remove_cols Removes redundant columns, such as columns with value
+#'   \code{URI} only.
 #'
 #' @return A data frame.
 #'
@@ -19,30 +22,44 @@
 #'                                         geography = "Glasgow City",
 #'                                         measure = "count"))
 #' }
-pre_process_data <- function(x, clean_URI_strings = TRUE) {
-  # Check if provided object is data frame
-  assert_data_frame(
-    x = x,
-    all.missing = FALSE,
-    min.rows = 1,
-    min.cols = 1,
-    null.ok = FALSE
-  )
-
-  # Keep only last elemnt of URI
-  if (clean_URI_strings) {
-    x[] <- lapply(
-      X = x,
-      FUN = function(x) {
-        sub(
-          pattern = "^h.*(/|.*#)",
-          replacement = "",
-          x = x,
-          perl = TRUE
-        )
-      }
+pre_process_data <-
+  function(x,
+           clean_URI_strings = TRUE,
+           remove_cols = FALSE) {
+    # Check if provided object is data frame
+    assert_data_frame(
+      x = x,
+      all.missing = FALSE,
+      min.rows = 1,
+      min.cols = 1,
+      null.ok = FALSE
     )
-  }
 
-  return(x)
-}
+    # Keep only last elemnt of URI
+    if (clean_URI_strings) {
+      x[] <- lapply(
+        X = x,
+        FUN = function(x) {
+          sub(
+            pattern = "^h.*(/|.*#)",
+            replacement = "",
+            x = x,
+            perl = TRUE
+          )
+        }
+      )
+    }
+
+    if (remove_cols) {
+      cols_to_remove <- vapply(
+        X = x,
+        FUN = function(x) {
+          all(x == "uri")
+        },
+        FUN.VALUE =  logical(1L)
+      )
+
+      x <- x[,-which(cols_to_remove)]
+    }
+    return(x)
+  }

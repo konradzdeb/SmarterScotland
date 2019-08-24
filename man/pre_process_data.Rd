@@ -4,14 +4,15 @@
 \alias{pre_process_data}
 \title{Pre-Process SPARQL Results Data}
 \usage{
-pre_process_data(x, clean_URI_strings = TRUE)
+pre_process_data(x, clean_URI_strings = TRUE, remove_cols = FALSE)
 }
 \arguments{
-\item{x}{A data frame, usually obtained via}
+\item{x}{A data frame, usually obtained via
+\code{\link[SmarterScotland]{get_geography_data}} or other data sourcing
+function.}
 
-\item{clean_URI_strings}{Defaults to \code{TRUE}; removes
-\code{http://purl.org/linked-data/cube#} from
-\code{http://purl.org/linked-data/cube#Observation}.}
+\item{clean_URI_strings}{Defaults to \code{TRUE}; removes initial part of
+URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.}
 }
 \value{
 A data frame.

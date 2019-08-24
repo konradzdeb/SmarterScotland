@@ -20,3 +20,17 @@ test_that(desc = "URI strings are removed",
                     )))
             ))
           })
+
+test_that(desc = "Column removal works",
+          code = {
+            tst_dta <-
+              data.frame(
+                uri_col = rep.int(x = "uri", times = 10),
+                colB = 1:10,
+                colC = 11:20
+              )
+            res_obj_cols <- pre_process_data(x = tst_dta,
+                                        remove_cols = TRUE)
+            expect_length(object = res_obj_cols, n = 2)
+            expect_is(object = res_obj_cols, class = class(tst_dta))
+          })

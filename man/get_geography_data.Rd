@@ -4,7 +4,8 @@
 \alias{get_geography_data}
 \title{Get Geography Data}
 \usage{
-get_geography_data(data_set, geography, period, measure = "count")
+get_geography_data(data_set, geography, period, measure = "count",
+  pre_process_results = FALSE, ...)
 }
 \arguments{
 \item{data_set}{\strong{Required.} A character scalar with the name of
@@ -23,6 +24,14 @@ data for 2nd quarters of 2001 and 2010 respectively.}
 \item{measure}{\strong{Required.} A character scalar pertaining to
 measure to be sources, usually \emph{count} or \emph{ratio}. Defaults to
 \emph{count}.}
+
+\item{pre_process_results}{A logical, defaults to \code{FALSE}. If
+\code{TRUE} will apply \code{\link[SmarterScotland]{pre_process_data}}
+function to the results, clearning data frame from URI strings and leaving
+only value columns.}
+
+\item{...}{Options passed to \code{\link[SmarterScotland]{pre_process_data}},
+ignored if \code{pre_process_results} is \code{FALSE}.}
 }
 \value{
 A data frame.

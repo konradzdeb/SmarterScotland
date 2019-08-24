@@ -21,6 +21,14 @@
 #'  available periods. For instance \code{c("2001Q2", "2010Q2")} would get the
 #'  data for 2nd quarters of 2001 and 2010 respectively.
 #'
+#' @param pre_process_results A logical, defaults to \code{FALSE}. If
+#'   \code{TRUE} will apply \code{\link[SmarterScotland]{pre_process_data}}
+#'   function to the results, clearning data frame from URI strings and leaving
+#'   only value columns.
+#'
+#' @param ... Options passed to \code{\link[SmarterScotland]{pre_process_data}},
+#'   ignored if \code{pre_process_results} is \code{FALSE}.
+#'
 #' @details The following function attempts to source all data available for
 #'   specific geographies for the provided period periods. Colloquial
 #'   geography names are matched with URI values in
@@ -42,7 +50,12 @@
 #'                    geography = "East Lothian")
 #' }
 get_geography_data <-
-  function(data_set, geography, period, measure = "count") {
+  function(data_set,
+           geography,
+           period,
+           measure = "count",
+           pre_process_results = FALSE,
+           ...) {
     # Check if all arguments were specified
     assert_string(x = data_set,
                   na.ok = FALSE,
@@ -71,9 +84,11 @@ get_geography_data <-
       geographies_URIs <- find_geography_URI(geography = geography,
                                              database = "internal")
       filter_geographies <-
-        construct_filter(sparql_variable = "reference_area",
-                         filter_values = geographies_URIs,
-                         use_str = TRUE)
+        construct_filter(
+          sparql_variable = "reference_area",
+          filter_values = geographies_URIs,
+          use_str = TRUE
+        )
     }
 
     # Check data set properties and construct relevant SPARQL calls for each
@@ -91,7 +106,7 @@ get_geography_data <-
     selected_properties <- sapply(
       X = dta_properties$property.value,
       FUN = function(x) {
-        if (grepl(pattern = "measure-properties",x = x)) {
+        if (grepl(pattern = "measure-properties", x = x)) {
           if (grepl(pattern = measure, x = x)) {
             x
           } else {
@@ -103,10 +118,12 @@ get_geography_data <-
       }
     )
 
-    indx_measure_remove <- which(sapply(selected_properties, is.null))
+    indx_measure_remove <-
+      which(sapply(selected_properties, is.null))
     var_nms <- var_nms[-indx_measure_remove]
 
-    selected_properties <- Filter(Negate(is.null), selected_properties)
+    selected_properties <-
+      Filter(Negate(is.null), selected_properties)
 
     # Generate where clauses
     where_vars_call <- paste(

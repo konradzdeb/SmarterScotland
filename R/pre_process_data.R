@@ -11,6 +11,9 @@
 #'   URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.
 #' @param remove_cols Removes redundant columns, such as columns with value
 #'   \code{URI} only. Defaults to \code{TRUE}.
+#' @param clean_column_names Defaults to \code{TRUE} applies sensible name
+#'   cleaning to provided columns. For instance, column
+#'   \code{unit_of_measure.value} will become \code{unit_of_measure}.
 #'
 #' @return A data frame.
 #'
@@ -25,7 +28,8 @@
 pre_process_data <-
   function(x,
            clean_URI_strings = TRUE,
-           remove_cols = TRUE) {
+           remove_cols = TRUE,
+           clean_column_names = TRUE) {
     # Check if provided object is data frame
     assert_data_frame(
       x = x,
@@ -60,5 +64,17 @@ pre_process_data <-
         x
       )
     }
+
+    if (clean_column_names) {
+      x <- setNames(
+        object = x,
+        nm = gsub(
+          pattern = "\\.value",
+          replacement = "",
+          x = names(x)
+        )
+      )
+    }
+
     return(x)
   }

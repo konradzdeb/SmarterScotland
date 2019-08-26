@@ -10,7 +10,7 @@
 #' @param clean_URI_strings Defaults to \code{TRUE}; removes initial part of
 #'   URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.
 #' @param remove_cols Removes redundant columns, such as columns with value
-#'   \code{URI} only.
+#'   \code{URI} only. Defaults to \code{TRUE}.
 #'
 #' @return A data frame.
 #'
@@ -25,7 +25,7 @@
 pre_process_data <-
   function(x,
            clean_URI_strings = TRUE,
-           remove_cols = FALSE) {
+           remove_cols = TRUE) {
     # Check if provided object is data frame
     assert_data_frame(
       x = x,
@@ -50,16 +50,15 @@ pre_process_data <-
       )
     }
 
+    # Remove pointless columns
     if (remove_cols) {
-      cols_to_remove <- vapply(
-        X = x,
-        FUN = function(x) {
-          all(x == "uri")
+      not.all <- Negate(all)
+      x <- Filter(
+        f = function(x) {
+          not.all(x %in% c("uri", "integer", "literal", "Observation"))
         },
-        FUN.VALUE =  logical(1L)
+        x
       )
-
-      x <- x[,-which(cols_to_remove)]
     }
     return(x)
   }

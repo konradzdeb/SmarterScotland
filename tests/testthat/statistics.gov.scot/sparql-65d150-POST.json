@@ -159,6 +159,12 @@
             {
                 "dataset": {
                     "type": "uri",
+                    "value": "http://statistics.gov.scot/data/business-innovation"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/business-site-counts"
                 }
             },
@@ -202,6 +208,48 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/carbon-footprint-breakdown"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-admissions-discharges-and-deaths"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-average-age-of-residents"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-demography"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-health-characteristics-of-residents"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-length-of-stay"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-type-of-stay"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-weekly-charges-and-sources-of-funding"
                 }
             },
             {

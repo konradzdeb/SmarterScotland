@@ -1,0 +1,107 @@
+{
+    "head": {
+        "vars": [
+            "property",
+            "label"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "type"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Count"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Area"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Unit of Measure"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Reference Period"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#measureType"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "measure type"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#dataSet"
+                },
+                "label": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "data set"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/ratio"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Ratio"
+                }
+            },
+            {
+                "property": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/dimension/crimeOrOffence"
+                },
+                "label": {
+                    "type": "literal",
+                    "value": "Crime or Offence"
+                }
+            }
+        ]
+    }
+}

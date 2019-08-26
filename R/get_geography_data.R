@@ -165,7 +165,7 @@ get_geography_data <-
 
     # Check whether to pre-process
     if (pre_process_results) {
-      results <- pre_process_results(x = results, ...)
+      results <- pre_process_data(x = results, ...)
     }
 
     # Return query results

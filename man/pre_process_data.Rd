@@ -4,7 +4,7 @@
 \alias{pre_process_data}
 \title{Pre-Process SPARQL Results Data}
 \usage{
-pre_process_data(x, clean_URI_strings = TRUE, remove_cols = FALSE)
+pre_process_data(x, clean_URI_strings = TRUE, remove_cols = TRUE)
 }
 \arguments{
 \item{x}{A data frame, usually obtained via
@@ -15,7 +15,7 @@ function.}
 URI \code{ex. http://purl.org/linked-data/cube#} from an URI string.}
 
 \item{remove_cols}{Removes redundant columns, such as columns with value
-\code{URI} only.}
+\code{URI} only. Defaults to \code{TRUE}.}
 }
 \value{
 A data frame.

@@ -32,6 +32,24 @@ with_mock_api({
 
 })
 
+# Test pre process function
+with_mock_api({
+  tst_proc_res <- get_geography_data(
+    data_set = "recorded-crime",
+    geography = "Glasgow City",
+    measure = "count",
+    pre_process_results = TRUE
+  )
+  expect_is(object = tst_proc_res, class = "data.frame")
+  # Check that all columns are removed
+  expect_null(object = Find(
+    f = function(x) {
+      any(x %in% c("uri", "literal", "Observation"))
+    },
+    x = tst_proc_res
+  ))
+})
+
 without_internet({
   test_that(desc = "Errores on no net",
             code = expect_error(

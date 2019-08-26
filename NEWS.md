@@ -1,13 +1,21 @@
-# SmarterScotland 0.0.9006
+# SmarterScotland 0.0.9009
 
-* Added a `NEWS.md` file to track changes to the package.
-* Posted early developmental version on GitHub
+* Added `pre_process_data` function
+
+# SmarterScotland 0.0.9008
+
+* Added `pre_process_data` function
 
 # SmarterScotland 0.0.9007
 
 * Created package pages via `pkgdown`
 * Integrated automatic page deployment via `tic` and Travis
 
-# SmarterScotland 0.0.9008
+# SmarterScotland 0.0.9006
 
-* Added `pre_process_data` function
+* Added a `NEWS.md` file to track changes to the package.
+* Posted early developmental version on GitHub
+
+
+
+

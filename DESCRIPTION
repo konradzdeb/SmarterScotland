@@ -1,7 +1,7 @@
 Type: Package
 Package: SmarterScotland
 Title: Source Public Data from statistics.gov.scot
-Version: 0.0.0.9008
+Version: 0.0.0.9009
 Date: 2018-02-03
 Authors@R: 
     person(given = "Konrad",

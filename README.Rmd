@@ -30,13 +30,11 @@ remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = T
 library(SmarterScotland)
 dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
                                         geography = "Glasgow City",
-                                        measure = "count")
+                                        measure = "count",
+                                        pre_process_results = TRUE)
 ```
-```{r preview_glasgow_crime, eval=FALSE}
-head(dta_Glasgow_Crime[ ,c("reference_period.value","count.value")])
-```
-```{r preview_glasgow_crime_tbl, eval=TRUE, echo=FALSE}
-knitr::kable(head(dta_Glasgow_Crime[ ,c("reference_period.value","count.value")]))
+```{r preview_glasgow_crime_tbl, eval=TRUE, echo=TRUE}
+knitr::kable(x = head(dta_Glasgow_Crime, n = 10))
 ```
 
 

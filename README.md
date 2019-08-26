@@ -35,21 +35,26 @@ remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = T
 library(SmarterScotland)
 dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
                                         geography = "Glasgow City",
-                                        measure = "count")
+                                        measure = "count",
+                                        pre_process_results = TRUE)
 ```
 
 ``` r
-head(dta_Glasgow_Crime[ ,c("reference_period.value","count.value")])
+knitr::kable(x = head(dta_Glasgow_Crime, n = 10))
 ```
 
-| reference\_period.value                                     | count.value |
-| :---------------------------------------------------------- | :---------- |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 90211       |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 4110        |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 1755        |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 57603       |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 14093       |
-| <http://reference.data.gov.uk/id/government-year/1996-1997> | 12650       |
+| count | reference\_area | unit\_of\_measure           | reference\_period | measure\_type | crime\_or\_offence                        |
+| :---- | :-------------- | :-------------------------- | :---------------- | :------------ | :---------------------------------------- |
+| 90211 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-crimes                                |
+| 4110  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-1-non-sexual-crimes-of-violence |
+| 1755  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-2-sexual-crimes                 |
+| 57603 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-3-crimes-of-dishonesty          |
+| 14093 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | \-vandalism-etc                           |
+| 12650 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-5-other-crimes                  |
+| 24    | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-homicide-etc               |
+| 1609  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-att-murder-serious-assault |
+| 2004  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-robbery                    |
+| 473   | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-other-violence             |
 
 ## Other similar projects
 

@@ -54,11 +54,14 @@ pre_process_data <-
       )
     }
 
+    # Handy
+    not.all <- Negate(all)
+
     # Remove pointless columns
     if (remove_cols) {
-      not.all <- Negate(all)
       x <- Filter(
         f = function(x) {
+          # Filter against undesired values
           not.all(x %in% c("uri", "integer", "literal", "Observation"))
         },
         x
@@ -76,5 +79,45 @@ pre_process_data <-
       )
     }
 
+    # Fix column types
+    potential_numeric_columns <- which(vapply(
+      FUN = function(column) {
+        any(!grepl(
+          pattern = "[^\\d\\,\\.\\-]",
+          x = column,
+          perl = TRUE
+        ))
+      },
+      X = x,
+      FUN.VALUE = logical(length = 1)
+    ))
+
+    if (not.all(is.na(potential_numeric_columns))) {
+      x[, potential_numeric_columns] <- lapply(
+        X = x[, potential_numeric_columns],
+        FUN = function(column) {
+          column <-
+            gsub(
+              pattern = ",",
+              replacement = "",
+              x = column,
+              fixed = TRUE
+            )
+
+          if (any(grepl(pattern = "\\.", x = column))) {
+            num_col <- suppressWarnings(as.numeric(column))
+          } else {
+            num_col <- suppressWarnings(as.integer(column))
+          }
+
+          if (any(is.na(num_col))) {
+            column
+          } else {
+            num_col
+          }
+
+        }
+      )
+    }
     return(x)
   }

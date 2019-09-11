@@ -48,14 +48,23 @@ test_that(desc = "Column names are cleaned.",
 
 test_that(desc = "Column conversion works",
           code = {
-            test_data <- data.frame(colA = c("1", "2", "3"),
-                                    colB = c("1.1", "1.2", "1.3"),
-                                    colC = c("123,454.3", "123,45", "1234,567"),
-                                    colD = LETTERS[1:3])
-            expected_data <- data.frame(colA = c(1, 2, 3),
-                                        colB = c(1.1, 1.2, 1.3),
-                                        colC = c(123454.3, 12345, 1234567),
-                                        colD = LETTERS[1:3])
-            expect_identical()
+            test_data <- data.frame(
+              colA = c("1", "2", "3"),
+              colB = c("1.1", "1.2", "1.3"),
+              colC = c("123,454.3", "123,45", "1234,567"),
+              colD = LETTERS[1:3],
+              stringsAsFactors = FALSE
+            )
+            expected_data <- data.frame(
+              colA = c(1, 2, 3),
+              colB = c(1.1, 1.2, 1.3),
+              colC = c(123454.3, 12345, 1234567),
+              colD = LETTERS[1:3],
+              stringsAsFactors = FALSE
+            )
+            expect_equal(
+              object = pre_process_data(x = test_data),
+              expected = expected_data,
+              check.attributes = FALSE
+            )
           })
-

@@ -213,6 +213,18 @@
             {
                 "dataset": {
                     "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-admissions-discharges-and-deaths"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-average-age-of-residents"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/care-homes-demography"
                 }
             },
@@ -220,6 +232,18 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/care-homes-health-characteristics-of-residents"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-length-of-stay"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/care-homes-type-of-stay"
                 }
             },
             {
@@ -339,12 +363,6 @@
             {
                 "dataset": {
                     "type": "uri",
-                    "value": "http://statistics.gov.scot/data/council-stock"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/council-tax-collection-rates"
                 }
             },
@@ -358,12 +376,6 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/crime-clear-up-rates"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
-                    "value": "http://statistics.gov.scot/data/crime-survey"
                 }
             },
             {
@@ -388,12 +400,6 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/debt-arrangement-scheme-das"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
-                    "value": "http://statistics.gov.scot/data/delayed-discharges"
                 }
             },
             {
@@ -634,12 +640,6 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/feeling-safe-when-alone-at-home---scottish-household-survey"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
-                    "value": "http://statistics.gov.scot/data/fire"
                 }
             },
             {
@@ -963,12 +963,6 @@
             {
                 "dataset": {
                     "type": "uri",
-                    "value": "http://statistics.gov.scot/data/life-expectancy"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
                     "value": "http://statistics.gov.scot/data/literacy-and-numeracy"
                 }
             },
@@ -1120,12 +1114,6 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/never-worked"
-                }
-            },
-            {
-                "dataset": {
-                    "type": "uri",
-                    "value": "http://statistics.gov.scot/data/new-build-housing"
                 }
             },
             {
@@ -1414,6 +1402,18 @@
                 "dataset": {
                     "type": "uri",
                     "value": "http://statistics.gov.scot/data/scottish-health-survey"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/scottish-health-survey-local-area-level-data"
+                }
+            },
+            {
+                "dataset": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/data/scottish-health-survey-scotland-level-data"
                 }
             },
             {

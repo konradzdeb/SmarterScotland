@@ -34,7 +34,7 @@ The following packages makes use of the SPARQL [^1] language queries in order to
 
 The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. 
 
-### Data sets
+### [statistics.gov.scot](http://statistics.gov.scot) data sets
 
 To see the list of available data sets refer to the `available_data_sets` objects.
 
@@ -83,7 +83,14 @@ knitr::kable(head(dta_Edinburgh_JSA))
 
 ## Pre-processing
 
-A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to quickly obtain data set with no URI strings.
+A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to manual processing and obtaining a data set without unnecessary variables and with correct variable types. The example below illustrates 
+
+```{r source_pre_process}
+dta_Glsgow_Crime <- pre_process_data(dta_Edinburgh_JSA)
+```
+```{r show_Glasgow_Crime, echo=FALSE}
+knitr::kable(head(dta_Glsgow_Crime))
+```
 
 
 ```{r end-setup, include=FALSE}

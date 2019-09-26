@@ -83,7 +83,7 @@ knitr::kable(head(dta_Edinburgh_JSA))
 
 ## Pre-processing
 
-A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to manual processing and obtaining a data set without unnecessary variables and with correct variable types. The example below illustrates 
+A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to manual processing and obtaining a data set without unnecessary variables and with correct variable types. The example below provides an example of the previous data to which `pre_process_data` function was applied.
 
 ```{r source_pre_process}
 dta_Glsgow_Crime <- pre_process_data(dta_Edinburgh_JSA)

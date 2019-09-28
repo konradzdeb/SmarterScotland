@@ -19,6 +19,34 @@ The SmarterScotland package provides a convenient interface for sourcing
 and interrogating data available through the
 [statistics.gov.scot](http://statistics.gov.scot).
 
+# Example
+
+``` r
+# Data
+library(SmarterScotland)
+# Visuals and data manipulation
+suppressPackageStartupMessages(library(tidyverse))
+# Data sourcing
+dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
+                                        geography = "Glasgow City",
+                                        measure = "count",
+                                        pre_process_results = TRUE)
+# Summary chart
+dta_Glasgow_Crime %>% 
+  filter(crime_or_offence == "all-crimes") %>%
+  select(count, reference_period) %>% 
+  arrange(desc(reference_period)) %>% 
+  ggplot(aes(x = reference_period, y = count, group = 1)) +
+  geom_line() +
+  labs(x = "Reference Period",
+       y = "Count",
+       title = "Total Crime in Glasgow City") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+![](README_files/figure-gfm/example_data_sourcing-1.png)<!-- -->
+
 # Installation
 
 ``` r
@@ -28,33 +56,6 @@ if (isFALSE("remotes" %in% rownames(installed.packages()))) {
 remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = TRUE,
                         dependencies = TRUE)
 ```
-
-# Example
-
-``` r
-library(SmarterScotland)
-dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
-                                        geography = "Glasgow City",
-                                        measure = "count",
-                                        pre_process_results = TRUE)
-```
-
-``` r
-knitr::kable(x = head(dta_Glasgow_Crime, n = 10))
-```
-
-| count | reference\_area | unit\_of\_measure           | reference\_period | measure\_type | crime\_or\_offence                        |
-| :---- | :-------------- | :-------------------------- | :---------------- | :------------ | :---------------------------------------- |
-| 90211 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-crimes                                |
-| 4110  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-1-non-sexual-crimes-of-violence |
-| 1755  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-2-sexual-crimes                 |
-| 57603 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-3-crimes-of-dishonesty          |
-| 14093 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | \-vandalism-etc                           |
-| 12650 | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | all-group-5-other-crimes                  |
-| 24    | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-homicide-etc               |
-| 1609  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-att-murder-serious-assault |
-| 2004  | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-robbery                    |
-| 473   | S12000049       | crimes-or-offences-recorded | 1996-1997         | count         | crimes-group-1-other-violence             |
 
 ## Other similar projects
 

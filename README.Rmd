@@ -1,6 +1,8 @@
 ---
 title: "README"
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -9,10 +11,36 @@ knitr::opts_chunk$set(echo = TRUE)
 
  [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![Build Status](https://travis-ci.org/konradzdeb/SmarterScotland.svg?branch=master)](https://travis-ci.org/konradzdeb/SmarterScotland) [![codecov](https://codecov.io/gh/konradzdeb/SmarterScotland/branch/master/graph/badge.svg)](https://codecov.io/gh/konradzdeb/SmarterScotland) [![Build status](https://ci.appveyor.com/api/projects/status/i3mfbvchkyah6gmf?svg=true)](https://ci.appveyor.com/project/konradedgar/smarterscotland-yhq6y) [![license](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) [![develVersion](https://img.shields.io/badge/devel%20version-0.0.09-yellow.svg?style=flat)](https://github.com/konradzdeb/SmarterScotland) [![CRAN status](https://www.r-pkg.org/badges/version/SmarterScotland)](https://cran.r-project.org/package=SmarterScotland)
 
-
 # Overview
 
 The SmarterScotland package provides a convenient interface for sourcing and interrogating data available through the [statistics.gov.scot](http://statistics.gov.scot).
+
+# Example
+
+```{r example_data_sourcing, echo=TRUE, warning=FALSE, message=FALSE}
+# Data
+library(SmarterScotland)
+# Visuals and data manipulation
+suppressPackageStartupMessages(library(tidyverse))
+# Data sourcing
+dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
+                                        geography = "Glasgow City",
+                                        measure = "count",
+                                        pre_process_results = TRUE)
+# Summary chart
+dta_Glasgow_Crime %>% 
+  filter(crime_or_offence == "all-crimes") %>%
+  select(count, reference_period) %>% 
+  arrange(desc(reference_period)) %>% 
+  ggplot(aes(x = reference_period, y = count, group = 1)) +
+  geom_line() +
+  labs(x = "Reference Period",
+       y = "Count",
+       title = "Total Crime in Glasgow City") +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE)) +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 # Installation
 
@@ -24,18 +52,6 @@ remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = T
                         dependencies = TRUE)
 ```
 
-# Example
-
-```{r example_data_sourcing, echo=TRUE, warning=FALSE, message=FALSE}
-library(SmarterScotland)
-dta_Glasgow_Crime <- get_geography_data(data_set = "recorded-crime",
-                                        geography = "Glasgow City",
-                                        measure = "count",
-                                        pre_process_results = TRUE)
-```
-```{r preview_glasgow_crime_tbl, eval=TRUE, echo=TRUE}
-knitr::kable(x = head(dta_Glasgow_Crime, n = 10))
-```
 
 
 

@@ -36,8 +36,8 @@ The proposed workflow looks at obtaning *life expectancy* data for the *Glasgow 
 
 1. **Data Selection:** Identification of the relevant data
 2. **Geography Selection:** Veryfying name of geogrphy for which we want to source data
-3. Sourcing
-4. Pre-processing and feeding data for analysis
+3. **Data Sourcing:** Querying [statistics.gov.scot](http://statistics.gov.scot) SPARQL endpoint
+4. **Pre-processing and Analysis:** Fixing data types and removing redundant columns
 
 ## 1. Data Selection
 
@@ -58,18 +58,33 @@ knitr::kable(
 
 ## 2. Geography
 
-The object `data("standard_geography_code_register")` is provided to facilitate veryfying existence of the geography we are interested in. Similarly, as in the previous step we can use `grep()` to verify existence of that object in the provided data frame.
+The object `data("standard_geography_code_register")` is provided to facilitate veryfying existence of the geography we are interested in. Similarly, as in the previous step we can use `grep()` to verify existence of that object in the provided data frame. For that purpose we can check the `value` column for existence of the desired string.
 
-```{r show_available_geographies}
+```{r show_available_geographies, eval=FALSE}
 data("standard_geography_code_register")
+subset.data.frame(x = standard_geography_code_register,
+                  subset = grepl(pattern = "^Glasgow City$", x = value))
 ```
 ```{r table_available_geographies, echo=FALSE}
-knitr::kable(head(standard_geography_code_register))
+knitr::kable(
+  subset.data.frame(x = standard_geography_code_register,
+                  subset = grepl(pattern = "^Glasgow City$", x = value))
+)
 ```
 
-## 3. Sourcing
+## 3. Data Sourcing
+
+Data sourceing is achieved through `get_geography_data()` function. Following from the example below the function can be applied as follows
+
+```{r}
+dta_Glasgow_Life_Expectancy <- get_geography_data(data_set = "life-expectancy",
+                                                  geography = "Glasgow City",
+                                                  pre_process_results = TRUE)
+```
 
 ## 4. Pre-processing and Analysis
+
+The pre-processing of the results already took place and was achieved by passing `pre_process_results = TRUE` to `get_geography_data()` function. The results can be also pre-processed independently by calling `pre_process_data()` on a returned object.
 
 # Conclusion
 

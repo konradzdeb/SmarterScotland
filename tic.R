@@ -2,7 +2,8 @@ do_package_checks()
 
 if (ci_on_travis()) {
   get_stage("before_deploy") %>%
-    add_step(step_install_ssh_keys())
+    add_step(step_install_ssh_keys()) %>%
+    add_step(step_install_cran(package = "tidyverse"))
 
   get_stage("deploy") %>%
     add_step(step_test_ssh()) %>%

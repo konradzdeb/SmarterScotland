@@ -12,6 +12,7 @@ Description: This package sources the publicly available
     data life outcomes, demographic and administrative data from the
     ScotStat portal for selected indicators, geographies and time periods.
 License: GPL-3
+URL: https://konradzdeb.github.io/SmarterScotland, https://github.com/konradzdeb/SmarterScotland
 Depends: 
     httr    (>= 1.4.0),
     R       (>= 3.3.0)

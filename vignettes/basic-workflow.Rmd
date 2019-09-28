@@ -1,5 +1,5 @@
 ---
-title: "Basic Usage"
+title: "Basic Workflow"
 author: "Konrad Zdeb"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -28,15 +28,20 @@ library("SmarterScotland")
 
 # Introduction
 
-The following packages makes use of the SPARQL [^1] language queries in order to query the data available through the [statistics.gov.scot](http://statistics.gov.scot) portal [^2]. In effect, the app works as a wrapper for SPARQL queries providing a suite of common functionalities relevant to how the Scottish public data is being utilises.
+The following packages makes use of the SPARQL[^1] language queries in order to query the data available through the [statistics.gov.scot](http://statistics.gov.scot) portal[^2]. In effect, the app works as a wrapper for SPARQL queries providing a suite of common functionalities relevant to how the Scottish public data is being utilises.
 
-## Available Data
+# Workflow
 
-The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. 
+The proposed workflow looks at obtaning **life expectancy** data for the **Glasgow City.** The workflow focuses on the following steps:
 
-### [statistics.gov.scot](http://statistics.gov.scot) data sets
+1. Identification of the relevant data
+2. Deciding on geography for which to download data
+3. Sourcing
+4. Pre-processing and feeding data for analysis
 
-To see the list of available data sets refer to the `available_data_sets` objects.
+## Data Selection
+
+The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. To see the list of available data sets refer to the `data("available_data_sets")` objects. For the **life expectancy** data it's 
 
 ```{r show_available_data}
 data("available_data_sets")
@@ -44,6 +49,8 @@ data("available_data_sets")
 ```{r table_available_data, echo=FALSE}
 knitr::kable(head(available_data_sets))
 ```
+
+
 
 ### Geographies
 
@@ -58,7 +65,7 @@ knitr::kable(head(standard_geography_code_register))
 
 ### Live reference data
 
-More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies` sources and parses Standard Geography Code Register. Searching for thematic data sets can be achieved simply using queries, as shown below. 
+More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies()` sources and parses Standard Geography Code Register. Searching for thematic data sets can be achieved simply using queries, as shown below. 
 
 ```{r search_jsa_data, results='hide'}
 get_available_datasets(pattern = "pupil")

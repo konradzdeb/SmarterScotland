@@ -28,6 +28,7 @@ addons:
       - libv8-dev
       - libxml2-dev
       - libgit2-dev
+      - r-cran-tidyverse
 
 r_github_packages:
   - jimhester/covr

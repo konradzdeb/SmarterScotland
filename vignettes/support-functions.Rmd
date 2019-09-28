@@ -12,6 +12,13 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+# Enable httptest for vignette development
+library(httptest)
+start_vignette("support-functions")
+
+# Load package
+library("SmarterScotland")
 ```
 
 ```{r setup}
@@ -19,3 +26,16 @@ library(SmarterScotland)
 ```
 
 The `vignette("basic-workflow")` vignette provides an outline of basic functionalities 
+
+# Live reference data
+
+More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies()` sources and parses Standard Geography Code Register. Searching for thematic data sets can be achieved simply using queries, as shown below. 
+
+```{r search_jsa_data, results='hide'}
+get_available_datasets(pattern = "expectancy")
+```
+```{r search_jsa_data_results, echo=FALSE}
+knitr::kable(get_available_datasets(pattern = "expectancy"))
+```
+
+Additional information on the available data can be gathered by following the links returned in the data set above. For instance [http://statistics.gov.scot/data/pupil-attainment-asn](http://statistics.gov.scot/data/pupil-attainment-asn) points to *Pupil Attainment (English and Maths)* data set.

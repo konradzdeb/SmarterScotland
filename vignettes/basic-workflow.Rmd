@@ -32,29 +32,33 @@ The following packages makes use of the SPARQL[^1] language queries in order to 
 
 # Workflow
 
-The proposed workflow looks at obtaning **life expectancy** data for the **Glasgow City.** The workflow focuses on the following steps:
+The proposed workflow looks at obtaning *life expectancy* data for the *Glasgow City.* The workflow focuses on the following steps:
 
-1. Identification of the relevant data
-2. Deciding on geography for which to download data
+1. **Data Selection:** Identification of the relevant data
+2. **Geography Selection:** Veryfying name of geogrphy for which we want to source data
 3. Sourcing
 4. Pre-processing and feeding data for analysis
 
-## Data Selection
+## 1. Data Selection
 
-The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. To see the list of available data sets refer to the `data("available_data_sets")` objects. For the **life expectancy** data it's 
+The package comes with an embedded data sets containing list of data and geographies available through the [statistics.gov.scot](http://statistics.gov.scot) endpoint. To see the list of available data sets refer to the `data("available_data_sets")` objects. The `available_data_sets` contains `subject` column that can be used to identify relevant data, as shown below.
 
-```{r show_available_data}
+```{r get_available_data, eval=FALSE}
 data("available_data_sets")
+subset.data.frame(x = available_data_sets, 
+                  subset = grepl(pattern = "expectancy", x = subject))
 ```
-```{r table_available_data, echo=FALSE}
-knitr::kable(head(available_data_sets))
+```{r show_available_data, echo=FALSE}
+knitr::kable(
+  subset.data.frame(x = available_data_sets, 
+                  subset = grepl(pattern = "expectancy", x = subject)),
+  caption = "Available Life Expectancy Data"
+)
 ```
 
+## 2. Geography
 
-
-### Geographies
-
-Similar techniques can be used to obtain a list of available geographies.
+The object `data("standard_geography_code_register")` is provided to facilitate veryfying existence of the geography we are interested in. Similarly, as in the previous step we can use `grep()` to verify existence of that object in the provided data frame.
 
 ```{r show_available_geographies}
 data("standard_geography_code_register")
@@ -63,47 +67,18 @@ data("standard_geography_code_register")
 knitr::kable(head(standard_geography_code_register))
 ```
 
-### Live reference data
+## 3. Sourcing
 
-More recent versions of the provided data sets can be sourced live from the [statistics.gov.scot](http://statistics.gov.scot) portal using dedicated functions, `get_available_datasets` sources available data and `get_available_geographies()` sources and parses Standard Geography Code Register. Searching for thematic data sets can be achieved simply using queries, as shown below. 
+## 4. Pre-processing and Analysis
 
-```{r search_jsa_data, results='hide'}
-get_available_datasets(pattern = "pupil")
-```
-```{r search_jsa_data_results, echo=FALSE}
-knitr::kable(get_available_datasets(pattern = "pupil"))
-```
+# Conclusion
 
-Additional information on the available data can be gathered by following the links returned in the data set above. For instance [http://statistics.gov.scot/data/pupil-attainment-asn](http://statistics.gov.scot/data/pupil-attainment-asn) points to *Pupil Attainment (English and Maths)* data set.
-
-# Sourcing Geography Data
-
-Likely, one of the most useful functions offered in the package would be concerned with sourcing data for specific geographies. Example below illustrates sourcing *Pupil Attainment (English and Maths)* data for geographies where official name or label matches *East Lothian*. 
-
-```{r source_edinburgh_JSA}
-dta_Edinburgh_JSA <- get_geography_data(data_set = "pupil-attainment-asn",
-                                        geography = "East Lothian")
-```
-```{r show_edinburgh_JSA, echo=FALSE}
-knitr::kable(head(dta_Edinburgh_JSA))
-```
-
-## Pre-processing
-
-A convenience function providing mechanism to quickly remove initial elements of URI string. A preferred option is to retrieve **`rdfs:label`** [^3] of the class. Provided pre-processing function offers a quick alternative to manual processing and obtaining a data set without unnecessary variables and with correct variable types. The example below provides an example of the previous data to which `pre_process_data` function was applied.
-
-```{r source_pre_process}
-dta_Glsgow_Crime <- pre_process_data(dta_Edinburgh_JSA)
-```
-```{r show_Glasgow_Crime, echo=FALSE}
-knitr::kable(head(dta_Glsgow_Crime))
-```
-
-
-```{r end-setup, include=FALSE}
-end_vignette()
-```
+For the efficiency the objects `data("available_data_sets")` and `data("standard_geography_code_register")` are provided in the package. Those objects are not updated too freqntely and providing them as statics data sets makes sense from the efficiency perspective. It is however possible to source live the mentioned objects. This is discussed in `vignette("support-functions")`.
 
 [^1]: Detailed information on the SPARQL is available through [W3C pages](https://www.w3.org/TR/rdf-sparql-query/).
 [^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government that can be accessed through the [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).
 [^3]: This is currently being developed; this behaviour will be controlled by `SmarterScotland.suffix_rdf` option.
+
+```{r end-setup, include=FALSE}
+end_vignette()
+```

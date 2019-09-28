@@ -1,6 +1,6 @@
 # SmarterScotland 0.0.9009
 
-* Added `pre_process_data` function
+* Fixed continuous deployment of package documentation with pkgdown and Travis CI using tic
 
 # SmarterScotland 0.0.9008
 

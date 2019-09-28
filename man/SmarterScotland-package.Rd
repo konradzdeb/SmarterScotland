@@ -13,7 +13,7 @@ SmarterScotland provides a suite of convenience functions
  \if{html}{\figure{logo.png}{options: alt="Smarter Scotland Logo" align="right"}}
 }
 \details{
-For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}.
+For sample usage see \code{vignette("basic-workflow", package = "SmarterScotland")}.
   For other usage, including charting and more advanced functionalities see
  \code{vignette("other-functions", package = "SmarterScotland")}.
 }
@@ -44,6 +44,14 @@ The following package is written in the open (both metaphorically and literally 
 }
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://konradzdeb.github.io/SmarterScotland}
+  \item \url{https://github.com/konradzdeb/SmarterScotland}
+}
+
+}
 \author{
 \itemize{
 \item Maintainer/Author: Konrad Zdeb \email{konrad.zdeb@me.com}

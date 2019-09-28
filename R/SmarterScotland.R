@@ -6,7 +6,7 @@
 #'
 #'  \if{html}{\figure{logo.png}{options: alt="Smarter Scotland Logo" align="right"}}
 #'
-#' @details For sample usage see \code{vignette("basic-usage", package = "SmarterScotland")}.
+#' @details For sample usage see \code{vignette("basic-workflow", package = "SmarterScotland")}.
 #'   For other usage, including charting and more advanced functionalities see
 #'  \code{vignette("other-functions", package = "SmarterScotland")}.
 #'

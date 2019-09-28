@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 # Enable httptest for vignette development
 library(httptest)
-start_vignette("basic-usage")
+start_vignette("basic-workflow")
 
 # Load package
 library("SmarterScotland")

@@ -17,7 +17,7 @@ The SmarterScotland package provides a convenient interface for sourcing and int
 
 # Example
 
-```{r example_data_sourcing, echo=TRUE, warning=FALSE, message=FALSE}
+```{r example_sourcing_and_chart, echo=TRUE, warning=FALSE, message=FALSE}
 # Data
 library(SmarterScotland)
 # Visuals and data manipulation

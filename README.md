@@ -41,11 +41,12 @@ dta_Glasgow_Crime %>%
   labs(x = "Reference Period",
        y = "Count",
        title = "Total Crime in Glasgow City") +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE)) +
   theme_light() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![](README_files/figure-gfm/example_data_sourcing-1.png)<!-- -->
+![](README_files/figure-gfm/example_sourcing_and_chart-1.png)<!-- -->
 
 # Installation
 

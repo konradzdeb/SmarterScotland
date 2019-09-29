@@ -77,9 +77,9 @@ knitr::kable(
 Data sourceing is achieved through `get_geography_data()` function. Following from the example below the function can be applied as follows
 
 ```{r}
-dta_Glasgow_Life_Expectancy <- get_geography_data(data_set = "life-expectancy",
+dta_Glasgow_Life_Expectancy <- get_geography_data(data_set = "healthy-life-expectancy",
                                                   geography = "Glasgow City",
-                                                  measure = "count"
+                                                  measure = "count",
                                                   pre_process_results = TRUE)
 ```
 

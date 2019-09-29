@@ -79,6 +79,7 @@ Data sourceing is achieved through `get_geography_data()` function. Following fr
 ```{r}
 dta_Glasgow_Life_Expectancy <- get_geography_data(data_set = "life-expectancy",
                                                   geography = "Glasgow City",
+                                                  measure = "count"
                                                   pre_process_results = TRUE)
 ```
 

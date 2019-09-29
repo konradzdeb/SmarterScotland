@@ -29,7 +29,8 @@ Suggests:
     rdflib      (>= 0.2.2),
     rmarkdown   (>= 1.14),
     testthat    (>= 2.1.0),
-    spelling    (>= 2.1)
+    spelling    (>= 2.1),
+    tidyverse   (>= 1.2.1)
 LinkingTo: 
     Rcpp
 VignetteBuilder: 

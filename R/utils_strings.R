@@ -20,7 +20,7 @@ NULL
 #'   underscore character.
 make_SPARQL_variable_names <- function(x) {
   assert_character(x = x,
-                   min.chars = 4,
+                   min.chars = 2,
                    all.missing = FALSE)
   x <- gsub(pattern = "[^[:alnum:]]|[[:digit:]]+",
             replacement = "_",

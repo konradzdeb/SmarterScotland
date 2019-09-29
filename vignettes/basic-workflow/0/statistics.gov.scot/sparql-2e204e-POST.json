@@ -1,0 +1,1741 @@
+{
+    "head": {
+        "vars": [
+            "type",
+            "count",
+            "reference_area",
+            "unit_of_measure",
+            "reference_period",
+            "measure_type",
+            "data_set",
+            "age",
+            "sex",
+            "urban_rural_classification",
+            "simd_quintiles"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "57.22"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/0"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "56.51"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/1-4"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "52.69"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/5-9"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "47.99"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/10-14"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "43.37"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/15-19"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "38.86"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/20-24"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "34.42"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/25-29"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "30.12"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/30-34"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "26.01"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/35-39"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "22.24"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/40-44"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "18.89"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/45-49"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "15.82"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/50-54"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "12.93"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/55-59"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "10.37"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/60-64"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "8.21"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/65-69"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "6.37"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/70-74"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "4.85"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/75-79"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "3.67"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/80-84"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "2.82"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/85-89"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "2.24"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/90"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/male"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "58.89"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/0"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "58.16"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/1-4"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "54.24"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/5-9"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "49.41"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/10-14"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "44.72"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/15-19"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "40.18"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/20-24"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "35.82"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/25-29"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "31.66"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/30-34"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "27.69"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/35-39"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "23.91"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/40-44"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "20.33"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/45-49"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "16.93"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/50-54"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "13.76"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/55-59"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "10.82"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/60-64"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "8.26"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/65-69"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "6.04"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/70-74"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "4.18"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/75-79"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "2.65"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/80-84"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "1.52"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/85-89"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            },
+            {
+                "type": {
+                    "type": "uri",
+                    "value": "http://purl.org/linked-data/cube#Observation"
+                },
+                "count": {
+                    "datatype": "http://www.w3.org/2001/XMLSchema#double",
+                    "type": "literal",
+                    "value": "0.67"
+                },
+                "reference_area": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/id/statistical-geography/S12000049"
+                },
+                "unit_of_measure": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/measure-units/years"
+                },
+                "reference_period": {
+                    "type": "uri",
+                    "value": "http://reference.data.gov.uk/id/gregorian-interval/2015-01-01T00:00:00/P3Y"
+                },
+                "measure_type": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/measure-properties/count"
+                },
+                "age": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/age/90"
+                },
+                "sex": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/sex/female"
+                },
+                "urban_rural_classification": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/urban-rural-classification/all"
+                },
+                "simd_quintiles": {
+                    "type": "uri",
+                    "value": "http://statistics.gov.scot/def/concept/simd-quintiles/all"
+                }
+            }
+        ]
+    }
+}

@@ -9,7 +9,6 @@
     list(SmarterScotland.endpoint = "http://statistics.gov.scot/sparql",
          SmarterScotland.response_check = "warn",
          SmarterScotland.geography_match_msg = TRUE,
-         # FIXME: rdfs suffixs should be used when possble
          SmarterScotland.suffix_rdf = FALSE
          )
   toset <- !(names(op.SmarterScotland) %in% names(op))

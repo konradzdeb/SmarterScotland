@@ -74,7 +74,7 @@ knitr::kable(
 
 ## 3. Data Sourcing
 
-Data sourcing is achieved through `get_geography_data()` function. Following from the example below the function can be applied as follows
+Most of the data sourcing work is done through `get_geography_data()` function. Following from the example below the function can be applied as follows
 
 ```{r get life_expectancy_data}
 dta_Glasgow_Life_Expectancy <- get_geography_data(data_set = "healthy-life-expectancy",
@@ -106,7 +106,7 @@ dta_Glasgow_Life_Expectancy %>%
 
 # Conclusion
 
-For the efficiency the objects `data("available_data_sets")` and `data("standard_geography_code_register")` are provided in the package. Those objects are not updated too frequently and providing them as statics data sets makes sense from the efficiency perspective. It is however possible to source live the mentioned objects. This is discussed in `vignette("support-functions")`.
+For the sake of efficiency the objects `data("available_data_sets")` and `data("standard_geography_code_register")` are provided in the package. Those objects are not updated too frequently and providing them as statics data sets makes sense from the efficiency perspective. It is however possible to source live the mentioned objects. This is discussed in `vignette("support-functions")`.
 
 [^1]: Detailed information on the SPARQL is available through [W3C pages](https://www.w3.org/TR/rdf-sparql-query/).
 [^2]: The implementation follows part of the *Open Data Strategy* implemented by the Scottish Government that can be accessed through the [Scottish Government pages](http://www.gov.scot/Topics/Economy/digital/digitalservices/datamanagement/OpenData).

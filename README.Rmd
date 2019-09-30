@@ -52,11 +52,7 @@ remotes::install_github(repo = "konradzdeb/SmarterScotland", build_vignettes = T
                         dependencies = TRUE)
 ```
 
-
-
-
-
-## Other similar projects
+# Similar projects
 
 * [SmarterPoland](https://cran.r-project.org/web/packages/SmarterPoland/index.html)
 * [Eurostat](https://cran.r-project.org/web/packages/eurostat/index.html)

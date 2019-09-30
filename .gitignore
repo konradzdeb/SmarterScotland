@@ -17,3 +17,6 @@ sessionInfoLog
 
 # Ignore VScode folder
 .vscode/
+
+# Ignore pkgdown internal build
+docs/

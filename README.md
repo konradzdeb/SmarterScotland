@@ -1,7 +1,7 @@
 README
 ================
 
-# SmarterScotland <img src="man/figures/logo.png" align="right" style="height:200px;"/>
+# SmarterScotland <img src="man/figures/logo.png" align="right" />
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)

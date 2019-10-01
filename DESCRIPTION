@@ -7,7 +7,8 @@ Authors@R:
     person(given = "Konrad",
            family = "Zdeb",
            role = c("aut", "cre"),
-           email = "konrad.zdeb@me.com")
+           email = "konrad.zdeb@me.com",
+           comment = c(ORCID = "0000-0002-4497-5681"))
 Description: This package sources the publicly available
     data life outcomes, demographic and administrative data from the
     ScotStat portal for selected indicators, geographies and time periods.

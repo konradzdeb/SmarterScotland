@@ -6,7 +6,10 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  fig.path = "man/figures/"
+)
 ```
 
 # SmarterScotland <img src="man/figures/logo.png" align="right" style="height:200px;"/>

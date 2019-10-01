@@ -48,7 +48,7 @@ dta_Glasgow_Crime %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![](README_files/figure-gfm/example_sourcing_and_chart-1.png)<!-- -->
+![](man/figures/example_sourcing_and_chart-1.png)<!-- -->
 
 # Installation
 

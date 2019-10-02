@@ -3,7 +3,7 @@ do_package_checks()
 if (ci_on_travis()) {
   get_stage("before_deploy") %>%
     add_step(step_install_ssh_keys()) %>%
-    add_code_step(call = pkgdown::build_favicons(
+    add_code_step(call = build_favicons(
       pkg = ".", overwrite = TRUE))
 
   get_stage("deploy") %>%

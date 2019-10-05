@@ -67,9 +67,7 @@ find_geography_URI <- function(geography, database = "internal") {
       ignore.case = TRUE
     )
     # Check if geography is an URI and return self if True
-    if (grepl(pattern = "^http[s]?\\:",
-              x = x,
-              perl = TRUE)) {
+    if (is_URL(x)) {
       return(x)
     } else {
       res_search <- switch(

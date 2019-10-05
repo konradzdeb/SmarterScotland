@@ -7,7 +7,7 @@
 \alias{create_URI}
 \title{Query File Utilities}
 \usage{
-is_URL(x, narm = TRUE)
+is_URL(x)
 
 make_SPARQL_variable_names(x)
 

@@ -5,8 +5,8 @@
 #' @section is_URL: Check which elements of character vector are formatted as
 #'   URLs; the checks are simplistic for internal use and generally not
 #'   useful outside the package context.
-is_URL <- function(x, narm = TRUE) {
-    .Call(`_SmarterScotland_is_URL`, x, narm)
+is_URL <- function(x) {
+    .Call(`_SmarterScotland_is_URL`, x)
 }
 
 #' @rdname query_file_functions

@@ -7,11 +7,7 @@
 //'   useful outside the package context.
 // [[Rcpp::export]]
 
-Rcpp::LogicalVector is_URL(Rcpp::StringVector x, bool narm = true) {
-  // Check whether to remove NAs
-  if (narm) {
-    x = na_omit(x);
-  }
+Rcpp::LogicalVector is_URL(Rcpp::StringVector x) {
   // Create results vector
   Rcpp::LogicalVector res(x.size());
   // Iterate over vector elements and test

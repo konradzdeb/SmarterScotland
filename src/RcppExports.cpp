@@ -6,14 +6,13 @@
 using namespace Rcpp;
 
 // is_URL
-Rcpp::LogicalVector is_URL(Rcpp::StringVector x, bool narm);
-RcppExport SEXP _SmarterScotland_is_URL(SEXP xSEXP, SEXP narmSEXP) {
+Rcpp::LogicalVector is_URL(Rcpp::StringVector x);
+RcppExport SEXP _SmarterScotland_is_URL(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< Rcpp::StringVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< bool >::type narm(narmSEXP);
-    rcpp_result_gen = Rcpp::wrap(is_URL(x, narm));
+    rcpp_result_gen = Rcpp::wrap(is_URL(x));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -30,7 +29,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_SmarterScotland_is_URL", (DL_FUNC) &_SmarterScotland_is_URL, 2},
+    {"_SmarterScotland_is_URL", (DL_FUNC) &_SmarterScotland_is_URL, 1},
     {"_SmarterScotland_read_query_file", (DL_FUNC) &_SmarterScotland_read_query_file, 1},
     {NULL, NULL, 0}
 };
